@@ -4751,7 +4751,6 @@ namespace StrengthReport
 
             // 21
             data = new int[] { 500, 800, 1200, 1500 };
-            //data = new int[] { 675, 975, 1375, 1675 };
 
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
@@ -4761,9 +4760,6 @@ namespace StrengthReport
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
 
             // 22
-            //data = new int[] { 500, 800, 1200, 1500 };
-            // the same that for 21
-
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
@@ -4772,9 +4768,6 @@ namespace StrengthReport
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
 
             // 47
-            //data = new int[] { 500, 800, 1200, 1500 };
-            // the same that for 21, 22
-
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
@@ -4793,9 +4786,6 @@ namespace StrengthReport
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
 
             // 42
-            //data = new int[] { 600, 1000, 1500, 2000, 2500, 3000 };
-            // the same that for 41
-
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
@@ -4855,7 +4845,6 @@ namespace StrengthReport
 
             // 100            
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
-            //data = new int[] { 835, 1235, 1535, 1735, 2235, 2735, 3235, 4235 };
 
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
@@ -4865,9 +4854,6 @@ namespace StrengthReport
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
 
             // 130
-            // data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
-            // the same that for 100
-
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
@@ -4876,9 +4862,6 @@ namespace StrengthReport
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
 
             // 152
-            //data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
-            //data = new int[] { 845, 1245, 1545, 1745, 2245, 2745, 3245, 4245 };
-
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
             hashTable.AddValue((string)m_PTO_List[index], data); index++;
