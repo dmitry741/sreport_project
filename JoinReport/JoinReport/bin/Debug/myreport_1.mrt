@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <SReport Ref="2" type="DataTableSource" isKey="true">
+        <Alias>SReport</Alias>
+        <Columns isList="true" count="434">
+          <value>PTO,System.String</value>
+          <value>PTO_Plane_Number,System.String</value>
+          <value>PTO_Full_Plane_Number,System.String</value>
+          <value>PTO_Plates,System.String</value>
+          <value>PTO_Plates_1,System.String</value>
+          <value>PTO_OriginalName,System.String</value>
+          <value>Medium_Hot_Name,System.String</value>
+          <value>Medium_Cold_Name,System.String</value>
+          <value>Medium_Hot_MaxT,System.String</value>
+          <value>Medium_Cold_MaxT,System.String</value>
+          <value>Medium_MinT,System.String</value>
+          <value>Medium_WallT,System.String</value>
+          <value>Weight_Netto,System.String</value>
+          <value>Weight_Brutto,System.String</value>
+          <value>Pmax,System.String</value>
+          <value>People_Developer,System.String</value>
+          <value>People_Auditor,System.String</value>
+          <value>People_NachPodrz,System.String</value>
+          <value>People_Ncontr,System.String</value>
+          <value>People_Utverdil,System.String</value>
+          <value>Table1_Period,System.String</value>
+          <value>Table2_Material_Row1,System.String</value>
+          <value>Table2_Material_Row2,System.String</value>
+          <value>Table2_Material_Row3,System.String</value>
+          <value>Table2_Material_Row4,System.String</value>
+          <value>Table2_Material_Row5,System.String</value>
+          <value>Table2_Material_Row6,System.String</value>
+          <value>Table2_Material_Row7,System.String</value>
+          <value>Table2_Material_Row8,System.String</value>
+          <value>Table2_T1,System.String</value>
+          <value>Table2_T2,System.String</value>
+          <value>Table2_PredelTech_11,System.String</value>
+          <value>Table2_PredelTech_12,System.String</value>
+          <value>Table2_PredelTech_21,System.String</value>
+          <value>Table2_PredelTech_22,System.String</value>
+          <value>Table2_PredelTech_31,System.String</value>
+          <value>Table2_PredelTech_32,System.String</value>
+          <value>Table2_PredelTech_41,System.String</value>
+          <value>Table2_PredelTech_42,System.String</value>
+          <value>Table2_PredelTech_51,System.String</value>
+          <value>Table2_PredelTech_52,System.String</value>
+          <value>Table2_PredelTech_61,System.String</value>
+          <value>Table2_PredelTech_62,System.String</value>
+          <value>Table2_PredelTech_71,System.String</value>
+          <value>Table2_PredelTech_72,System.String</value>
+          <value>Table2_PredelTech_81,System.String</value>
+          <value>Table2_PredelTech_82,System.String</value>
+          <value>Table2_PredelProch_11,System.String</value>
+          <value>Table2_PredelProch_12,System.String</value>
+          <value>Table2_PredelProch_21,System.String</value>
+          <value>Table2_PredelProch_22,System.String</value>
+          <value>Table2_PredelProch_31,System.String</value>
+          <value>Table2_PredelProch_32,System.String</value>
+          <value>Table2_PredelProch_41,System.String</value>
+          <value>Table2_PredelProch_42,System.String</value>
+          <value>Table2_PredelProch_51,System.String</value>
+          <value>Table2_PredelProch_52,System.String</value>
+          <value>Table2_PredelProch_61,System.String</value>
+          <value>Table2_PredelProch_62,System.String</value>
+          <value>Table2_PredelProch_71,System.String</value>
+          <value>Table2_PredelProch_72,System.String</value>
+          <value>Table2_PredelProch_81,System.String</value>
+          <value>Table2_PredelProch_82,System.String</value>
+          <value>Table2_Sigma_11,System.String</value>
+          <value>Table2_Sigma_12,System.String</value>
+          <value>Table2_Sigma_21,System.String</value>
+          <value>Table2_Sigma_22,System.String</value>
+          <value>Table2_Sigma_31,System.String</value>
+          <value>Table2_Sigma_32,System.String</value>
+          <value>Table2_Sigma_41,System.String</value>
+          <value>Table2_Sigma_42,System.String</value>
+          <value>Table2_Sigma_51,System.String</value>
+          <value>Table2_Sigma_52,System.String</value>
+          <value>Table2_Sigma_61,System.String</value>
+          <value>Table2_Sigma_62,System.String</value>
+          <value>Table2_Sigma_71,System.String</value>
+          <value>Table2_Sigma_72,System.String</value>
+          <value>Table2_Sigma_81,System.String</value>
+          <value>Table2_Sigma_82,System.String</value>
+          <value>Table2_ModuleUpr_11,System.String</value>
+          <value>Table2_ModuleUpr_12,System.String</value>
+          <value>Table2_ModuleUpr_21,System.String</value>
+          <value>Table2_ModuleUpr_22,System.String</value>
+          <value>Table2_ModuleUpr_31,System.String</value>
+          <value>Table2_ModuleUpr_32,System.String</value>
+          <value>Table2_ModuleUpr_41,System.String</value>
+          <value>Table2_ModuleUpr_42,System.String</value>
+          <value>Table2_ModuleUpr_51,System.String</value>
+          <value>Table2_ModuleUpr_52,System.String</value>
+          <value>Table2_ModuleUpr_61,System.String</value>
+          <value>Table2_ModuleUpr_62,System.String</value>
+          <value>Table2_ModuleUpr_71,System.String</value>
+          <value>Table2_ModuleUpr_72,System.String</value>
+          <value>Table2_ModuleUpr_81,System.String</value>
+          <value>Table2_ModuleUpr_82,System.String</value>
+          <value>Table2_LinearExt_12,System.String</value>
+          <value>Table2_LinearExt_22,System.String</value>
+          <value>Table2_LinearExt_32,System.String</value>
+          <value>Table2_LinearExt_42,System.String</value>
+          <value>Table2_LinearExt_52,System.String</value>
+          <value>Table2_LinearExt_62,System.String</value>
+          <value>Table2_LinearExt_72,System.String</value>
+          <value>Table2_LinearExt_82,System.String</value>
+          <value>Table3_P,System.String</value>
+          <value>Table3_SigmaTH,System.String</value>
+          <value>Table3_SigmaT,System.String</value>
+          <value>Table3_PH,System.String</value>
+          <value>Presuure_HydroTest,System.String</value>
+          <value>Pressure_Calc,System.String</value>
+          <value>Table4_B,System.String</value>
+          <value>Table_Bm,System.String</value>
+          <value>Table_Am,System.String</value>
+          <value>Table_A,System.String</value>
+          <value>Table_bb,System.String</value>
+          <value>Table_Bsh,System.String</value>
+          <value>Table_d,System.String</value>
+          <value>Table_z,System.String</value>
+          <value>Table_c111,System.String</value>
+          <value>Table_c112,System.String</value>
+          <value>Table_c12,System.String</value>
+          <value>Table_c2,System.String</value>
+          <value>Table_S1,System.String</value>
+          <value>Table_S2,System.String</value>
+          <value>Table4_Y,System.String</value>
+          <value>Table4_Km,System.String</value>
+          <value>Table4_Ko,System.String</value>
+          <value>Table4_c_stat,System.String</value>
+          <value>Table4_c_pri,System.String</value>
+          <value>Table4_SR1,System.String</value>
+          <value>Table4_SR2,System.String</value>
+          <value>Table4_SR12,System.String</value>
+          <value>Table4_SR22,System.String</value>
+          <value>Table4_Sigma,System.String</value>
+          <value>Table4_SigmaH,System.String</value>
+          <value>Table4_Sigma_pri,System.String</value>
+          <value>Table4_SigmaH_pri,System.String</value>
+          <value>Table4_SR11_plus_C,System.String</value>
+          <value>Table4_SR12_plus_C,System.String</value>
+          <value>Table4_SR21_plus_C,System.String</value>
+          <value>Table4_SR22_plus_C,System.String</value>
+          <value>Table5_Epsilon,System.String</value>
+          <value>Table5_Am,System.String</value>
+          <value>Table5_Bm,System.String</value>
+          <value>Table5_b,System.String</value>
+          <value>Table5_Q0,System.String</value>
+          <value>Table5_Fob,System.String</value>
+          <value>Table5_P,System.String</value>
+          <value>Table5_Ph,System.String</value>
+          <value>Table5_Eta,System.String</value>
+          <value>Table5_Fp,System.String</value>
+          <value>Table5_Fd,System.String</value>
+          <value>Table5_Hi,System.String</value>
+          <value>Table5_m,System.String</value>
+          <value>Table5_F2,System.String</value>
+          <value>Table5_F2_plus,System.String</value>
+          <value>Table5_Fph,System.String</value>
+          <value>Table5_F2h,System.String</value>
+          <value>Table5_F2h_plus,System.String</value>
+          <value>Table5_z,System.String</value>
+          <value>Table5_d0,System.String</value>
+          <value>Table5_ksi,System.String</value>
+          <value>Table5_MomentK,System.String</value>
+          <value>Table5_Fow,System.String</value>
+          <value>Table5_Fw,System.String</value>
+          <value>Table5_dc,System.String</value>
+          <value>Table5_SigmaW,System.String</value>
+          <value>Table5_dw,System.String</value>
+          <value>Table5_dow,System.String</value>
+          <value>Table6_d0_down,System.String</value>
+          <value>Table6_d0_up,System.String</value>
+          <value>Table6_dc,System.String</value>
+          <value>Table6_Mk_down,System.String</value>
+          <value>Table6_Mk_up,System.String</value>
+          <value>Table6_ksi,System.String</value>
+          <value>Table6_Fow_down,System.String</value>
+          <value>Table6_Fow_up,System.String</value>
+          <value>Table6_SigmaW,System.String</value>
+          <value>Table6_dw_down,System.String</value>
+          <value>Table6_dw_up,System.String</value>
+          <value>Table6_d0w_down,System.String</value>
+          <value>Table6_d0w_up,System.String</value>
+          <value>Table8_b0,System.String</value>
+          <value>Table8_b,System.String</value>
+          <value>Table8_delta,System.String</value>
+          <value>Table8_q0,System.String</value>
+          <value>Table8_Fob,System.String</value>
+          <value>Table8_P,System.String</value>
+          <value>Table8_Ph,System.String</value>
+          <value>Table8_Dm,System.String</value>
+          <value>Table8_Fp,System.String</value>
+          <value>Table8_Fd,System.String</value>
+          <value>Table8_hi,System.String</value>
+          <value>Table8_m,System.String</value>
+          <value>Table8_eta,System.String</value>
+          <value>Table8_F2,System.String</value>
+          <value>Table8_F2_plus,System.String</value>
+          <value>Table8_Fph,System.String</value>
+          <value>Table8_F2h,System.String</value>
+          <value>Table8_F2h_plus,System.String</value>
+          <value>Table8_z,System.String</value>
+          <value>Table8_d0,System.String</value>
+          <value>Table8_ksi,System.String</value>
+          <value>Table8_Mk,System.String</value>
+          <value>Table8_Fow,System.String</value>
+          <value>Table8_Fw,System.String</value>
+          <value>Table8_dc,System.String</value>
+          <value>Table8_dw,System.String</value>
+          <value>Table8_d0w,System.String</value>
+          <value>Table9_n,System.String</value>
+          <value>Table9_f,System.String</value>
+          <value>Table9_h,System.String</value>
+          <value>Table9_dh,System.String</value>
+          <value>Table9_epsilon,System.String</value>
+          <value>Table9_b,System.String</value>
+          <value>Table9_Epr,System.String</value>
+          <value>Table9_q,System.String</value>
+          <value>Table9_A,System.String</value>
+          <value>Table9_B,System.String</value>
+          <value>Table9_A1,System.String</value>
+          <value>Table9_B1,System.String</value>
+          <value>Table9_R,System.String</value>
+          <value>Table9_tpt,System.String</value>
+          <value>Table9_p,System.String</value>
+          <value>Table10_n,System.String</value>
+          <value>Table10_s,System.String</value>
+          <value>Table10_l1,System.String</value>
+          <value>Table10_dT,System.String</value>
+          <value>Table10_lw,System.String</value>
+          <value>Table10_d,System.String</value>
+          <value>Table10_z,System.String</value>
+          <value>Table10_Ew,System.String</value>
+          <value>Table10_dw,System.String</value>
+          <value>Table10_Aw,System.String</value>
+          <value>Table10_LambdaW,System.String</value>
+          <value>Table10_Alpha1,System.String</value>
+          <value>Table10_Alpha2,System.String</value>
+          <value>Table10_eta,System.String</value>
+          <value>Table10_Mk,System.String</value>
+          <value>Table10_Fw,System.String</value>
+          <value>Table10_Fp_1,System.String</value>
+          <value>Table10_Fp_2,System.String</value>
+          <value>Table10_Fp_3,System.String</value>
+          <value>Table10_Fp_4,System.String</value>
+          <value>Table10_Ft_1,System.String</value>
+          <value>Table10_Ft_2,System.String</value>
+          <value>Table10_Ft_3,System.String</value>
+          <value>Table10_Ft_4,System.String</value>
+          <value>Table10_Fph_1,System.String</value>
+          <value>Table10_Fph_2,System.String</value>
+          <value>Table10_Fph_3,System.String</value>
+          <value>Table10_Fph_4,System.String</value>
+          <value>Table10_Fwp_1,System.String</value>
+          <value>Table10_Fwp_2,System.String</value>
+          <value>Table10_Fwp_3,System.String</value>
+          <value>Table10_Fwp_4,System.String</value>
+          <value>Table10_SigmaW_Round_1,System.String</value>
+          <value>Table10_SigmaW_Round_2,System.String</value>
+          <value>Table10_SigmaW_Round_3,System.String</value>
+          <value>Table10_SigmaW_Round_4,System.String</value>
+          <value>Table10_SigmaW_Square_1,System.String</value>
+          <value>Table10_SigmaW_Square_2,System.String</value>
+          <value>Table10_SigmaW_Square_3,System.String</value>
+          <value>Table10_SigmaW_Square_4,System.String</value>
+          <value>Table10_Tau,System.String</value>
+          <value>Table10_Sigma4W_Round_1,System.String</value>
+          <value>Table10_Sigma4W_Round_2,System.String</value>
+          <value>Table10_Sigma4W_Round_3,System.String</value>
+          <value>Table10_Sigma4W_Round_4,System.String</value>
+          <value>Table10_Sigma4W_Square_1,System.String</value>
+          <value>Table10_Sigma4W_Square_2,System.String</value>
+          <value>Table10_Sigma4W_Square_3,System.String</value>
+          <value>Table10_Sigma4W_Square_4,System.String</value>
+          <value>Table11_Q_1,System.String</value>
+          <value>Table11_L1_1,System.String</value>
+          <value>Table11_L2_1,System.String</value>
+          <value>Table11_L3_1,System.String</value>
+          <value>Table11_F_1,System.String</value>
+          <value>Table11_M_1,System.String</value>
+          <value>Table11_W_1,System.String</value>
+          <value>Table11_Sigma_1,System.String</value>
+          <value>Table11_13Sigma_1,System.String</value>
+          <value>Table11_Q_2,System.String</value>
+          <value>Table11_F_2,System.String</value>
+          <value>Table11_M_2,System.String</value>
+          <value>Table11_W_2,System.String</value>
+          <value>Table11_Sigma_2,System.String</value>
+          <value>Table11_13Sigma_2,System.String</value>
+          <value>Table12_F_1314,System.String</value>
+          <value>Table12_A_1314,System.String</value>
+          <value>Table12_Sigma_1314,System.String</value>
+          <value>Table12_SigmaSquare_1314,System.String</value>
+          <value>Table12_Q1_1314,System.String</value>
+          <value>Table12_mu_1314,System.String</value>
+          <value>Table12_z_1314,System.String</value>
+          <value>Table12_Ft_1314,System.String</value>
+          <value>Table12_Q_1314,System.String</value>
+          <value>Table12_d0_1314,System.String</value>
+          <value>Table12_tau_1314,System.String</value>
+          <value>Table12_tauSquare_1314,System.String</value>
+          <value>Table12_Mk_1314,System.String</value>
+          <value>Table12_tauK_1314,System.String</value>
+          <value>Table12_Sigma4w_1314,System.String</value>
+          <value>Table12_17Sigma_1314,System.String</value>
+          <value>Table12_F_1516,System.String</value>
+          <value>Table12_A_1516,System.String</value>
+          <value>Table12_Sigma_1516,System.String</value>
+          <value>Table12_SigmaSquare_1516,System.String</value>
+          <value>Table12_Q1_1516,System.String</value>
+          <value>Table12_mu_1516,System.String</value>
+          <value>Table12_z_1516,System.String</value>
+          <value>Table12_Ft_1516,System.String</value>
+          <value>Table12_Q_1516,System.String</value>
+          <value>Table12_d0_1516,System.String</value>
+          <value>Table12_tau_1516,System.String</value>
+          <value>Table12_tauSquare_1516,System.String</value>
+          <value>Table12_Mk_1516,System.String</value>
+          <value>Table12_tauK_1516,System.String</value>
+          <value>Table12_Sigma4w_1516,System.String</value>
+          <value>Table12_17Sigma_1516,System.String</value>
+          <value>Table13_F_1,System.String</value>
+          <value>Table13_F_2,System.String</value>
+          <value>Table13_F_3,System.String</value>
+          <value>Table13_F_4,System.String</value>
+          <value>Table13_F_5,System.String</value>
+          <value>Table13_F_6,System.String</value>
+          <value>Table13_F_7,System.String</value>
+          <value>Table13_F_8,System.String</value>
+          <value>Table13_d_1,System.String</value>
+          <value>Table13_d_2,System.String</value>
+          <value>Table13_d_3,System.String</value>
+          <value>Table13_d_4,System.String</value>
+          <value>Table13_d_5,System.String</value>
+          <value>Table13_d_6,System.String</value>
+          <value>Table13_d_7,System.String</value>
+          <value>Table13_d_8,System.String</value>
+          <value>Table13_h_1,System.String</value>
+          <value>Table13_h_2,System.String</value>
+          <value>Table13_h_3,System.String</value>
+          <value>Table13_h_4,System.String</value>
+          <value>Table13_h_5,System.String</value>
+          <value>Table13_h_6,System.String</value>
+          <value>Table13_h_7,System.String</value>
+          <value>Table13_h_8,System.String</value>
+          <value>Table13_K1_1,System.String</value>
+          <value>Table13_K1_2,System.String</value>
+          <value>Table13_K1_3,System.String</value>
+          <value>Table13_K1_4,System.String</value>
+          <value>Table13_K1_5,System.String</value>
+          <value>Table13_K1_6,System.String</value>
+          <value>Table13_K1_7,System.String</value>
+          <value>Table13_K1_8,System.String</value>
+          <value>Table13_Km,System.String</value>
+          <value>Table13_z_1,System.String</value>
+          <value>Table13_z_2,System.String</value>
+          <value>Table13_z_3,System.String</value>
+          <value>Table13_z_4,System.String</value>
+          <value>Table13_z_5,System.String</value>
+          <value>Table13_z_6,System.String</value>
+          <value>Table13_z_7,System.String</value>
+          <value>Table13_z_8,System.String</value>
+          <value>Table13_TauP_1,System.String</value>
+          <value>Table13_TauP_2,System.String</value>
+          <value>Table13_TauP_3,System.String</value>
+          <value>Table13_TauP_4,System.String</value>
+          <value>Table13_TauP_5,System.String</value>
+          <value>Table13_TauP_6,System.String</value>
+          <value>Table13_TauP_7,System.String</value>
+          <value>Table13_TauP_8,System.String</value>
+          <value>Table13_TauSquareP_1,System.String</value>
+          <value>Table13_TauSquareP_2,System.String</value>
+          <value>Table13_TauSquareP_3,System.String</value>
+          <value>Table13_TauSquareP_4,System.String</value>
+          <value>Table13_TauSquareP_5,System.String</value>
+          <value>Table13_TauSquareP_6,System.String</value>
+          <value>Table13_TauSquareP_7,System.String</value>
+          <value>Table13_TauSquareP_8,System.String</value>
+          <value>Table14_P,System.String</value>
+          <value>Table14_F,System.String</value>
+          <value>Table14_Apr,System.String</value>
+          <value>Table14_q,System.String</value>
+          <value>Table14_L,System.String</value>
+          <value>Table14_z1,System.String</value>
+          <value>Table14_z2,System.String</value>
+          <value>Table14_z3,System.String</value>
+          <value>Table14_Bpr,System.String</value>
+          <value>Table14_a,System.String</value>
+          <value>Table14_M1,System.String</value>
+          <value>Table14_M2,System.String</value>
+          <value>Table14_M3,System.String</value>
+          <value>Table14_b1,System.String</value>
+          <value>Table14_b2,System.String</value>
+          <value>Table14_b3,System.String</value>
+          <value>Table14_h,System.String</value>
+          <value>Table14_W1,System.String</value>
+          <value>Table14_W2,System.String</value>
+          <value>Table14_W3,System.String</value>
+          <value>Table14_SigmaSquare,System.String</value>
+          <value>Table14_SigmaIs1,System.String</value>
+          <value>Table14_SigmaIs2,System.String</value>
+          <value>Table14_SigmaIs3,System.String</value>
+          <value>Table14_SSIs,System.String</value>
+          <value>Table15_A_1,System.String</value>
+          <value>Table15_A_2,System.String</value>
+          <value>Table15_Sigma_1,System.String</value>
+          <value>Table15_Sigma_2,System.String</value>
+          <value>Table15_SigmaSquare,System.String</value>
+          <value>Table16_NSigma,System.String</value>
+          <value>Table16_NN,System.String</value>
+          <value>Table16_A,System.String</value>
+          <value>Table16_B,System.String</value>
+          <value>Table16_t,System.String</value>
+          <value>Table16_K,System.String</value>
+          <value>Table16_Sigma4w_1,System.String</value>
+          <value>Table16_Sigma4w_2,System.String</value>
+          <value>Table16_Sigma4w_3,System.String</value>
+          <value>Table16_SigmaA_1,System.String</value>
+          <value>Table16_SigmaA_2,System.String</value>
+          <value>Table16_SigmaA_3,System.String</value>
+          <value>Table16_NSquare_1,System.String</value>
+          <value>Table16_NSquare_2,System.String</value>
+          <value>Table16_NSquare_3,System.String</value>
+          <value>Table16_N1,System.String</value>
+          <value>Table16_N2,System.String</value>
+          <value>Table16_N3,System.String</value>
+          <value>Table16_al,System.String</value>
+          <value>Table16_N1M,System.String</value>
+          <value>Table16_BM,System.String</value>
+          <value>Picture1,System.Drawing.Bitmap</value>
+          <value>Picture2,System.Drawing.Bitmap</value>
+          <value>Picture3,System.Drawing.Bitmap</value>
+          <value>Picture4,System.Drawing.Bitmap</value>
+          <value>Picture5,System.Drawing.Bitmap</value>
+          <value>Picture7,System.Drawing.Bitmap</value>
+          <value>WorkAge,System.String</value>
+        </Columns>
+        <DataName>SReport</DataName>
+        <Dictionary isRef="1" />
+        <Name>SReport</Name>
+      </SReport>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="2">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="32">
+        <Page1Text1 Ref="4" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>8.9,0,5,1.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Verdana,36,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Page1Text1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>ридан</Text>
+          <TextBrush>Navy</TextBrush>
+          <TextFormat Ref="5" type="GeneralFormat" isKey="true" />
+        </Page1Text1>
+        <Image1 Ref="6" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>7.5,0.4,1.2,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Image>Qk1WFwAAAAAAADYAAAAoAAAAMQAAACgAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAA////////////////////////////////////////////////////7uz35eTx5eTy5eTy5eTy5eTy5eTy5eTy5eTy5eTy5eTy5eTy5eTy5eTy5eTx5eTy5OLy4uHx////////////////////////////////4ODd6+Xi6uXh6uXh6uXh6uXh6uXh6OTc5uTg////AP////////////////////////////////////Xz9JaN1Ek7uSQQqiUOsScQsScQsScQsScQsScQsScQsScQsScQsScQsScQsScQsScQsScQsScQsSkQsREArLSp3f////////////////////7//////7SYhk8RAFsfAFofAFofAFofAFofAFofAEUGANjNyP///wD////////////////////////////9//tyZsghC7AtGLQ1ILg4JLo4Jrg4Jrc4Jrc4Jrc4Jrc4Jrc4Jrc4Jrc4Jrc4Jrc4Jrc4Jrc4Jrc4Jrc4JrcyIbZMO7z///////////////////////////////9aIQBpMQpqMgtqMgtqMgtqMgtpMgtjKACUcFn////+//4A///////////////+///8////vbvdJhGvLhq1OCW3OSW3OSW3OCa4OSa3OSa4OSa4OSa4OSa4OSa4OSa4OSa4OSa4OSa4OSa4OSa4OSa4OSa3OCS6Iwux2dfs////////////////////////////n4BlYScAajIMajMMajMMaTIMajILaDELViIA////////////AP///////////////////5eG0CQIsTcltTkluDkluDgmuDgmtzkmtzkmuDkmuDkmuDkmuDkmuDkmuDkmuDkmuDkmuDkmuDkmuDkmuDkmtzgmtzIcuVxVuf////z+/v////////////////////v8+FUZAGo0CGkyDGozDGkyDGoyDGkyDF4fALmsnf///////////wD///////////////+Vjs4iDLI4Jbc4Jbg5Jrg5Jrg5Jrg5Jrc5Jbg5Jbg4Jbg4Jbg4Jbg4Jbg4Jbg4Jbg4Jbg4Jbg4Jbg4Jbg4Jbg4Jbg4JrYjCrDv6vb///////////////////////7///+KZ0xkKgFpMwxqMgxqMwxqMgxoNQhmLgZuRxr///////7///////8A/////v//////xsblIAiyNyS6OSa3OSa4OSa4OSa4OSa3OSW4NyW3Lhq0KBKwJQ+wJA6vJA+vJA+vJA+vJA+vJA+vJA+vJA+vJA+vJQ+vGwSueWrD////////////////////////////6ebfVxkAaTIMajIMajMMajMMajIMZjQKVhgA7Ojl/////f//////////AP///////v///i8YrzYjtzkmtzkmuDkmuDkmuDkmtzkluDEitCoQsoeAztvX7Pb19vb1+fb1+fb1+Pb1+Pb1+Pb1+Pb1+fb1+fb1+fb1+fTy+P//+////v///////////////////////3xOMGIvAWoyDGozDGozDGkzDGoyDF8mAJt+Z////////////////////wD///////+Jf9MsF7c4Jrc5Jrg5Jrg5Jrg5Jrc5JrcyHrY8Krb0+Pf///////7///3///7///7///7///7///7///7///7///7///7///7///7//v7////////////////////////Zz8VaHQBsMgxpMgtqMwxpMwxqMgtpMAheKAL////+//////////////////8A////////LBesNiS3OSW3OSa4OSa4OSa4OCa3NiK4Lh2z///+///////+///////////////////////////////////////////////////////////////////////////+////Zz0XZy4HaTILajMMajMMaTIMbjMKVRwAzL+1/////f//////////////////AP///8S+5CMTsjkluTgmtzkmuDkmuDkmuDgmtykPtsTD4v/////+///+//////////////////////////////////////////////////////////////////7//v///v///8i4p1kfAGoyDGozDGozDGozDGoyDGQsAXxWM////////////////////////////wD///6DfMwvGrQ4Jrc5Jrg5Jrg5Jrg5Jrg1Irc+LbP////+///////////////////////////////////////////////////////////////////////////8//7+//////9cLAZqMQdpMgxqMwxqMwxqMwtpMgpRGgD59/T///////////////////////////8A////ZVPDMR62OSa4OSa4OSa4OSa4OSa4Lhq0joDP///8/f////////////////////////////////////////////////////////////////////////////7/////tJ2KXSQAazMLaTIMajMMajMLaDMMXiMArJF9/////v/+////////////////////////AP///1VEuDMgtjkmuDkmuDkmuDkmuDkmuCsXs62j3f///////f///////////////////////////////////////////////////////////////////////////////1ofAGkxCmkyDGozDGozDGkzC2ovCF0tB////////////////////////////////////wD///9cTMAyH7Y5Jrg5Jrg5Jrg5Jrg5JrgsGLSiltf///7+//7////////////////////////////////////////////////////////////////+///+//////+fhWpmJQBpMwxqMwxqMwxqMwxqMgxVHwDUzMH///////39//////////////////////////8A///+fXPKLxu1OCa3OSa4OSa4OSa4OSa4Mh+2YVDA/////f/////////////////////////////////////////////////////////////////////+//////75UhoAZzIMajILajMMajMMajMMZy8HdEgl/////////////v//////////////////////////AP///7245igVsDkkujgmtzkmuDkmuDkmuDgltyMNsuvt8P////////7//////////////////////////////////////////////////////////////v///4xtTmcpAG0yC2kzDGozDGozDGozDGkyDGgwBk8aAHxWNOXZz/////////7//////////////////wD///////8rFrE5JbM4Jbg5Jrc5Jrg5Jrg4Jrc1ILhHMrf//////v/+///////////////////////////////////////////////////////////////u6+NYFgBpMgtpMgxqMgxqMgxpMgxpMwtqMwxpMgxqMgtkKwNaFwCPa1L///////////////////////8A////////mpHQKBS0OSa2OSW4OSa3OSa4OCa3OiW4Lhu1WEC7///6//////////////7///7//////v////7///////////////////////7//v7/////elE2Zy4AajIKazMKaTMKaDQJazQJbDIMaTMLajMMaTIMazQKajMLXikAcDgX/////////f//////////AP///////////zsnuDMcvzkntjkluDkluDkmuDgmtzklty0euS4bsqWZ1/bx9v////////////////////z9+////////////////////////////82/uUcFAFMjAFohAFghAFccAF4eAGQqAGgzC2kyC2oyC2ozDGkyDGkyDGoyDGIpAHI7Gv///////////////wD////9//7///3p7/UoEKwzIrk5J7Q5Jrc5Jbg5Jrg4Jrc7Jbc4IbsrGLcnELAqFa0rF64rF64qFa4aCqH7+Pj//////////////////////v/+/v/+/v3////////////////////m3tuUe2FaGwBqLwhnMwxqMgtqMwxqMwxqMwxqMgxeJwCRc1r////+///9//8A////////////////3NvzKRGrMx28OCe0OCW4OCa3OSa3OCa3OCa3OCW3OCW4OCW4NyS4NyS4KBSznJTV////////////////////////////////////////////////////////////////6+TeXCYBajEDaTIMaTIMajMMajMMajIMZzQLVRYA6N/V///////+AP/////////////+/////+/29kQztCYOtzYkszojuzgluDkluTkmtzkmuDkmuDkmuDgluDcjtjUfs////////f///v///////////////////////////////////////////////////v/+//////fx8lceAGgzCWwzC2kyDGozDGoyDGozC2IsA4FaOf///////AD///////////////////////////6zrNxBKrolEa04I7w4J7Q5Jbg5Jrg5Jrg5Jrg4JbgnErG3rt////////////////////////////////////////////////////////////////////////v///+3opRgJgBjNAxqMgxqMwxqMwxqMgxqMgtTGQD///////8A/////////////////////v/9//7/////////7PH0LhqyOCS5OSa3OSa4OSa4OSW4NCKzRDC4//////////////////////////////////////////////////////////////////////////7/////////WSMAaTILajIMajMMajMMajMMaTMMXyEAyr6t////AP/////////////////////////////9/////o18zCwZuDsltzgmuDkmuDkluDkntSIMtM3L4v////7//////////////////////////////////////////////////////////////////////////////4NbNmYtBWkyC2ozDGozDGozDGkyDGUmALCahf///wD///////////////////////////////zv7fMhCq42JrY6Jbg4Jrc5Jrg5JbcxHrdXRrz////+/v7+//7///////////////////////////////////////////////////////////////////////////+NaklnKgZpMwtqMwxqMwxqMwxpMgxnJwCkjnr///8A////////////////////////////////V0DAMyC1OSW4OCa3OSa4OSW3OCW3Igyw4eDu////////////////////////////////////////////////////////////////////////////////////////b0QcZy8GaTIMajMMajMMajMMaTIMZCYAtJ+K////AP////////////////////7//f///7e23SUNtTkmtzgltzkmuDkltzgluSwdtWldxv////7+/f////////////////////////////////////////////////////////////////////////3///////r5+VUdAGczDGoyC2ozDGozDGozDGkyDF8hAM/Ft////wD///////////////////////////otGLI3Ib44Jrc5Jbg5Jrg5Jbg0J7UnCrH09/b///7///7///////////////////////////////////////////////////////////////////////////3///+Zf2VjKgBoNAtqMgxqMwxqMwxpMgxqMgtSGgD///////8A////////////////////////fXHKLRm1OCa2OSW4OSa3OSa4OCW3Lhy1gnTM/////v7///7//////////////////////////////////////////////////////////////////f7//f/6////4NfOWhoAaTMLajMLajIMajMMaTIMazQJZS0Eflkz///////9AP///////////////////+Ph7yAKrzsmtzgluDkmtzkmuDgluDcktycSrv//+////////////////////////////////////////////////////////////////////////////////////9nRwlscAGE0CGoyDGoyDGozDGozDGoyDGM2ClgaANjPxv///////gD////////////9//3///9GNLIzIbY5Jbg4Jrc5Jrg4Jbg7JrYmFrigkdD////+//3//////////////v/9///////6/Pj8/fn8/fn8/fn8/fn8/fn8/fn8/fn8/fn8/fn7/fn09/PVzMaHZ05XGwBnMglrMwtpMgxqMwxqMwxqMwxpMgxoKgB9UzL///////////8A////////////////pKDYKBC2OCa3OCa3OSa4OSa4OCW4NiS1NB2w///////8///9/////////////f//////XCsKVxkAVh4AVh0AVh0AVh0AVh0AVh0AVh0AVh0AVx0AVR4AWB4AYyEAaCwBajILajIMaTIMajMMajMMajMMaTIMaTAJVR4A/P/+////////////AP////7/+////v///i0SqjUktzkltzkmuDkmuDkmuDgltywStK+p3f/////+/////v///////////////7upmV0hAGkzDGoyDGoyDGoyDGoyDGoyDGoyDGoyDGoyDGoyDGkyDGgzDGgyDWkyDWozC2kzDGozDGozC2ozC2kyDG4xCE8ZAN3Uzf///////////////wD///////////9qW8EwGrk5Jbk4Jrc5Jrg5Jrg5Jrc1Ibc+LrL///////7///////////////////////9hJwBpMQhqMgxqMwtqMwtqMwtqMwtqMwtqMwtqMwtqMwtqMwtqMgtqMgtqMwtqMwtpMwxqMwxpMwtqMgtpMgxnLQZSGwDZzMb//////v7///////////8A////////1NDmIA2vOCa3OSW4OCa3OSa3OSa3OSW5IRCxzsPn///+///+/////////////P7/////qJJ/ZCYAaTIMajIMajIMajIMajIMajIMajIMajIMajIMajIMajIMajIMajIMajIMajMLaTMLaTMMajIMZjIKYyQAYTUK7ejl////////////////////////AP///////z8mujMitzgluDgluDgluDgluDkltzEfuVFBuP/////+/v///f///////////////////loaAGkzB2kyDGkzDGkzDGkzDGkzDGkzDGkzDGkzDGkzDGkzDGkzDGkzDGkzDGkzDGkyDGoyC2YsBF0jAFkfAKmVe//////////+/v///////////////////wD///+MgM4YAawnD7QnEbEnEbEnEbEnEbEnEbEZAqja3Oz///////7///7///////////////+BZkpZFQBgIABfIABgHwBgHwBgHwBgHwBgHwBgIABgIABgIABgIABgHwBgHwBgHwBgHwBaHABUHwB7VDO7qZX///////////////7///////////////////////8A///829Xu4ODx4uLv4uHx4uHx4uHx4uHx4eHx4+Du///9//7/////////////////////////3dbR5OLc5OLd5eLd5eLd5eLd5eLd5eLd5eLd5eLd5eLd5eLd5eLd5eLd5eLd5eLd5+Pg9PLz////////////////////////////////////////////////////AA==</Image>
+          <Name>Image1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Image1>
+        <Text2 Ref="7" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.3,2.6,8.85,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,14.25,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Закрытое акционерное общество "Ридан"</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="8" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text2>
+        <Text3 Ref="9" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>7.87,8.78,6.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,14.25,Bold,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Расчет на прочность</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="10" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text3>
+        <Text4 Ref="11" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.77,9.78,13,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,14.25,Bold,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Аппарат теплообменный пластинчатый разборный</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="12" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text4>
+        <Text5 Ref="13" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>7.98,11.18,4.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,14.25,Bold,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.PTO}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="14" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text5>
+        <Text6 Ref="15" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>8.01,11.98,9.07,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,14.25,Bold,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>зав. №{SReport.PTO_Full_Plane_Number}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="16" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text6>
+        <Text7 Ref="17" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,24.6,0.8,3.2</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Инв. № подл.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="18" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text7>
+        <Text8 Ref="19" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,21,0.8,3.6</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text8</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Подпись и дата</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="20" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text8>
+        <Text9 Ref="21" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,17.8,0.8,3.2</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Взаим. инв. №</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="22" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text9>
+        <Text10 Ref="23" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,14.8,0.8,3</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text10</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Инв. № подл.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="24" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text10>
+        <Text11 Ref="25" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,11.2,0.8,3.6</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text11</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Подпись и дата</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="26" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text11>
+        <HorizontalLinePrimitive1 Ref="27" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,0,17.4,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive1>
+        <HorizontalLinePrimitive2 Ref="28" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,27.8,17.4,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive2>
+        <VerticalLinePrimitive1 Ref="29" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,0,0.0254,27.8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>5f2d5fe5ec38419eab025d46aabc3ab5</Guid>
+          <Name>VerticalLinePrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive1>
+        <StartPointPrimitive1 Ref="30" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>1.6,0,0,0</ClientRectangle>
+          <Name>StartPointPrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>5f2d5fe5ec38419eab025d46aabc3ab5</ReferenceToGuid>
+        </StartPointPrimitive1>
+        <EndPointPrimitive1 Ref="31" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>1.8,27.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>5f2d5fe5ec38419eab025d46aabc3ab5</ReferenceToGuid>
+        </EndPointPrimitive1>
+        <VerticalLinePrimitive2 Ref="32" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>19,0,0.0254,27.8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>d816239fc3c042ee81525c8514b64463</Guid>
+          <Name>VerticalLinePrimitive2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive2>
+        <StartPointPrimitive2 Ref="33" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>19,0,0,0</ClientRectangle>
+          <Name>StartPointPrimitive2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>d816239fc3c042ee81525c8514b64463</ReferenceToGuid>
+        </StartPointPrimitive2>
+        <EndPointPrimitive2 Ref="34" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>19,27.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>d816239fc3c042ee81525c8514b64463</ReferenceToGuid>
+        </EndPointPrimitive2>
+        <VerticalLinePrimitive3 Ref="35" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>0,11.4,0.0254,16.4</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>f59adf6632004a9dac96a4f1cbbe65a5</Guid>
+          <Name>VerticalLinePrimitive3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive3>
+        <StartPointPrimitive3 Ref="36" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>0,11.4,0,0</ClientRectangle>
+          <Name>StartPointPrimitive3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>f59adf6632004a9dac96a4f1cbbe65a5</ReferenceToGuid>
+        </StartPointPrimitive3>
+        <EndPointPrimitive3 Ref="37" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>0,27.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>f59adf6632004a9dac96a4f1cbbe65a5</ReferenceToGuid>
+        </EndPointPrimitive3>
+        <VerticalLinePrimitive4 Ref="38" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>0.8,11.4,0.0254,16.4</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>7d19178a43b74c299f2f4ab498a931ac</Guid>
+          <Name>VerticalLinePrimitive4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive4>
+        <StartPointPrimitive4 Ref="39" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>0.8,11.4,0,0</ClientRectangle>
+          <Name>StartPointPrimitive4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>7d19178a43b74c299f2f4ab498a931ac</ReferenceToGuid>
+        </StartPointPrimitive4>
+        <EndPointPrimitive4 Ref="40" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>0.8,27.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>7d19178a43b74c299f2f4ab498a931ac</ReferenceToGuid>
+        </EndPointPrimitive4>
+        <HorizontalLinePrimitive3 Ref="41" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,11.4,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive3>
+        <HorizontalLinePrimitive4 Ref="42" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,27.8,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive4>
+        <HorizontalLinePrimitive5 Ref="43" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,14.8,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive5>
+        <HorizontalLinePrimitive6 Ref="44" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,17.8,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive6>
+        <HorizontalLinePrimitive7 Ref="45" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,21,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive7>
+        <HorizontalLinePrimitive8 Ref="46" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,24.6,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive8</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive8>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Page isRef="3" />
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="47" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+    <Page2 Ref="48" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="0" />
+      <Conditions isList="true" count="0" />
+      <Margins>1,1,1,1</Margins>
+      <Name>Page2</Name>
+      <Page isRef="48" />
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="49" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page2>
+  </Pages>
+  <PrinterSettings Ref="50" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>4/21/2010 3:44:49 PM</ReportChanged>
+  <ReportCreated>3/14/2006 12:36:55 PM</ReportCreated>
+  <ReportGuid>2292ea60fc854f77a34ae916f9b796c1</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2006.4</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using System.IO;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.ReportControls;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();		
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

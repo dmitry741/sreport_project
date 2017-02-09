@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <SReport>
+    <PTO_Type>58</PTO_Type>
+    <PTO_PlateCount>68</PTO_PlateCount>
+    <PTO_PlateMaterial>0</PTO_PlateMaterial>
+    <PTO_PlateThickness>1</PTO_PlateThickness>
+    <PTO_WrapperMaterial1>1</PTO_WrapperMaterial1>
+    <PTO_WrapperMaterial2>0</PTO_WrapperMaterial2>
+    <PTO_Volume>0,107</PTO_Volume>
+    <PTO_Len>0</PTO_Len>
+    <PTO_WeightNetto>842</PTO_WeightNetto>
+    <PTO_WeightBrutto>949</PTO_WeightBrutto>
+    <PTO_PR>1,6</PTO_PR>
+    <PTO_PG>2,1</PTO_PG>
+    <PTO_T>150</PTO_T>
+    <PTO_PlaneNumber>00390</PTO_PlaneNumber>
+    <People_Razrab>козенкова</People_Razrab>
+    <People_Prov>Семенов</People_Prov>
+    <People_Nach />
+    <People_Norm>Волков</People_Norm>
+    <People_Utv>Попов</People_Utv>
+    <Medium_MediumHot>Вода</Medium_MediumHot>
+    <Medium_MediumCold>Вода</Medium_MediumCold>
+    <Medium_TypeHot>0</Medium_TypeHot>
+    <Medium_TypeCold>0</Medium_TypeCold>
+    <Medium_MaxThot>42,3</Medium_MaxThot>
+    <Medium_MaxTcold>33</Medium_MaxTcold>
+    <Medium_MinT>0</Medium_MinT>
+    <Material_StaticPlate>1</Material_StaticPlate>
+    <Material_PriPlate>1</Material_PriPlate>
+    <Material_NaprUp>1</Material_NaprUp>
+    <Material_NaprDown>0</Material_NaprDown>
+    <Material_Rez>0</Material_Rez>
+    <Material_Shplilka>0</Material_Shplilka>
+    <Material_Bolt>0</Material_Bolt>
+    <Material_Gaika>0</Material_Gaika>
+    <Material_Phlance>0</Material_Phlance>
+  </SReport>
+</DocumentElement>

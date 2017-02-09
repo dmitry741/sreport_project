@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="9.75" />
+  <Class Name="SReport_Utility.DigitalProcess" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAEABAAABAAAAAAACAAAAAAgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SReport_Utility.KitConstant" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAACBAAAGAAAAQAAAAQAAAAAAAgAAAAAQQQAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SReport_Utility.MyDoubleHashTable" Collapsed="true">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAIAAEAAAAAQAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SReport_Utility.MyHashTable" Collapsed="true">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AABAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SReport_Utility.MyStringHashTable" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAIAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SReport_Utility.PrintReport" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAIAAAAgAgAAAAQAAAAAAAAAAAAAAAAAgAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SReport_Utility.SimpleImageProccessing" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SReport_Utility.SteelProperty" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>EQAAAAIAAAAAAAAAAAAAAAQCQBBAgBACAAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SReport_Utility.ISteelProperty" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ISteelProperty.cs</FileName>
+      <HashCode>AQAAAAIAAAAAAAAAAAAAAAQAABAAABAAAAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

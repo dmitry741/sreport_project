@@ -1,0 +1,5 @@
+bin\Debug\DbReader.dll
+bin\Debug\DbReader.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DbReader.dll
+obj\Debug\DbReader.pdb

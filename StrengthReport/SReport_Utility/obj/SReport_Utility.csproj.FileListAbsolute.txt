@@ -1,0 +1,15 @@
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\bin\Release\SReport_Utility.dll
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\bin\Release\SReport_Utility.pdb
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\obj\Release\ResolveAssemblyReference.cache
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\obj\Release\SReport_Utility.dll
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\obj\Release\SReport_Utility.pdb
+D:\Dmitry\StrengthReport\SReport_Utility\bin\Debug\SReport_Utility.dll
+D:\Dmitry\StrengthReport\SReport_Utility\bin\Debug\SReport_Utility.pdb
+D:\Dmitry\StrengthReport\SReport_Utility\obj\Debug\ResolveAssemblyReference.cache
+D:\Dmitry\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.dll
+D:\Dmitry\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.pdb
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\bin\Debug\SReport_Utility.dll
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\bin\Debug\SReport_Utility.pdb
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\obj\Debug\ResolveAssemblyReference.cache
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.dll
+D:\Dmitry\SReport\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.pdb

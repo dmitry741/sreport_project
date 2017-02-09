@@ -1,0 +1,123 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <SReport>
+    <BD_Path>D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\1.xml</BD_Path>
+    <BD_Name>Rep1</BD_Name>
+    <BD_Comment>com1</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\2.xml</BD_Path>
+    <BD_Name>Report 90</BD_Name>
+    <BD_Comment>// === 05.10.2010 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\3.xml</BD_Path>
+    <BD_Name>report 95 plates</BD_Name>
+    <BD_Comment>// === 07.10.2010 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\5.xml</BD_Path>
+    <BD_Name>расчет на прочность 062-00871</BD_Name>
+    <BD_Comment>// === 19.10.2011 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\6.xml</BD_Path>
+    <BD_Name>НН№14 С-16-14531</BD_Name>
+    <BD_Comment>// === 03.11.2011 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\8.xml</BD_Path>
+    <BD_Name>НН№14-О-16-14557</BD_Name>
+    <BD_Comment>// === 08.11.2011 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\9.xml</BD_Path>
+    <BD_Name>021-02568</BD_Name>
+    <BD_Comment>// === 18.11.2011 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\15.xml</BD_Path>
+    <BD_Name>041-02151,</BD_Name>
+    <BD_Comment>// === 28.11.2011 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\16.xml</BD_Path>
+    <BD_Name>042-00946</BD_Name>
+    <BD_Comment>// === 12.12.2011 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\18.xml</BD_Path>
+    <BD_Name>19-00524</BD_Name>
+    <BD_Comment>// === 21.12.2011 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\19.xml</BD_Path>
+    <BD_Name>047-04473</BD_Name>
+    <BD_Comment>// === 22.12.2011 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\20.xml</BD_Path>
+    <BD_Name>047-04517</BD_Name>
+    <BD_Comment>// === 20.01.2012 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\21.xml</BD_Path>
+    <BD_Name>042-00945</BD_Name>
+    <BD_Comment>// === 24.01.2012 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\22.xml</BD_Path>
+    <BD_Name>042-0945(1)</BD_Name>
+    <BD_Comment>// === 03.02.2012 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\23.xml</BD_Path>
+    <BD_Name>019-00638</BD_Name>
+    <BD_Comment>// === 10.02.2012 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>X:\Павлов\Расчет на прочность Козенкова Любовь\24.xml</BD_Path>
+    <BD_Name>00638</BD_Name>
+    <BD_Comment>// === 13.02.2012 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\25.xml</BD_Path>
+    <BD_Name>для Козенковой Любы</BD_Name>
+    <BD_Comment>// === 28.05.2012 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\26.xml</BD_Path>
+    <BD_Name>для Козенковой Любы 2</BD_Name>
+    <BD_Comment>// === 28.05.2012 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\27.xml</BD_Path>
+    <BD_Name>для Любы Козенковой 3</BD_Name>
+    <BD_Comment>// === 28.05.2012 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\28.xml</BD_Path>
+    <BD_Name>65-10</BD_Name>
+    <BD_Comment>// === 24.09.2014 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\29.xml</BD_Path>
+    <BD_Name>qwerty</BD_Name>
+    <BD_Comment>// === 02.11.2015 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>C:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\30.xml</BD_Path>
+    <BD_Name>20092016</BD_Name>
+    <BD_Comment>// === 20.09.2016 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>C:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\31.xml</BD_Path>
+    <BD_Name>error in report</BD_Name>
+    <BD_Comment>// === 11.10.2016 ===</BD_Comment>
+  </SReport>
+  <SReport>
+    <BD_Path>C:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\32.xml</BD_Path>
+    <BD_Name>fwefwe 111</BD_Name>
+    <BD_Comment>// === 08.12.2016 ===</BD_Comment>
+  </SReport>
+</DocumentElement>

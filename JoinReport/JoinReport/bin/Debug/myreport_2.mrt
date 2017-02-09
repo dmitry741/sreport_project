@@ -1,0 +1,2048 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <SReport Ref="2" type="DataTableSource" isKey="true">
+        <Alias>SReport</Alias>
+        <Columns isList="true" count="434">
+          <value>PTO,System.String</value>
+          <value>PTO_Plane_Number,System.String</value>
+          <value>PTO_Full_Plane_Number,System.String</value>
+          <value>PTO_Plates,System.String</value>
+          <value>PTO_Plates_1,System.String</value>
+          <value>PTO_OriginalName,System.String</value>
+          <value>Medium_Hot_Name,System.String</value>
+          <value>Medium_Cold_Name,System.String</value>
+          <value>Medium_Hot_MaxT,System.String</value>
+          <value>Medium_Cold_MaxT,System.String</value>
+          <value>Medium_MinT,System.String</value>
+          <value>Medium_WallT,System.String</value>
+          <value>Weight_Netto,System.String</value>
+          <value>Weight_Brutto,System.String</value>
+          <value>Pmax,System.String</value>
+          <value>People_Developer,System.String</value>
+          <value>People_Auditor,System.String</value>
+          <value>People_NachPodrz,System.String</value>
+          <value>People_Ncontr,System.String</value>
+          <value>People_Utverdil,System.String</value>
+          <value>Table1_Period,System.String</value>
+          <value>Table2_Material_Row1,System.String</value>
+          <value>Table2_Material_Row2,System.String</value>
+          <value>Table2_Material_Row3,System.String</value>
+          <value>Table2_Material_Row4,System.String</value>
+          <value>Table2_Material_Row5,System.String</value>
+          <value>Table2_Material_Row6,System.String</value>
+          <value>Table2_Material_Row7,System.String</value>
+          <value>Table2_Material_Row8,System.String</value>
+          <value>Table2_T1,System.String</value>
+          <value>Table2_T2,System.String</value>
+          <value>Table2_PredelTech_11,System.String</value>
+          <value>Table2_PredelTech_12,System.String</value>
+          <value>Table2_PredelTech_21,System.String</value>
+          <value>Table2_PredelTech_22,System.String</value>
+          <value>Table2_PredelTech_31,System.String</value>
+          <value>Table2_PredelTech_32,System.String</value>
+          <value>Table2_PredelTech_41,System.String</value>
+          <value>Table2_PredelTech_42,System.String</value>
+          <value>Table2_PredelTech_51,System.String</value>
+          <value>Table2_PredelTech_52,System.String</value>
+          <value>Table2_PredelTech_61,System.String</value>
+          <value>Table2_PredelTech_62,System.String</value>
+          <value>Table2_PredelTech_71,System.String</value>
+          <value>Table2_PredelTech_72,System.String</value>
+          <value>Table2_PredelTech_81,System.String</value>
+          <value>Table2_PredelTech_82,System.String</value>
+          <value>Table2_PredelProch_11,System.String</value>
+          <value>Table2_PredelProch_12,System.String</value>
+          <value>Table2_PredelProch_21,System.String</value>
+          <value>Table2_PredelProch_22,System.String</value>
+          <value>Table2_PredelProch_31,System.String</value>
+          <value>Table2_PredelProch_32,System.String</value>
+          <value>Table2_PredelProch_41,System.String</value>
+          <value>Table2_PredelProch_42,System.String</value>
+          <value>Table2_PredelProch_51,System.String</value>
+          <value>Table2_PredelProch_52,System.String</value>
+          <value>Table2_PredelProch_61,System.String</value>
+          <value>Table2_PredelProch_62,System.String</value>
+          <value>Table2_PredelProch_71,System.String</value>
+          <value>Table2_PredelProch_72,System.String</value>
+          <value>Table2_PredelProch_81,System.String</value>
+          <value>Table2_PredelProch_82,System.String</value>
+          <value>Table2_Sigma_11,System.String</value>
+          <value>Table2_Sigma_12,System.String</value>
+          <value>Table2_Sigma_21,System.String</value>
+          <value>Table2_Sigma_22,System.String</value>
+          <value>Table2_Sigma_31,System.String</value>
+          <value>Table2_Sigma_32,System.String</value>
+          <value>Table2_Sigma_41,System.String</value>
+          <value>Table2_Sigma_42,System.String</value>
+          <value>Table2_Sigma_51,System.String</value>
+          <value>Table2_Sigma_52,System.String</value>
+          <value>Table2_Sigma_61,System.String</value>
+          <value>Table2_Sigma_62,System.String</value>
+          <value>Table2_Sigma_71,System.String</value>
+          <value>Table2_Sigma_72,System.String</value>
+          <value>Table2_Sigma_81,System.String</value>
+          <value>Table2_Sigma_82,System.String</value>
+          <value>Table2_ModuleUpr_11,System.String</value>
+          <value>Table2_ModuleUpr_12,System.String</value>
+          <value>Table2_ModuleUpr_21,System.String</value>
+          <value>Table2_ModuleUpr_22,System.String</value>
+          <value>Table2_ModuleUpr_31,System.String</value>
+          <value>Table2_ModuleUpr_32,System.String</value>
+          <value>Table2_ModuleUpr_41,System.String</value>
+          <value>Table2_ModuleUpr_42,System.String</value>
+          <value>Table2_ModuleUpr_51,System.String</value>
+          <value>Table2_ModuleUpr_52,System.String</value>
+          <value>Table2_ModuleUpr_61,System.String</value>
+          <value>Table2_ModuleUpr_62,System.String</value>
+          <value>Table2_ModuleUpr_71,System.String</value>
+          <value>Table2_ModuleUpr_72,System.String</value>
+          <value>Table2_ModuleUpr_81,System.String</value>
+          <value>Table2_ModuleUpr_82,System.String</value>
+          <value>Table2_LinearExt_12,System.String</value>
+          <value>Table2_LinearExt_22,System.String</value>
+          <value>Table2_LinearExt_32,System.String</value>
+          <value>Table2_LinearExt_42,System.String</value>
+          <value>Table2_LinearExt_52,System.String</value>
+          <value>Table2_LinearExt_62,System.String</value>
+          <value>Table2_LinearExt_72,System.String</value>
+          <value>Table2_LinearExt_82,System.String</value>
+          <value>Table3_P,System.String</value>
+          <value>Table3_SigmaTH,System.String</value>
+          <value>Table3_SigmaT,System.String</value>
+          <value>Table3_PH,System.String</value>
+          <value>Presuure_HydroTest,System.String</value>
+          <value>Pressure_Calc,System.String</value>
+          <value>Table4_B,System.String</value>
+          <value>Table_Bm,System.String</value>
+          <value>Table_Am,System.String</value>
+          <value>Table_A,System.String</value>
+          <value>Table_bb,System.String</value>
+          <value>Table_Bsh,System.String</value>
+          <value>Table_d,System.String</value>
+          <value>Table_z,System.String</value>
+          <value>Table_c111,System.String</value>
+          <value>Table_c112,System.String</value>
+          <value>Table_c12,System.String</value>
+          <value>Table_c2,System.String</value>
+          <value>Table_S1,System.String</value>
+          <value>Table_S2,System.String</value>
+          <value>Table4_Y,System.String</value>
+          <value>Table4_Km,System.String</value>
+          <value>Table4_Ko,System.String</value>
+          <value>Table4_c_stat,System.String</value>
+          <value>Table4_c_pri,System.String</value>
+          <value>Table4_SR1,System.String</value>
+          <value>Table4_SR2,System.String</value>
+          <value>Table4_SR12,System.String</value>
+          <value>Table4_SR22,System.String</value>
+          <value>Table4_Sigma,System.String</value>
+          <value>Table4_SigmaH,System.String</value>
+          <value>Table4_Sigma_pri,System.String</value>
+          <value>Table4_SigmaH_pri,System.String</value>
+          <value>Table4_SR11_plus_C,System.String</value>
+          <value>Table4_SR12_plus_C,System.String</value>
+          <value>Table4_SR21_plus_C,System.String</value>
+          <value>Table4_SR22_plus_C,System.String</value>
+          <value>Table5_Epsilon,System.String</value>
+          <value>Table5_Am,System.String</value>
+          <value>Table5_Bm,System.String</value>
+          <value>Table5_b,System.String</value>
+          <value>Table5_Q0,System.String</value>
+          <value>Table5_Fob,System.String</value>
+          <value>Table5_P,System.String</value>
+          <value>Table5_Ph,System.String</value>
+          <value>Table5_Eta,System.String</value>
+          <value>Table5_Fp,System.String</value>
+          <value>Table5_Fd,System.String</value>
+          <value>Table5_Hi,System.String</value>
+          <value>Table5_m,System.String</value>
+          <value>Table5_F2,System.String</value>
+          <value>Table5_F2_plus,System.String</value>
+          <value>Table5_Fph,System.String</value>
+          <value>Table5_F2h,System.String</value>
+          <value>Table5_F2h_plus,System.String</value>
+          <value>Table5_z,System.String</value>
+          <value>Table5_d0,System.String</value>
+          <value>Table5_ksi,System.String</value>
+          <value>Table5_MomentK,System.String</value>
+          <value>Table5_Fow,System.String</value>
+          <value>Table5_Fw,System.String</value>
+          <value>Table5_dc,System.String</value>
+          <value>Table5_SigmaW,System.String</value>
+          <value>Table5_dw,System.String</value>
+          <value>Table5_dow,System.String</value>
+          <value>Table6_d0_down,System.String</value>
+          <value>Table6_d0_up,System.String</value>
+          <value>Table6_dc,System.String</value>
+          <value>Table6_Mk_down,System.String</value>
+          <value>Table6_Mk_up,System.String</value>
+          <value>Table6_ksi,System.String</value>
+          <value>Table6_Fow_down,System.String</value>
+          <value>Table6_Fow_up,System.String</value>
+          <value>Table6_SigmaW,System.String</value>
+          <value>Table6_dw_down,System.String</value>
+          <value>Table6_dw_up,System.String</value>
+          <value>Table6_d0w_down,System.String</value>
+          <value>Table6_d0w_up,System.String</value>
+          <value>Table8_b0,System.String</value>
+          <value>Table8_b,System.String</value>
+          <value>Table8_delta,System.String</value>
+          <value>Table8_q0,System.String</value>
+          <value>Table8_Fob,System.String</value>
+          <value>Table8_P,System.String</value>
+          <value>Table8_Ph,System.String</value>
+          <value>Table8_Dm,System.String</value>
+          <value>Table8_Fp,System.String</value>
+          <value>Table8_Fd,System.String</value>
+          <value>Table8_hi,System.String</value>
+          <value>Table8_m,System.String</value>
+          <value>Table8_eta,System.String</value>
+          <value>Table8_F2,System.String</value>
+          <value>Table8_F2_plus,System.String</value>
+          <value>Table8_Fph,System.String</value>
+          <value>Table8_F2h,System.String</value>
+          <value>Table8_F2h_plus,System.String</value>
+          <value>Table8_z,System.String</value>
+          <value>Table8_d0,System.String</value>
+          <value>Table8_ksi,System.String</value>
+          <value>Table8_Mk,System.String</value>
+          <value>Table8_Fow,System.String</value>
+          <value>Table8_Fw,System.String</value>
+          <value>Table8_dc,System.String</value>
+          <value>Table8_dw,System.String</value>
+          <value>Table8_d0w,System.String</value>
+          <value>Table9_n,System.String</value>
+          <value>Table9_f,System.String</value>
+          <value>Table9_h,System.String</value>
+          <value>Table9_dh,System.String</value>
+          <value>Table9_epsilon,System.String</value>
+          <value>Table9_b,System.String</value>
+          <value>Table9_Epr,System.String</value>
+          <value>Table9_q,System.String</value>
+          <value>Table9_A,System.String</value>
+          <value>Table9_B,System.String</value>
+          <value>Table9_A1,System.String</value>
+          <value>Table9_B1,System.String</value>
+          <value>Table9_R,System.String</value>
+          <value>Table9_tpt,System.String</value>
+          <value>Table9_p,System.String</value>
+          <value>Table10_n,System.String</value>
+          <value>Table10_s,System.String</value>
+          <value>Table10_l1,System.String</value>
+          <value>Table10_dT,System.String</value>
+          <value>Table10_lw,System.String</value>
+          <value>Table10_d,System.String</value>
+          <value>Table10_z,System.String</value>
+          <value>Table10_Ew,System.String</value>
+          <value>Table10_dw,System.String</value>
+          <value>Table10_Aw,System.String</value>
+          <value>Table10_LambdaW,System.String</value>
+          <value>Table10_Alpha1,System.String</value>
+          <value>Table10_Alpha2,System.String</value>
+          <value>Table10_eta,System.String</value>
+          <value>Table10_Mk,System.String</value>
+          <value>Table10_Fw,System.String</value>
+          <value>Table10_Fp_1,System.String</value>
+          <value>Table10_Fp_2,System.String</value>
+          <value>Table10_Fp_3,System.String</value>
+          <value>Table10_Fp_4,System.String</value>
+          <value>Table10_Ft_1,System.String</value>
+          <value>Table10_Ft_2,System.String</value>
+          <value>Table10_Ft_3,System.String</value>
+          <value>Table10_Ft_4,System.String</value>
+          <value>Table10_Fph_1,System.String</value>
+          <value>Table10_Fph_2,System.String</value>
+          <value>Table10_Fph_3,System.String</value>
+          <value>Table10_Fph_4,System.String</value>
+          <value>Table10_Fwp_1,System.String</value>
+          <value>Table10_Fwp_2,System.String</value>
+          <value>Table10_Fwp_3,System.String</value>
+          <value>Table10_Fwp_4,System.String</value>
+          <value>Table10_SigmaW_Round_1,System.String</value>
+          <value>Table10_SigmaW_Round_2,System.String</value>
+          <value>Table10_SigmaW_Round_3,System.String</value>
+          <value>Table10_SigmaW_Round_4,System.String</value>
+          <value>Table10_SigmaW_Square_1,System.String</value>
+          <value>Table10_SigmaW_Square_2,System.String</value>
+          <value>Table10_SigmaW_Square_3,System.String</value>
+          <value>Table10_SigmaW_Square_4,System.String</value>
+          <value>Table10_Tau,System.String</value>
+          <value>Table10_Sigma4W_Round_1,System.String</value>
+          <value>Table10_Sigma4W_Round_2,System.String</value>
+          <value>Table10_Sigma4W_Round_3,System.String</value>
+          <value>Table10_Sigma4W_Round_4,System.String</value>
+          <value>Table10_Sigma4W_Square_1,System.String</value>
+          <value>Table10_Sigma4W_Square_2,System.String</value>
+          <value>Table10_Sigma4W_Square_3,System.String</value>
+          <value>Table10_Sigma4W_Square_4,System.String</value>
+          <value>Table11_Q_1,System.String</value>
+          <value>Table11_L1_1,System.String</value>
+          <value>Table11_L2_1,System.String</value>
+          <value>Table11_L3_1,System.String</value>
+          <value>Table11_F_1,System.String</value>
+          <value>Table11_M_1,System.String</value>
+          <value>Table11_W_1,System.String</value>
+          <value>Table11_Sigma_1,System.String</value>
+          <value>Table11_13Sigma_1,System.String</value>
+          <value>Table11_Q_2,System.String</value>
+          <value>Table11_F_2,System.String</value>
+          <value>Table11_M_2,System.String</value>
+          <value>Table11_W_2,System.String</value>
+          <value>Table11_Sigma_2,System.String</value>
+          <value>Table11_13Sigma_2,System.String</value>
+          <value>Table12_F_1314,System.String</value>
+          <value>Table12_A_1314,System.String</value>
+          <value>Table12_Sigma_1314,System.String</value>
+          <value>Table12_SigmaSquare_1314,System.String</value>
+          <value>Table12_Q1_1314,System.String</value>
+          <value>Table12_mu_1314,System.String</value>
+          <value>Table12_z_1314,System.String</value>
+          <value>Table12_Ft_1314,System.String</value>
+          <value>Table12_Q_1314,System.String</value>
+          <value>Table12_d0_1314,System.String</value>
+          <value>Table12_tau_1314,System.String</value>
+          <value>Table12_tauSquare_1314,System.String</value>
+          <value>Table12_Mk_1314,System.String</value>
+          <value>Table12_tauK_1314,System.String</value>
+          <value>Table12_Sigma4w_1314,System.String</value>
+          <value>Table12_17Sigma_1314,System.String</value>
+          <value>Table12_F_1516,System.String</value>
+          <value>Table12_A_1516,System.String</value>
+          <value>Table12_Sigma_1516,System.String</value>
+          <value>Table12_SigmaSquare_1516,System.String</value>
+          <value>Table12_Q1_1516,System.String</value>
+          <value>Table12_mu_1516,System.String</value>
+          <value>Table12_z_1516,System.String</value>
+          <value>Table12_Ft_1516,System.String</value>
+          <value>Table12_Q_1516,System.String</value>
+          <value>Table12_d0_1516,System.String</value>
+          <value>Table12_tau_1516,System.String</value>
+          <value>Table12_tauSquare_1516,System.String</value>
+          <value>Table12_Mk_1516,System.String</value>
+          <value>Table12_tauK_1516,System.String</value>
+          <value>Table12_Sigma4w_1516,System.String</value>
+          <value>Table12_17Sigma_1516,System.String</value>
+          <value>Table13_F_1,System.String</value>
+          <value>Table13_F_2,System.String</value>
+          <value>Table13_F_3,System.String</value>
+          <value>Table13_F_4,System.String</value>
+          <value>Table13_F_5,System.String</value>
+          <value>Table13_F_6,System.String</value>
+          <value>Table13_F_7,System.String</value>
+          <value>Table13_F_8,System.String</value>
+          <value>Table13_d_1,System.String</value>
+          <value>Table13_d_2,System.String</value>
+          <value>Table13_d_3,System.String</value>
+          <value>Table13_d_4,System.String</value>
+          <value>Table13_d_5,System.String</value>
+          <value>Table13_d_6,System.String</value>
+          <value>Table13_d_7,System.String</value>
+          <value>Table13_d_8,System.String</value>
+          <value>Table13_h_1,System.String</value>
+          <value>Table13_h_2,System.String</value>
+          <value>Table13_h_3,System.String</value>
+          <value>Table13_h_4,System.String</value>
+          <value>Table13_h_5,System.String</value>
+          <value>Table13_h_6,System.String</value>
+          <value>Table13_h_7,System.String</value>
+          <value>Table13_h_8,System.String</value>
+          <value>Table13_K1_1,System.String</value>
+          <value>Table13_K1_2,System.String</value>
+          <value>Table13_K1_3,System.String</value>
+          <value>Table13_K1_4,System.String</value>
+          <value>Table13_K1_5,System.String</value>
+          <value>Table13_K1_6,System.String</value>
+          <value>Table13_K1_7,System.String</value>
+          <value>Table13_K1_8,System.String</value>
+          <value>Table13_Km,System.String</value>
+          <value>Table13_z_1,System.String</value>
+          <value>Table13_z_2,System.String</value>
+          <value>Table13_z_3,System.String</value>
+          <value>Table13_z_4,System.String</value>
+          <value>Table13_z_5,System.String</value>
+          <value>Table13_z_6,System.String</value>
+          <value>Table13_z_7,System.String</value>
+          <value>Table13_z_8,System.String</value>
+          <value>Table13_TauP_1,System.String</value>
+          <value>Table13_TauP_2,System.String</value>
+          <value>Table13_TauP_3,System.String</value>
+          <value>Table13_TauP_4,System.String</value>
+          <value>Table13_TauP_5,System.String</value>
+          <value>Table13_TauP_6,System.String</value>
+          <value>Table13_TauP_7,System.String</value>
+          <value>Table13_TauP_8,System.String</value>
+          <value>Table13_TauSquareP_1,System.String</value>
+          <value>Table13_TauSquareP_2,System.String</value>
+          <value>Table13_TauSquareP_3,System.String</value>
+          <value>Table13_TauSquareP_4,System.String</value>
+          <value>Table13_TauSquareP_5,System.String</value>
+          <value>Table13_TauSquareP_6,System.String</value>
+          <value>Table13_TauSquareP_7,System.String</value>
+          <value>Table13_TauSquareP_8,System.String</value>
+          <value>Table14_P,System.String</value>
+          <value>Table14_F,System.String</value>
+          <value>Table14_Apr,System.String</value>
+          <value>Table14_q,System.String</value>
+          <value>Table14_L,System.String</value>
+          <value>Table14_z1,System.String</value>
+          <value>Table14_z2,System.String</value>
+          <value>Table14_z3,System.String</value>
+          <value>Table14_Bpr,System.String</value>
+          <value>Table14_a,System.String</value>
+          <value>Table14_M1,System.String</value>
+          <value>Table14_M2,System.String</value>
+          <value>Table14_M3,System.String</value>
+          <value>Table14_b1,System.String</value>
+          <value>Table14_b2,System.String</value>
+          <value>Table14_b3,System.String</value>
+          <value>Table14_h,System.String</value>
+          <value>Table14_W1,System.String</value>
+          <value>Table14_W2,System.String</value>
+          <value>Table14_W3,System.String</value>
+          <value>Table14_SigmaSquare,System.String</value>
+          <value>Table14_SigmaIs1,System.String</value>
+          <value>Table14_SigmaIs2,System.String</value>
+          <value>Table14_SigmaIs3,System.String</value>
+          <value>Table14_SSIs,System.String</value>
+          <value>Table15_A_1,System.String</value>
+          <value>Table15_A_2,System.String</value>
+          <value>Table15_Sigma_1,System.String</value>
+          <value>Table15_Sigma_2,System.String</value>
+          <value>Table15_SigmaSquare,System.String</value>
+          <value>Table16_NSigma,System.String</value>
+          <value>Table16_NN,System.String</value>
+          <value>Table16_A,System.String</value>
+          <value>Table16_B,System.String</value>
+          <value>Table16_t,System.String</value>
+          <value>Table16_K,System.String</value>
+          <value>Table16_Sigma4w_1,System.String</value>
+          <value>Table16_Sigma4w_2,System.String</value>
+          <value>Table16_Sigma4w_3,System.String</value>
+          <value>Table16_SigmaA_1,System.String</value>
+          <value>Table16_SigmaA_2,System.String</value>
+          <value>Table16_SigmaA_3,System.String</value>
+          <value>Table16_NSquare_1,System.String</value>
+          <value>Table16_NSquare_2,System.String</value>
+          <value>Table16_NSquare_3,System.String</value>
+          <value>Table16_N1,System.String</value>
+          <value>Table16_N2,System.String</value>
+          <value>Table16_N3,System.String</value>
+          <value>Table16_al,System.String</value>
+          <value>Table16_N1M,System.String</value>
+          <value>Table16_BM,System.String</value>
+          <value>Picture1,System.Drawing.Bitmap</value>
+          <value>Picture2,System.Drawing.Bitmap</value>
+          <value>Picture3,System.Drawing.Bitmap</value>
+          <value>Picture4,System.Drawing.Bitmap</value>
+          <value>Picture5,System.Drawing.Bitmap</value>
+          <value>Picture7,System.Drawing.Bitmap</value>
+          <value>WorkAge,System.String</value>
+        </Columns>
+        <DataName>SReport</DataName>
+        <Dictionary isRef="1" />
+        <Name>SReport</Name>
+      </SReport>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="2">
+    <R1Page2 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="128">
+        <Text18 Ref="4" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,24.6,0.8,3</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text18</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Инв. № подл.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="5" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text18>
+        <Text19 Ref="6" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,21,0.8,3.6</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text19</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Подпись и дата</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="7" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text19>
+        <Text20 Ref="8" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,17.8,0.8,3.2</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text20</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Взаим. инв. №</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="9" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text20>
+        <Text21 Ref="10" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,14.8,0.8,3</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text21</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Инв. № подл.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="11" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text21>
+        <Text22 Ref="12" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,11.2,0.8,3.6</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text22</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Подпись и дата</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="13" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text22>
+        <Text12 Ref="14" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.8,27.15,1.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text12</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Утв.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="15" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text12>
+        <Text13 Ref="16" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.8,26.55,1.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text13</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Н. контр.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="17" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text13>
+        <Text14 Ref="18" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.8,25.96,2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text14</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Нач. подр.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="19" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text14>
+        <Text15 Ref="20" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.8,25.36,1.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text15</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Пров.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="21" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text15>
+        <Text16 Ref="22" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.8,24.76,1.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text16</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Разраб.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="23" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text16>
+        <Text17 Ref="24" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.8,24.74,2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text17</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.People_Developer}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="25" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text17>
+        <Text23 Ref="26" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.8,25.31,2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text23</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.People_Auditor}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="27" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text23>
+        <Text24 Ref="28" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.82,25.9,2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text24</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.People_NachPodrz}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="29" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text24>
+        <Text25 Ref="30" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.8,26.54,2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text25</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.People_Ncontr}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="31" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text25>
+        <Text26 Ref="32" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.8,27.16,2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text26</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.People_Utverdil}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="33" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text26>
+        <Text27 Ref="34" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.8,9,0.8,2.4</ClientRectangle>
+          <ComponentStyle isNull="true" />
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,10,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text27</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Ф. 2. 104-1</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="35" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Center</VertAlignment>
+        </Text27>
+        <Text28 Ref="36" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.6,24.16,1,0.44</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text28</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Изм.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="37" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text28>
+        <Text29 Ref="38" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.6,24.15,1,0.45</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text29</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Лист</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="39" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text29>
+        <Text30 Ref="40" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.8,24.2,1.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text30</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>№ докум.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="41" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text30>
+        <Text31 Ref="42" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6,24.13,1.2,0.47</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text31</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Подп.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="43" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text31>
+        <Text32 Ref="44" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>7.4,24.13,1.2,0.47</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text32</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Дата</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="45" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text32>
+        <Text33 Ref="46" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>8.95,23.4,9.82,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,14.25,Bold,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text33</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.PTO}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="47" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text33>
+        <Text35 Ref="48" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>14.8,24.75,0.8,0.45</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text35</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Лит.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="49" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text35>
+        <Text34 Ref="50" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>16.35,24.78,1.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text34</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Стр.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="51" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text34>
+        <Text36 Ref="52" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>17.4,24.8,1.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9.75,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text36</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Страниц</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="53" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text36>
+        <Text37 Ref="54" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>15.2,26.4,3,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text37</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>ЗАО  "РИДАН"</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="55" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text37>
+        <Text38 Ref="56" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>16.22,25.2,0.8,0.53</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,11.25,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text38</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>2</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="57" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text38>
+        <Text39 Ref="58" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>17.66,25.25,0.8,0.51</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,11.25,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text39</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>36</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="59" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text39>
+        <Text40 Ref="60" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.38,24.8,4.65,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,11.25,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text40</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Аппарат теплообменный пластинчатый разборный</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="61" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text40>
+        <Text41 Ref="62" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.4,26,4.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,11.25,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text41</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.PTO_OriginalName}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="63" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text41>
+        <Text42 Ref="64" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10,26.8,3.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,11.25,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text42</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Расчет на прочность</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="65" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text42>
+        <Text50 Ref="66" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,2.8,15.76,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text50</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Введение...........................................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="67" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text50>
+        <Text51 Ref="68" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>8.4,1.2,3.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,14.25,Regular,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text51</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Содержание</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="69" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text51>
+        <Text52 Ref="70" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,3.4,15.77,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text52</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>1 Условия работы.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="71" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text52>
+        <Text53 Ref="72" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.06,4,15.7,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text53</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>2 Конструкционные материалы.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="73" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text53>
+        <Text54 Ref="74" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,4.6,15.78,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text54</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>3 Гидравлические испытания.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="75" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text54>
+        <Text55 Ref="76" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,5.2,15.78,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text55</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>4 Расчет по выбору основных размеров.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="77" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text55>
+        <Text56 Ref="78" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,5.8,15.84,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text56</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>4.1 Расчет по выбору толщин торцевых плит.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="79" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text56>
+        <Text57 Ref="80" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,6.4,15.83,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text57</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>4.2 Расчет по выбору минимального диаметра крепежных деталей.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="81" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text57>
+        <Text65 Ref="82" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,7,15.85,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text65</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>4.3 Расчет прокладок на распор гидростатическим давлением.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="83" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text65>
+        <Text66 Ref="84" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,7.6,15.88,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text66</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>5 Поверочный расчет.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="85" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text66>
+        <Text67 Ref="86" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,8.2,15.87,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text67</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>5.1 Расчет на прочность шпильки стяжной .........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="87" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text67>
+        <Text68 Ref="88" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,8.8,15.85,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text68</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>5.2 Расчет на прочность направляющих .........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="89" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text68>
+        <Text69 Ref="90" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,9.4,15.85,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text69</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>5.3 Расчет на прочность болтов крепления направляющих к стойке.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="91" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text69>
+        <Text70 Ref="92" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,10,15.85,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text70</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>5.4 Расчет на прочность резьбы.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="93" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text70>
+        <Text71 Ref="94" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,10.6,15.86,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text71</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>5.5 Расчет на прочность плиты неподвижной.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="95" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text71>
+        <Text72 Ref="96" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,11.2,15.84,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text72</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>5.6 Определение напряжения смятия в месте контакта шайба – гайка и шайба – плита прижимная</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="97" type="GeneralFormat" isKey="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text72>
+        <Text73 Ref="98" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,12.36,15.84,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text73</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>5.7 Расчет на циклическую прочность.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="99" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text73>
+        <Text74 Ref="100" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,12.96,15.83,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text74</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>6 Заключение.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="101" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text74>
+        <Text75 Ref="102" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,13.56,15.84,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text75</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>7 Список литературы.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="103" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text75>
+        <Text77 Ref="104" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,2.8,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text77</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>3</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="105" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text77>
+        <Text95 Ref="106" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,3.4,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text95</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>4</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="107" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text95>
+        <Text96 Ref="108" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,4,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text96</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>5</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="109" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text96>
+        <Text97 Ref="110" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,4.6,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text97</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>7</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="111" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text97>
+        <Text98 Ref="112" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,5.2,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text98</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>8</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="113" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text98>
+        <Text99 Ref="114" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,6.4,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text99</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>10</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="115" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text99>
+        <Text100 Ref="116" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,7,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text100</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>17</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="117" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text100>
+        <Text101 Ref="118" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,7.6,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text101</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>19</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="119" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text101>
+        <Text102 Ref="120" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,8.2,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text102</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>19</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="121" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text102>
+        <Text103 Ref="122" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,8.8,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text103</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>22</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="123" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text103>
+        <Text104 Ref="124" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,9.4,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text104</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>25</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="125" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text104>
+        <Text105 Ref="126" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,10,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text105</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>26</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="127" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text105>
+        <Text106 Ref="128" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,10.6,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text106</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>28</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="129" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text106>
+        <Text107 Ref="130" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>17.98,11.68,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text107</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>31</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="131" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text107>
+        <Text108 Ref="132" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,5.8,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text108</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>8</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="133" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text108>
+        <Text109 Ref="134" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>17.96,12.33,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text109</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>32</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="135" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text109>
+        <Text110 Ref="136" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>17.98,12.93,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text110</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>34</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="137" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text110>
+        <Text111 Ref="138" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>17.98,13.57,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text111</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>35</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="139" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text111>
+        <Text76 Ref="140" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.14,11.72,13.7,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text76</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>.........................................................................................................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="141" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text76>
+        <HorizontalLinePrimitive9 Ref="142" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,0,17.4,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive9>
+        <HorizontalLinePrimitive10 Ref="143" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,27.6,19,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive10</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive10>
+        <VerticalLinePrimitive5 Ref="144" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,0,0.0254,27.6</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>c4b372a63ad343d5ab5669743ac3da85</Guid>
+          <Name>VerticalLinePrimitive5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive5>
+        <VerticalLinePrimitive6 Ref="145" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>19,0,0.0254,27.6</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>30fff9c9fadd484897328f0e796bcde0</Guid>
+          <Name>VerticalLinePrimitive6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive6>
+        <VerticalLinePrimitive7 Ref="146" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>0,11.4,0.0254,16.2</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>24e5d97dd8134f55accb115da79d1ce8</Guid>
+          <Name>VerticalLinePrimitive7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive7>
+        <VerticalLinePrimitive8 Ref="147" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>0.8,11.4,0.0254,16.2</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>3eaf726c56d740a9bbe2d894051ae2cc</Guid>
+          <Name>VerticalLinePrimitive8</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive8>
+        <HorizontalLinePrimitive11 Ref="148" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,11.4,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive11</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive11>
+        <HorizontalLinePrimitive13 Ref="149" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,14.8,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive13</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive13>
+        <HorizontalLinePrimitive14 Ref="150" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,17.8,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive14</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive14>
+        <HorizontalLinePrimitive15 Ref="151" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,21,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive15</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive15>
+        <HorizontalLinePrimitive16 Ref="152" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,24.6,1.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive16</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive16>
+        <StartPointPrimitive5 Ref="153" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>1.6,0,0,0</ClientRectangle>
+          <Name>StartPointPrimitive5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>c4b372a63ad343d5ab5669743ac3da85</ReferenceToGuid>
+        </StartPointPrimitive5>
+        <EndPointPrimitive5 Ref="154" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>1.6,27.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>c4b372a63ad343d5ab5669743ac3da85</ReferenceToGuid>
+        </EndPointPrimitive5>
+        <StartPointPrimitive6 Ref="155" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>19,0,0,0</ClientRectangle>
+          <Name>StartPointPrimitive6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>30fff9c9fadd484897328f0e796bcde0</ReferenceToGuid>
+        </StartPointPrimitive6>
+        <EndPointPrimitive6 Ref="156" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>19,27.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>30fff9c9fadd484897328f0e796bcde0</ReferenceToGuid>
+        </EndPointPrimitive6>
+        <StartPointPrimitive7 Ref="157" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>0,11.4,0,0</ClientRectangle>
+          <Name>StartPointPrimitive7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>24e5d97dd8134f55accb115da79d1ce8</ReferenceToGuid>
+        </StartPointPrimitive7>
+        <EndPointPrimitive7 Ref="158" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>0,27.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>24e5d97dd8134f55accb115da79d1ce8</ReferenceToGuid>
+        </EndPointPrimitive7>
+        <StartPointPrimitive8 Ref="159" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>0.8,11.4,0,0</ClientRectangle>
+          <Name>StartPointPrimitive8</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>3eaf726c56d740a9bbe2d894051ae2cc</ReferenceToGuid>
+        </StartPointPrimitive8>
+        <EndPointPrimitive8 Ref="160" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>0.8,27.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive8</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>3eaf726c56d740a9bbe2d894051ae2cc</ReferenceToGuid>
+        </EndPointPrimitive8>
+        <HorizontalLinePrimitive17 Ref="161" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,24.6,17.4,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive17</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive17>
+        <VerticalLinePrimitive9 Ref="162" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>3.6,22.8,0.0254,4.8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>5380244fb00044479d3ef3301190cc74</Guid>
+          <Name>VerticalLinePrimitive9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive9>
+        <StartPointPrimitive9 Ref="163" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>3.6,22.8,0,0</ClientRectangle>
+          <Name>StartPointPrimitive9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>5380244fb00044479d3ef3301190cc74</ReferenceToGuid>
+        </StartPointPrimitive9>
+        <EndPointPrimitive9 Ref="164" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>3.6,27.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>5380244fb00044479d3ef3301190cc74</ReferenceToGuid>
+        </EndPointPrimitive9>
+        <HorizontalLinePrimitive18 Ref="165" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,24,7.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive18</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive18>
+        <HorizontalLinePrimitive19 Ref="166" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,23.4,7.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive19</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive19>
+        <HorizontalLinePrimitive20 Ref="167" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,22.8,17.4,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive20</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive20>
+        <VerticalLinePrimitive10 Ref="168" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>8.8,22.8,0.0254,4.8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>1346f8f1ea8148ea905db7fecfeaa2eb</Guid>
+          <Name>VerticalLinePrimitive10</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive10>
+        <StartPointPrimitive10 Ref="169" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>8.8,22.8,0,0</ClientRectangle>
+          <Name>StartPointPrimitive10</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>1346f8f1ea8148ea905db7fecfeaa2eb</ReferenceToGuid>
+        </StartPointPrimitive10>
+        <EndPointPrimitive10 Ref="170" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>9,27.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive10</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>1346f8f1ea8148ea905db7fecfeaa2eb</ReferenceToGuid>
+        </EndPointPrimitive10>
+        <HorizontalLinePrimitive21 Ref="171" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,25.2,7.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive21</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive21>
+        <HorizontalLinePrimitive22 Ref="172" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,25.8,7.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive22</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive22>
+        <HorizontalLinePrimitive23 Ref="173" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.62,26.4,7.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive23</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive23>
+        <HorizontalLinePrimitive24 Ref="174" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>1.6,27,7.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive24</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive24>
+        <VerticalLinePrimitive11 Ref="175" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>2.4,22.8,0.0254,1.8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>3aec2b34cde34f3395371187748cc1b5</Guid>
+          <Name>VerticalLinePrimitive11</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive11>
+        <StartPointPrimitive11 Ref="176" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>2.4,22.8,0,0</ClientRectangle>
+          <Name>StartPointPrimitive11</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>3aec2b34cde34f3395371187748cc1b5</ReferenceToGuid>
+        </StartPointPrimitive11>
+        <EndPointPrimitive11 Ref="177" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>2.6,24.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive11</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>3aec2b34cde34f3395371187748cc1b5</ReferenceToGuid>
+        </EndPointPrimitive11>
+        <VerticalLinePrimitive12 Ref="178" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>5.8,22.8,0.0254,4.8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>c4568d72cf01450cb3a4fc832ffa233d</Guid>
+          <Name>VerticalLinePrimitive12</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive12>
+        <StartPointPrimitive12 Ref="179" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>5.8,22.8,0,0</ClientRectangle>
+          <Name>StartPointPrimitive12</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>c4568d72cf01450cb3a4fc832ffa233d</ReferenceToGuid>
+        </StartPointPrimitive12>
+        <EndPointPrimitive12 Ref="180" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>5.6,27.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive12</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>c4568d72cf01450cb3a4fc832ffa233d</ReferenceToGuid>
+        </EndPointPrimitive12>
+        <VerticalLinePrimitive13 Ref="181" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>7.2,22.8,0.0254,4.8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>f756acf1e2e2476a9598317d8a3e0ae3</Guid>
+          <Name>VerticalLinePrimitive13</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive13>
+        <StartPointPrimitive13 Ref="182" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>7.2,22.8,0,0</ClientRectangle>
+          <Name>StartPointPrimitive13</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>f756acf1e2e2476a9598317d8a3e0ae3</ReferenceToGuid>
+        </StartPointPrimitive13>
+        <EndPointPrimitive13 Ref="183" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>7.2,27.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive13</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>f756acf1e2e2476a9598317d8a3e0ae3</ReferenceToGuid>
+        </EndPointPrimitive13>
+        <VerticalLinePrimitive14 Ref="184" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>14.4,24.6,0.0254,3</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>443b5d5dc6c14b91af6773d841244c79</Guid>
+          <Name>VerticalLinePrimitive14</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive14>
+        <StartPointPrimitive14 Ref="185" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>14.4,24.6,0,0</ClientRectangle>
+          <Name>StartPointPrimitive14</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>443b5d5dc6c14b91af6773d841244c79</ReferenceToGuid>
+        </StartPointPrimitive14>
+        <EndPointPrimitive14 Ref="186" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>14.6,27.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive14</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>443b5d5dc6c14b91af6773d841244c79</ReferenceToGuid>
+        </EndPointPrimitive14>
+        <HorizontalLinePrimitive12 Ref="187" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>14.4,25.8,4.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive12</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive12>
+        <HorizontalLinePrimitive25 Ref="188" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>14.4,25.2,4.6,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Name>HorizontalLinePrimitive25</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </HorizontalLinePrimitive25>
+        <VerticalLinePrimitive15 Ref="189" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>16.2,24.6,0.0254,1.2</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>161b52de0af44cf783912c94b738804b</Guid>
+          <Name>VerticalLinePrimitive15</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive15>
+        <StartPointPrimitive15 Ref="190" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>16.2,24.6,0,0</ClientRectangle>
+          <Name>StartPointPrimitive15</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>161b52de0af44cf783912c94b738804b</ReferenceToGuid>
+        </StartPointPrimitive15>
+        <EndPointPrimitive15 Ref="191" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>11.4,25.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive15</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>161b52de0af44cf783912c94b738804b</ReferenceToGuid>
+        </EndPointPrimitive15>
+        <VerticalLinePrimitive16 Ref="192" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>17.2,24.6,0.0254,1.2</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>ac693217d3004c41bacc003c2a989ca8</Guid>
+          <Name>VerticalLinePrimitive16</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive16>
+        <StartPointPrimitive16 Ref="193" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>17.2,24.6,0,0</ClientRectangle>
+          <Name>StartPointPrimitive16</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>ac693217d3004c41bacc003c2a989ca8</ReferenceToGuid>
+        </StartPointPrimitive16>
+        <EndPointPrimitive16 Ref="194" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>17,25.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive16</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>ac693217d3004c41bacc003c2a989ca8</ReferenceToGuid>
+        </EndPointPrimitive16>
+        <VerticalLinePrimitive17 Ref="195" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>15,25.2,0.0254,0.6</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>905976ab7b964902bb060d6d4f6b5522</Guid>
+          <Name>VerticalLinePrimitive17</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive17>
+        <StartPointPrimitive17 Ref="196" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>15,25.2,0,0</ClientRectangle>
+          <Name>StartPointPrimitive17</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>905976ab7b964902bb060d6d4f6b5522</ReferenceToGuid>
+        </StartPointPrimitive17>
+        <EndPointPrimitive17 Ref="197" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>15.2,25.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive17</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>905976ab7b964902bb060d6d4f6b5522</ReferenceToGuid>
+        </EndPointPrimitive17>
+        <VerticalLinePrimitive18 Ref="198" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>15.6,25.2,0.0254,0.6</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>8a6363bdb57e44b79bbff9d5abf314d6</Guid>
+          <Name>VerticalLinePrimitive18</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </VerticalLinePrimitive18>
+        <StartPointPrimitive18 Ref="199" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>15.6,25.2,0,0</ClientRectangle>
+          <Name>StartPointPrimitive18</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>8a6363bdb57e44b79bbff9d5abf314d6</ReferenceToGuid>
+        </StartPointPrimitive18>
+        <EndPointPrimitive18 Ref="200" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>15.6,25.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive18</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>8a6363bdb57e44b79bbff9d5abf314d6</ReferenceToGuid>
+        </EndPointPrimitive18>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Margins>1,1,1,1</Margins>
+      <Name>R1Page2</Name>
+      <Page isRef="3" />
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="201" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </R1Page2>
+    <R1Page3 Ref="202" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="0" />
+      <Conditions isList="true" count="0" />
+      <Margins>1,1,1,1</Margins>
+      <Name>R1Page3</Name>
+      <Page isRef="202" />
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="203" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </R1Page3>
+  </Pages>
+  <PrinterSettings Ref="204" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>3/26/2010 10:45:00 AM</ReportChanged>
+  <ReportCreated>3/14/2006 12:36:55 PM</ReportCreated>
+  <ReportGuid>440b81c7a5b64d338907c4981e15b6a4</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2006.4</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using System.IO;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.ReportControls;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();		
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

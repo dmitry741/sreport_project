@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReportSettings">
+  <User Name="pavlov_d">
+    <Category Name="StiPdfExportSetupForm">
+      <Item Key="ExportSettings" Value="True" Type="System.Boolean" />
+      <Item Key="StandardPdfFonts" Value="False" Type="System.Boolean" />
+      <Item Key="CopyTextAndGraphics" Value="True" Type="System.Boolean" />
+      <Item Key="Resolution" Value="100" Type="System.Int32" />
+      <Item Key="EncryptionKeyLength" Value="0" Type="System.Int32" />
+      <Item Key="ImageQuality" Value="100" Type="System.Int32" />
+      <Item Key="Compressed" Value="True" Type="System.Boolean" />
+      <Item Key="PrintDocument" Value="True" Type="System.Boolean" />
+      <Item Key="OpenAfterExport" Value="False" Type="System.Boolean" />
+      <Item Key="EmbeddedFonts" Value="False" Type="System.Boolean" />
+      <Item Key="ModifyContents" Value="True" Type="System.Boolean" />
+      <Item Key="ExportRtfTextAsImage" Value="False" Type="System.Boolean" />
+    </Category>
+    <Category Name="StiPagesManagerForm">
+      <Item Key="height" Value="204" Type="System.Int32" />
+      <Item Key="top" Value="449" Type="System.Int32" />
+      <Item Key="width" Value="338" Type="System.Int32" />
+      <Item Key="left" Value="522" Type="System.Int32" />
+    </Category>
+    <Category Name="StiPreviewControl">
+      <Item Key="UnicodeSingle" Value="True" Type="System.Boolean" />
+      <Item Key="DotMatrixMode" Value="False" Type="System.Boolean" />
+      <Item Key="ZoomX" Value="125%" Type="System.String" />
+      <Item Key="ZoomY" Value="125%" Type="System.String" />
+      <Item Key="ToolEditorActive" Value="False" Type="System.Boolean" />
+      <Item Key="Simple" Value="False" Type="System.Boolean" />
+      <Item Key="ThumbsPanelEnabled" Value="False" Type="System.Boolean" />
+      <Item Key="groupBoxZoom" Value="False" Type="System.Boolean" />
+      <Item Key="PageViewMode" Value="MultiplePages" Type="Stimulsoft.Report.Render.StiPageViewMode" />
+      <Item Key="DrawBorder" Value="True" Type="System.Boolean" />
+      <Item Key="groupBoxEncoding" Value="False" Type="System.Boolean" />
+      <Item Key="Encoding" Value="0" Type="System.Int32" />
+      <Item Key="KillSpaceGraphLines" Value="False" Type="System.Boolean" />
+      <Item Key="CutLongLines" Value="False" Type="System.Boolean" />
+      <Item Key="ToolHandActive" Value="False" Type="System.Boolean" />
+      <Item Key="Zoom" Value="1" Type="System.Double" />
+      <Item Key="KillSpaceLines" Value="True" Type="System.Boolean" />
+      <Item Key="ThumbsPanelWidth" Value="104" Type="System.Int32" />
+      <Item Key="groupBoxSettings" Value="False" Type="System.Boolean" />
+      <Item Key="BookmarksPanelWidth" Value="136" Type="System.Int32" />
+      <Item Key="UnicodeDouble" Value="False" Type="System.Boolean" />
+      <Item Key="PutFeedPageCode" Value="True" Type="System.Boolean" />
+      <Item Key="ToolSelectActive" Value="True" Type="System.Boolean" />
+      <Item Key="groupBoxRefresh" Value="False" Type="System.Boolean" />
+      <Item Key="ExportSaveLoadPath" Value="C:\Documents and Settings\pavlov_d\Мои документы" Type="System.String" />
+      <Item Key="groupBoxBorderType" Value="False" Type="System.Boolean" />
+      <Item Key="AutoRefresh" Value="True" Type="System.Boolean" />
+    </Category>
+    <Category Name="StiTipOfTheDay">
+      <Item Key="ShowTipsOnStartup" Value="True" Type="System.Boolean" />
+      <Item Key="CurrentTip" Value="19" Type="System.Int32" />
+    </Category>
+    <Category Name="StiImageEditorForm">
+      <Item Key="height" Value="396" Type="System.Int32" />
+      <Item Key="top" Value="298" Type="System.Int32" />
+      <Item Key="width" Value="709" Type="System.Int32" />
+      <Item Key="left" Value="285" Type="System.Int32" />
+    </Category>
+    <Category Name="StiTextEditorForm">
+      <Item Key="height" Value="397" Type="System.Int32" />
+      <Item Key="top" Value="297" Type="System.Int32" />
+      <Item Key="width" Value="718" Type="System.Int32" />
+      <Item Key="left" Value="281" Type="System.Int32" />
+      <Item Key="Spl" Value="329" Type="System.Int32" />
+    </Category>
+    <Category Name="StiDataStoreViewerForm">
+      <Item Key="height" Value="435" Type="System.Int32" />
+      <Item Key="top" Value="278" Type="System.Int32" />
+      <Item Key="width" Value="384" Type="System.Int32" />
+      <Item Key="left" Value="448" Type="System.Int32" />
+    </Category>
+    <Category Name="StiDesigner">
+      <Item Key="ShowRulers" Value="True" Type="System.Boolean" />
+      <Item Key="RecentFile8" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_23.mrt" Type="System.String" />
+      <Item Key="FillCrossBands" Value="True" Type="System.Boolean" />
+      <Item Key="ShowHeaders" Value="True" Type="System.Boolean" />
+      <Item Key="DrawEventMarkers" Value="True" Type="System.Boolean" />
+      <Item Key="PropertyGridShowDescription" Value="True" Type="System.Boolean" />
+      <Item Key="RecentFile6" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_15.mrt" Type="System.String" />
+      <Item Key="PropertyGridLocalizable" Value="True" Type="System.Boolean" />
+      <Item Key="UseComponentColor" Value="True" Type="System.Boolean" />
+      <Item Key="FillContainer" Value="True" Type="System.Boolean" />
+      <Item Key="GridSizeInch" Value="0.1" Type="System.Double" />
+      <Item Key="GridMode" Value="Lines" Type="Stimulsoft.Report.StiGridMode" />
+      <Item Key="RecentFile2" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_33.mrt" Type="System.String" />
+      <Item Key="ShowGrid" Value="True" Type="System.Boolean" />
+      <Item Key="GridSizeHundredthsOfInch" Value="10" Type="System.Double" />
+      <Item Key="PropertyGridSort" Value="Alphabetical" Type="System.Windows.Forms.PropertySort" />
+      <Item Key="RecentFile5" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_25.mrt" Type="System.String" />
+      <Item Key="FillBands" Value="True" Type="System.Boolean" />
+      <Item Key="DrawMarkersWhenMoving" Value="True" Type="System.Boolean" />
+      <Item Key="ViewMode" Value="Normal" Type="Stimulsoft.Report.StiViewMode" />
+      <Item Key="GridSizeCentimetres" Value="0.2" Type="System.Double" />
+      <Item Key="UseLastFormat" Value="True" Type="System.Boolean" />
+      <Item Key="RecentFile4" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_27.mrt" Type="System.String" />
+      <Item Key="RecentFile1" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_1.mrt" Type="System.String" />
+      <Item Key="AlignToGrid" Value="False" Type="System.Boolean" />
+      <Item Key="ShowOrder" Value="False" Type="System.Boolean" />
+      <Item Key="RecentFile7" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_12.mrt" Type="System.String" />
+      <Item Key="RecentFile0" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_3.mrt" Type="System.String" />
+      <Item Key="QuickInfoOverlay" Value="True" Type="System.Boolean" />
+      <Item Key="GridSizeMillimeters" Value="2" Type="System.Double" />
+      <Item Key="GridSizePixels" Value="8" Type="System.Double" />
+      <Item Key="Zoom" Value="1" Type="System.Double" />
+      <Item Key="RunDesignerAfterInsert" Value="True" Type="System.Boolean" />
+      <Item Key="MarkersStyle" Value="Corners" Type="Stimulsoft.Report.Components.StiMarkersStyle" />
+      <Item Key="TableMode" Value="False" Type="System.Boolean" />
+      <Item Key="RecentFile3" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_30.mrt" Type="System.String" />
+      <Item Key="QuickInfoType" Value="None" Type="Stimulsoft.Report.Design.StiQuickInfoType" />
+      <Item Key="FillComponent" Value="True" Type="System.Boolean" />
+    </Category>
+  </User>
+  <User Name="Дмитрий">
+    <Category Name="StiPreviewControl">
+      <Item Key="UnicodeSingle" Value="True" Type="System.Boolean" />
+      <Item Key="DotMatrixMode" Value="False" Type="System.Boolean" />
+      <Item Key="ZoomX" Value="125%" Type="System.String" />
+      <Item Key="ZoomY" Value="125%" Type="System.String" />
+      <Item Key="ToolEditorActive" Value="False" Type="System.Boolean" />
+      <Item Key="Simple" Value="False" Type="System.Boolean" />
+      <Item Key="ThumbsPanelEnabled" Value="False" Type="System.Boolean" />
+      <Item Key="groupBoxZoom" Value="False" Type="System.Boolean" />
+      <Item Key="PageViewMode" Value="MultiplePages" Type="Stimulsoft.Report.Render.StiPageViewMode" />
+      <Item Key="DrawBorder" Value="True" Type="System.Boolean" />
+      <Item Key="groupBoxEncoding" Value="False" Type="System.Boolean" />
+      <Item Key="Encoding" Value="0" Type="System.Int32" />
+      <Item Key="KillSpaceGraphLines" Value="False" Type="System.Boolean" />
+      <Item Key="CutLongLines" Value="False" Type="System.Boolean" />
+      <Item Key="ToolHandActive" Value="False" Type="System.Boolean" />
+      <Item Key="Zoom" Value="1" Type="System.Double" />
+      <Item Key="KillSpaceLines" Value="True" Type="System.Boolean" />
+      <Item Key="ThumbsPanelWidth" Value="104" Type="System.Int32" />
+      <Item Key="groupBoxSettings" Value="False" Type="System.Boolean" />
+      <Item Key="BookmarksPanelWidth" Value="136" Type="System.Int32" />
+      <Item Key="UnicodeDouble" Value="False" Type="System.Boolean" />
+      <Item Key="PutFeedPageCode" Value="True" Type="System.Boolean" />
+      <Item Key="ToolSelectActive" Value="True" Type="System.Boolean" />
+      <Item Key="groupBoxRefresh" Value="False" Type="System.Boolean" />
+      <Item Key="groupBoxBorderType" Value="False" Type="System.Boolean" />
+      <Item Key="AutoRefresh" Value="True" Type="System.Boolean" />
+    </Category>
+    <Category Name="StiTipOfTheDay">
+      <Item Key="ShowTipsOnStartup" Value="True" Type="System.Boolean" />
+      <Item Key="CurrentTip" Value="4" Type="System.Int32" />
+    </Category>
+    <Category Name="StiDesigner">
+      <Item Key="QuickInfoType" Value="None" Type="Stimulsoft.Report.Design.StiQuickInfoType" />
+      <Item Key="GridSizeInch" Value="0.1" Type="System.Double" />
+      <Item Key="UseComponentColor" Value="True" Type="System.Boolean" />
+      <Item Key="PropertyGridSort" Value="Alphabetical" Type="System.Windows.Forms.PropertySort" />
+      <Item Key="TableMode" Value="True" Type="System.Boolean" />
+      <Item Key="GridSizeCentimetres" Value="0.2" Type="System.Double" />
+      <Item Key="ShowHeaders" Value="True" Type="System.Boolean" />
+      <Item Key="PropertyGridLocalizable" Value="True" Type="System.Boolean" />
+      <Item Key="ShowOrder" Value="False" Type="System.Boolean" />
+      <Item Key="MarkersStyle" Value="Corners" Type="Stimulsoft.Report.Components.StiMarkersStyle" />
+      <Item Key="ShowGrid" Value="True" Type="System.Boolean" />
+      <Item Key="DrawEventMarkers" Value="True" Type="System.Boolean" />
+      <Item Key="UseLastFormat" Value="True" Type="System.Boolean" />
+      <Item Key="GridSizePixels" Value="8" Type="System.Double" />
+      <Item Key="FillContainer" Value="True" Type="System.Boolean" />
+      <Item Key="QuickInfoOverlay" Value="True" Type="System.Boolean" />
+      <Item Key="FillComponent" Value="True" Type="System.Boolean" />
+      <Item Key="FillCrossBands" Value="True" Type="System.Boolean" />
+      <Item Key="RecentFile0" Value="D:\Dmitry\SReport\StrengthReport\StrengthReport\bin\Debug\myreport_10.mrt" Type="System.String" />
+      <Item Key="Zoom" Value="1" Type="System.Double" />
+      <Item Key="GridSizeMillimeters" Value="2" Type="System.Double" />
+      <Item Key="ShowRulers" Value="True" Type="System.Boolean" />
+      <Item Key="PropertyGridShowDescription" Value="True" Type="System.Boolean" />
+      <Item Key="AlignToGrid" Value="True" Type="System.Boolean" />
+      <Item Key="ViewMode" Value="Normal" Type="Stimulsoft.Report.StiViewMode" />
+      <Item Key="FillBands" Value="True" Type="System.Boolean" />
+      <Item Key="GridSizeHundredthsOfInch" Value="10" Type="System.Double" />
+      <Item Key="RunDesignerAfterInsert" Value="True" Type="System.Boolean" />
+      <Item Key="GridMode" Value="Lines" Type="Stimulsoft.Report.StiGridMode" />
+      <Item Key="DrawMarkersWhenMoving" Value="True" Type="System.Boolean" />
+    </Category>
+  </User>
+</StiSerializer>

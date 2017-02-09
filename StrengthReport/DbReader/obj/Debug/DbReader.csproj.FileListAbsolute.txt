@@ -1,0 +1,10 @@
+D:\Dmitry\SReport\StrengthReport\DbReader\bin\Debug\DbReader.dll
+D:\Dmitry\SReport\StrengthReport\DbReader\bin\Debug\DbReader.pdb
+D:\Dmitry\SReport\StrengthReport\DbReader\obj\Debug\DbReader.dll
+D:\Dmitry\SReport\StrengthReport\DbReader\obj\Debug\DbReader.pdb
+D:\Dmitry\SReport\StrengthReport\DbReader\obj\Debug\DbReader.csprojResolveAssemblyReference.cache
+C:\Dmitry\SReport\StrengthReport\DbReader\bin\Debug\DbReader.dll
+C:\Dmitry\SReport\StrengthReport\DbReader\bin\Debug\DbReader.pdb
+C:\Dmitry\SReport\StrengthReport\DbReader\obj\Debug\DbReader.csprojResolveAssemblyReference.cache
+C:\Dmitry\SReport\StrengthReport\DbReader\obj\Debug\DbReader.dll
+C:\Dmitry\SReport\StrengthReport\DbReader\obj\Debug\DbReader.pdb
