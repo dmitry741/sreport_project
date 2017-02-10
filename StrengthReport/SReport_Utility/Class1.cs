@@ -8,9 +8,6 @@ namespace SReport_Utility
 {
     public class KitConstant
     {
-        static public string WaterVapor { get { return "Водяной пар"; } }
-
-        // сталь
         static public string Steel_st2 { get { return "Сталь Ст2"; } }
         static public string Steel_st3 { get { return "Сталь Ст3"; } }
         static public string Steel_20 { get { return "Сталь 20"; } }
