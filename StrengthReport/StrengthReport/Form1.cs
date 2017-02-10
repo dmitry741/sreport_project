@@ -4697,267 +4697,222 @@ namespace StrengthReport
         {
             int[] data = null;
             int index = 0;
+            int i;
             MyIntegerHashTable hashTable = new MyIntegerHashTable();
 
             // 04
             data = new int[] { 250, 330, 500 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 08
             data = new int[] { 250, 330, 500 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 07
             data = new int[] { 400, 600, 800 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 14
             data = new int[] { 400, 600, 800 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 20
             data = new int[] { 400, 600, 800 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 21
             data = new int[] { 500, 800, 1200, 1500 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 22
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 47
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 41
             data = new int[] { 600, 1000, 1500, 2000, 2500, 3000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 42
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 62
             data = new int[] { 600, 1000, 1500, 2000, 2500, 3000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 86
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 110
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 43
             data = new int[] { 600, 1000, 1500, 2000, 2500, 3000, 4000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
-            // 65 - O
+            // 65
             data = new int[] { 600, 1000, 1500, 2000, 2500, 3000, 4000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 100            
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 130
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 152
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 220
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 113
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 81
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 121
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 188
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 251
             data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 145
             data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 4; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 210
             data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 4; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 201
             data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 2; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             // 19
             data = new int[] { 400, 500, 600, 750, 1000 };
 
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (i = 0; i < 4; i++)
+            {
+                hashTable.AddValue((string)m_PTO_List[index++], data);
+            }
 
             return hashTable;
         }
