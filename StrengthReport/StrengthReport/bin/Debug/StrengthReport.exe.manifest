@@ -150,14 +150,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DbReader.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DbReader.dll" size="6144">
       <assemblyIdentity name="DbReader" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>tZ+IigiMuJ3TNQVB4iGZe5Kfda4=</dsig:DigestValue>
+        <dsig:DigestValue>/+AwoaV4wK2z7pWT27W9t7n2M2s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -325,7 +325,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>j6WKZQuIzbu2RTaA1C2hIuni7yE=</dsig:DigestValue>
+        <dsig:DigestValue>TBzHveTNxosRuvA4dI7CFGNt6Ow=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -337,7 +337,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Uein0gHd2iMQle8KpXoHIAX09bE=</dsig:DigestValue>
+        <dsig:DigestValue>z2Ys93D9EifDex/bJpvgmPFadZA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
