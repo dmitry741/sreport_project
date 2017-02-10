@@ -1,4 +1,4 @@
 # ignore files
 *.exe
-StrengthReport/VersionControl_VB/bin/Debug/
-StrengthReport/VersionControl_VB/obj/
+StrengthReport\VersionControl_VB\bin\
+StrengthReport\VersionControl_VB\obj\
