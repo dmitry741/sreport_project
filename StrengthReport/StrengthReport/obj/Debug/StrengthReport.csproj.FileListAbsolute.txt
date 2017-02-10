@@ -123,3 +123,8 @@ C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\obj\Debug
 C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\obj\Debug\StrengthReport.TrustInfo.xml
 C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\obj\Debug\StrengthReport.exe.manifest
 C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\obj\Debug\StrengthReport.application
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\bin\Debug\Calc.HotExchangerSolver.CompanySolution2.dll
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\bin\Debug\Calc.HotExchangerSolver.CompanySolution_Base.dll
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\bin\Debug\Calc.HotExchangerSolver.MathCore.dll
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\bin\Debug\Calc.HotExchangerSolver.PhisicsDependency.dll
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\bin\Debug\Calc.HotExchangerSolver.Utility.dll
