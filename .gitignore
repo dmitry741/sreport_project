@@ -4,3 +4,6 @@
 
 # version dll
 StrengthReport/VersionControl_VB/bin/Debug/*.dll
+
+# utility
+StrengthReport/SReport_Utility/bin/Debug/*.dll

@@ -86,7 +86,7 @@ namespace StrengthReport
             {
                 m_db.Open(startupPath);
 
-                for (int i = 0; i < m_db.Count; i++)
+                for (int i = 0; i < m_db.count; i++)
                 {
                     DataRow dr = m_db.GetDataRow(i);
                     listBox1.Items.Add((string)dr["BD_Name"]);

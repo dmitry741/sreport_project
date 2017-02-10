@@ -27,7 +27,7 @@ namespace SReport_Utility
 
         #region === Public ===
 
-        public int Count
+        public int count
         {
             get { return m_DataTable.Rows.Count; }
         }

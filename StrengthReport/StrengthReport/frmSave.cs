@@ -42,7 +42,7 @@ namespace StrengthReport
                     db.Open(startupPath);
                     bool bEqual = false;
 
-                    for (int i = 0; i < db.Count; i++)
+                    for (int i = 0; i < db.count; i++)
                     {
                         DataRow dr = db.GetDataRow(i);
                         string name = (string)dr["BD_Name"];
