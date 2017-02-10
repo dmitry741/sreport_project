@@ -11,7 +11,6 @@ namespace StrengthReport
         string m_path = "";
         string m_ReportName = "";
         bool m_bUpdate = false;
-        string m_source_path = Application.StartupPath;
 
         public frmOpen()
         {
@@ -81,11 +80,11 @@ namespace StrengthReport
 
         private void frmOpen_Load(object sender, EventArgs e)
         {            
-            string startupPath = m_source_path + "\\";
+            string startupPath = Application.StartupPath + "\\db.xml";
 
-            if (System.IO.File.Exists(startupPath + "db.xml"))
+            if (System.IO.File.Exists(startupPath))
             {
-                m_db.Open(startupPath + "db.xml");
+                m_db.Open(startupPath);
 
                 for (int i = 0; i < m_db.Count; i++)
                 {
@@ -110,8 +109,8 @@ namespace StrengthReport
         {
             if (m_bUpdate)
             {
-                string startupPath = m_source_path + "\\";
-                m_db.Save(startupPath + "db.xml");
+                string startupPath = Application.StartupPath + "\\db.xml";
+                m_db.Save(startupPath);
             }
         }
 

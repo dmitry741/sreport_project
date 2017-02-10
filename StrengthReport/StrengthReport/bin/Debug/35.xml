@@ -1,8 +1,8 @@
 <?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <SReport>
-    <PTO_Type>19</PTO_Type>
-    <PTO_PlateCount>123</PTO_PlateCount>
+    <PTO_Type>53</PTO_Type>
+    <PTO_PlateCount>41</PTO_PlateCount>
     <PTO_PlateMaterial>0</PTO_PlateMaterial>
     <PTO_PlateThickness>1</PTO_PlateThickness>
     <PTO_WrapperMaterial1>0</PTO_WrapperMaterial1>
@@ -15,12 +15,12 @@
     <PTO_PG>2,3</PTO_PG>
     <PTO_T>60</PTO_T>
     <PTO_PlaneNumber>12345</PTO_PlaneNumber>
-    <People_Razrab />
-    <People_Prov>Семенов</People_Prov>
-    <People_Nach />
-    <People_Norm>Таланов</People_Norm>
-    <People_Utv>Якимец</People_Utv>
-    <Medium_MediumHot>Вода</Medium_MediumHot>
+    <People_Razrab>1</People_Razrab>
+    <People_Prov>2</People_Prov>
+    <People_Nach>3</People_Nach>
+    <People_Norm>4</People_Norm>
+    <People_Utv>5</People_Utv>
+    <Medium_MediumHot>Проп. Глик.</Medium_MediumHot>
     <Medium_MediumCold>Вода</Medium_MediumCold>
     <Medium_TypeHot>0</Medium_TypeHot>
     <Medium_TypeCold>0</Medium_TypeCold>

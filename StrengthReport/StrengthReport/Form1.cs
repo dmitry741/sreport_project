@@ -5663,49 +5663,48 @@ namespace StrengthReport
                 // save
                 SReport_Utility.SReportArchive archive = new SReportArchive();
 
-                archive.SetIntegerValue("PTO_Type", comboBox1.SelectedIndex);
-                archive.SetStringValue("PTO_PlateCount", textBox3.Text);
-                archive.SetIntegerValue("PTO_PlateMaterial", comboBox2.SelectedIndex);
-                archive.SetIntegerValue("PTO_PlateThickness", comboBox3.SelectedIndex);
-                archive.SetIntegerValue("PTO_WrapperMaterial1", comboBoxWrapper.SelectedIndex);
-                archive.SetIntegerValue("PTO_WrapperMaterial2", comboBox4.SelectedIndex);
+                archive.SetValue("PTO_Type", comboBox1.SelectedIndex);
+                archive.SetValue("PTO_PlateCount", textBox3.Text);
+                archive.SetValue("PTO_PlateMaterial", comboBox2.SelectedIndex);
+                archive.SetValue("PTO_PlateThickness", comboBox3.SelectedIndex);
+                archive.SetValue("PTO_WrapperMaterial1", comboBoxWrapper.SelectedIndex);
+                archive.SetValue("PTO_WrapperMaterial2", comboBox4.SelectedIndex);
 
-                archive.SetStringValue("PTO_Volume", textBox5.Text);
-                archive.SetIntegerValue("PTO_Len", comboBox17.SelectedIndex);
-                archive.SetStringValue("PTO_WeightNetto", textBox10.Text);
-                archive.SetStringValue("PTO_WeightBrutto", textBox9.Text);
+                archive.SetValue("PTO_Volume", textBox5.Text);
+                archive.SetValue("PTO_Len", comboBox17.SelectedIndex);
+                archive.SetValue("PTO_WeightNetto", textBox10.Text);
+                archive.SetValue("PTO_WeightBrutto", textBox9.Text);
 
-                archive.SetStringValue("PTO_PR", textBox1.Text);
-                archive.SetStringValue("PTO_PG", textBox2.Text);
-                archive.SetStringValue("PTO_T", textBox11.Text);
-                archive.SetStringValue("PTO_PlaneNumber", textBox4.Text);
+                archive.SetValue("PTO_PR", textBox1.Text);
+                archive.SetValue("PTO_PG", textBox2.Text);
+                archive.SetValue("PTO_T", textBox11.Text);
+                archive.SetValue("PTO_PlaneNumber", textBox4.Text);
 
-                archive.SetStringValue("People_Razrab", textBox13.Text);
-                archive.SetStringValue("People_Prov", textBox14.Text);
-                archive.SetStringValue("People_Nach", textBox16.Text);
-                archive.SetStringValue("People_Norm", textBox15.Text);
-                archive.SetStringValue("People_Utv", textBox17.Text);
+                archive.SetValue("People_Razrab", textBox13.Text);
+                archive.SetValue("People_Prov", textBox14.Text);
+                archive.SetValue("People_Nach", textBox16.Text);
+                archive.SetValue("People_Norm", textBox15.Text);
+                archive.SetValue("People_Utv", textBox17.Text);
 
-                archive.SetStringValue("Medium_MediumHot", txtMediumHot.Text);
-                archive.SetStringValue("Medium_MediumCold", txtMediumCold.Text);
-                archive.SetIntegerValue("Medium_TypeHot", comboBox13.SelectedIndex);
-                archive.SetIntegerValue("Medium_TypeCold", comboBox14.SelectedIndex);
-                archive.SetStringValue("Medium_MaxThot", textBox7.Text);
-                archive.SetStringValue("Medium_MaxTcold", textBox12.Text);
-                archive.SetStringValue("Medium_MinT", textBox8.Text);
+                archive.SetValue("Medium_MediumHot", txtMediumHot.Text);
+                archive.SetValue("Medium_MediumCold", txtMediumCold.Text);
+                archive.SetValue("Medium_TypeHot", comboBox13.SelectedIndex);
+                archive.SetValue("Medium_TypeCold", comboBox14.SelectedIndex);
+                archive.SetValue("Medium_MaxThot", textBox7.Text);
+                archive.SetValue("Medium_MaxTcold", textBox12.Text);
+                archive.SetValue("Medium_MinT", textBox8.Text);
 
-                archive.SetIntegerValue("Material_StaticPlate", comboBox5.SelectedIndex);
-                archive.SetIntegerValue("Material_PriPlate", comboBox6.SelectedIndex);
-                archive.SetIntegerValue("Material_NaprUp", comboBox7.SelectedIndex);
-                archive.SetIntegerValue("Material_NaprDown", comboBox8.SelectedIndex);
-                archive.SetIntegerValue("Material_Rez", comboBox12.SelectedIndex);
-                archive.SetIntegerValue("Material_Shplilka", comboBox9.SelectedIndex);
-                archive.SetIntegerValue("Material_Bolt", comboBox11.SelectedIndex);
-                archive.SetIntegerValue("Material_Gaika", comboBox10.SelectedIndex);
-                archive.SetIntegerValue("Material_Phlance", comboBox16.SelectedIndex);
+                archive.SetValue("Material_StaticPlate", comboBox5.SelectedIndex);
+                archive.SetValue("Material_PriPlate", comboBox6.SelectedIndex);
+                archive.SetValue("Material_NaprUp", comboBox7.SelectedIndex);
+                archive.SetValue("Material_NaprDown", comboBox8.SelectedIndex);
+                archive.SetValue("Material_Rez", comboBox12.SelectedIndex);
+                archive.SetValue("Material_Shplilka", comboBox9.SelectedIndex);
+                archive.SetValue("Material_Bolt", comboBox11.SelectedIndex);
+                archive.SetValue("Material_Gaika", comboBox10.SelectedIndex);
+                archive.SetValue("Material_Phlance", comboBox16.SelectedIndex);
 
                 string startupPath = m_source_path + "\\";
-
                 string sId = "1";
 
                 if (File.Exists(startupPath + "id.txt"))
@@ -5752,11 +5751,14 @@ namespace StrengthReport
                 // declare archive object
                 SReportArchive archive = new SReportArchive();
 
+                // open report
+                if (!archive.Open(dlg.Path))
+                {
+                    MessageBox.Show("Невозможно открыть расчет" + dlg.ReportName, "Расчет на прочность", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+
                 // change title
                 this.Text = "Расчет на прочность - " + dlg.ReportName;
-
-                // open report
-                archive.Open(dlg.Path);
 
                 comboBox1.SelectedIndex = archive.GetIntegerValue("PTO_Type");
                 textBox3.Text = archive.GetStringValue("PTO_PlateCount");

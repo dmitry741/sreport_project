@@ -165,13 +165,7 @@ namespace SReport_Utility
 
         #region === Public ===
 
-        public void SetIntegerValue(string field, int Value)
-        {
-            DataRow dr = m_DataTable.Rows[0];
-            dr[field] = Value;
-        }
-
-        public void SetStringValue(string field, string Value)
+        public void SetValue(string field, object Value)
         {
             DataRow dr = m_DataTable.Rows[0];
             dr[field] = Value;
