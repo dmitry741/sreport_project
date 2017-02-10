@@ -8,3 +8,8 @@ C:\Dmitry\SReport\StrengthReport\DbReader\bin\Debug\DbReader.pdb
 C:\Dmitry\SReport\StrengthReport\DbReader\obj\Debug\DbReader.csprojResolveAssemblyReference.cache
 C:\Dmitry\SReport\StrengthReport\DbReader\obj\Debug\DbReader.dll
 C:\Dmitry\SReport\StrengthReport\DbReader\obj\Debug\DbReader.pdb
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\DbReader\bin\Debug\DbReader.dll
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\DbReader\bin\Debug\DbReader.pdb
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\DbReader\obj\Debug\DbReader.csprojResolveAssemblyReference.cache
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\DbReader\obj\Debug\DbReader.dll
+C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\DbReader\obj\Debug\DbReader.pdb

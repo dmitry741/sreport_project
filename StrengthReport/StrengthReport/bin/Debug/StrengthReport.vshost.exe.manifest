@@ -157,7 +157,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>NHq1A5OMaz8bF6NP+UIbhdL5pj8=</dsig:DigestValue>
+        <dsig:DigestValue>wOCfekUNtfFOuDVVnYgLAlril9U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -169,7 +169,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>q2pHQeqyHRAZb6fHQKpCGYdXVg0=</dsig:DigestValue>
+        <dsig:DigestValue>8JWO8En3v5EsT1BatwgFZqvtq54=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -318,14 +318,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StrengthReport.exe" size="1457152">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StrengthReport.exe" size="1457664">
       <assemblyIdentity name="StrengthReport" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/Rbjr9YF8VIWPliGfq5klIvfNMU=</dsig:DigestValue>
+        <dsig:DigestValue>YBg/jFu/Y1Llez1qg+O0Zwe6VFs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

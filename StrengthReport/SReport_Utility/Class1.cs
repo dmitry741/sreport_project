@@ -1465,12 +1465,6 @@ namespace SReport_Utility
             }
         }
 
-        //public double[] T
-        //{
-        //    get { return m_T; }
-        //    set { m_T = value; }
-        //}
-
         public string Name
         {
             get { return m_Name; }

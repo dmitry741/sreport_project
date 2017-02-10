@@ -15,4 +15,9 @@
     <BD_Name>110-NacCl</BD_Name>
     <BD_Comment>// --- 10.02.2017 ---</BD_Comment>
   </SReport>
+  <SReport>
+    <BD_Path>C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\bin\Debug\37.xml</BD_Path>
+    <BD_Name>123</BD_Name>
+    <BD_Comment>// --- 10.02.2017 ---</BD_Comment>
+  </SReport>
 </DocumentElement>
