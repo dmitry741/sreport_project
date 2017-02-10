@@ -467,33 +467,7 @@ namespace SReport_Utility
 
         static public string GetDoubleFormat(double Val, int Sign)
         {
-            if (Sign < 0)
-            {
-                throw new Exception("Number of sign is incorrect! Sign < 0.");
-            }
-
-            string s;
-
-            if (Sign == 0)
-            {
-                s = Convert.ToInt32(Val).ToString();
-            }
-            else
-            {
-                long power = 1;
-
-                for (int i = 0; i < Sign; i++)
-                {
-                    power *= 10;
-                }
-
-                long lval = Convert.ToInt64(Val * power);
-                double dval = Convert.ToDouble(lval) / Convert.ToDouble(power);
-
-                s = dval.ToString();
-            }
-
-            return s;
+            return Math.Round(Val, Sign).ToString();
         }
 
         static public string MathTrancate(double Val, int Sign, bool Formated)
@@ -1355,7 +1329,7 @@ namespace SReport_Utility
         }
     }
 
-    public class SteelProperty : SReport_Utility.ISteelProperty
+    public class SteelProperty : ISteelProperty
     {
         // Rp0,2 МПа
         // Rm МПа
