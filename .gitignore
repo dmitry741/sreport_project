@@ -1,3 +1,6 @@
-# ignore files
+﻿$ cat .gitignore
+# exe files
+*.pdb
+
+# dll files
 *.exe
-*.dll
