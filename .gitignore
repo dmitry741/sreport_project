@@ -9,4 +9,4 @@ StrengthReport/VersionControl_VB/bin/Debug/*.dll
 StrengthReport/SReport_Utility/bin/Debug/*.dll
 
 # dbReader
-sreport_project/StrengthReport/DbReader/bin/Debug/*.*
+StrengthReport/DbReader/bin/Debug/*.dll

@@ -1,40 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Data.Common;
-using System.Data.OleDb;
 
 namespace DbReader
 {
     public class ExcelReader
     {
-        #region === Members ===
+        #region === members ===
 
         string[] m_Fields;
-        string m_DbPath;
-        string m_Page;
+        string m_dbPath, m_page;
 
         #endregion
 
-        #region === Constractors ===
+        #region === constractors ===
 
         public ExcelReader()
         {
             m_Fields = null;
-            m_DbPath = "";
-            m_Page = "";
+            m_dbPath = m_page = string.Empty;
         }
 
         public ExcelReader(string DbPath, string[] Fields, string Page)
         {
             m_Fields = Fields;
-            m_DbPath = DbPath;
-            m_Page = Page;
+            m_dbPath = DbPath;
+            m_page = Page;
         }
 
         #endregion
 
-        #region === Public ===
+        #region === public ===
 
         public string[] Fields
         {
@@ -44,14 +39,14 @@ namespace DbReader
 
         public string DbPath
         {
-            get { return m_DbPath; }
-            set { m_DbPath = value; }
+            get { return m_dbPath; }
+            set { m_dbPath = value; }
         }
 
         public string Page
         {
-            get { return m_Page; }
-            set { m_Page = value; }
+            get { return m_page; }
+            set { m_page = value; }
         }
 
         public int[,] GetIntegerTable()
@@ -66,14 +61,13 @@ namespace DbReader
                 table[i] = new System.Collections.ArrayList();
             }
 
-            string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_DbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
+            string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
             DbProviderFactory factory = DbProviderFactories.GetFactory("System.Data.OleDb");
             DbConnection connection = factory.CreateConnection();
 
             connection.ConnectionString = connectionString;
 
             DbCommand command = connection.CreateCommand();
-
             string commandText = "SELECT " + m_Fields[0];
 
             for (i = 1; i < Columns; i++)
@@ -81,7 +75,7 @@ namespace DbReader
                 commandText += ", " + m_Fields[i];
             }
 
-            commandText += " FROM [" + m_Page + "$]";
+            commandText += " FROM [" + m_page + "$]";
             command.CommandText = commandText;
 
             connection.Open();
@@ -148,7 +142,7 @@ namespace DbReader
                 table[i] = new System.Collections.ArrayList();
             }
 
-            string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_DbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
+            string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
             DbProviderFactory factory = DbProviderFactories.GetFactory("System.Data.OleDb");
             DbConnection connection = factory.CreateConnection();
 
@@ -163,7 +157,7 @@ namespace DbReader
                 commandText += ", " + m_Fields[i];
             }
 
-            commandText += " FROM [" + m_Page + "$]";
+            commandText += " FROM [" + m_page + "$]";
             command.CommandText = commandText;
 
             connection.Open();
@@ -227,7 +221,7 @@ namespace DbReader
                 table[i] = new System.Collections.ArrayList();
             }
 
-            string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_DbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
+            string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
             DbProviderFactory factory = DbProviderFactories.GetFactory("System.Data.OleDb");
             DbConnection connection = factory.CreateConnection();
 
@@ -242,7 +236,7 @@ namespace DbReader
                 commandText += ", " + m_Fields[i];
             }
 
-            commandText += " FROM [" + m_Page + "$]";
+            commandText += " FROM [" + m_page + "$]";
             command.CommandText = commandText;
 
             connection.Open();
@@ -281,7 +275,6 @@ namespace DbReader
 
             return StringTable;
         }
-
 
         #endregion
     }
