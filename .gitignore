@@ -1,10 +1,4 @@
 # ignore files
 *.exe
-JoinReport\JoinReport\bin\Debug\*.*
-JoinReport\JoinReport\obj\*.*
-StrengthReport\DbReader\bin\Debug\*.*
-StrengthReport\DbReader\obj\*.*
-StrengthReport\SReport_Utility\bin\Debug\*.*
-StrengthReport\SReport_Utility\obj\*.*
-StrengthReport\VersionControl_VB\bin\Debug\*.*
-StrengthReport\VersionControl_VB\obj\*.*
+StrengthReport/VersionControl_VB/bin/Debug/
+StrengthReport/VersionControl_VB/obj/
