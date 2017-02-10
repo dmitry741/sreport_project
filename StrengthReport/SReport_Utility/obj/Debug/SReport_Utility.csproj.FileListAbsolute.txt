@@ -8,8 +8,3 @@ C:\Dmitry\SReport\StrengthReport\SReport_Utility\bin\Debug\SReport_Utility.pdb
 C:\Dmitry\SReport\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.csprojResolveAssemblyReference.cache
 C:\Dmitry\SReport\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.dll
 C:\Dmitry\SReport\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.pdb
-C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\SReport_Utility\bin\Debug\SReport_Utility.dll
-C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\SReport_Utility\bin\Debug\SReport_Utility.pdb
-C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.csprojResolveAssemblyReference.cache
-C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.dll
-C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\SReport_Utility\obj\Debug\SReport_Utility.pdb
