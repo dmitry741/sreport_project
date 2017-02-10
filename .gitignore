@@ -1,2 +1,3 @@
 # ignore files
 *.exe
+StrengthReport\VersionControl_VB\bin\Debug\*.dll
