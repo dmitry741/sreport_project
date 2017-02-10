@@ -1,3 +1,6 @@
 ﻿$ cat .gitignore
 # exe files
 *.exe
+
+# version dll
+StrengthReport/VersionControl_VB/bin/Debug/*.dll
