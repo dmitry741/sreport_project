@@ -1,2 +1,4 @@
 # ignore files
 *.exe
+JoinReport\JoinReport\bin\Debug\*.*
+JoinReport\JoinReport\obj\*.*

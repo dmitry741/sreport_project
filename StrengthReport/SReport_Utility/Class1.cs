@@ -27,6 +27,11 @@ namespace SReport_Utility
 
         #region === Public ===
 
+        public int Count
+        {
+            get { return m_DataTable.Rows.Count; }
+        }
+
         public bool Save(string path)
         {
             bool result = true;
@@ -190,7 +195,7 @@ namespace SReport_Utility
     public class SReportDataBase : SReport
     {
         int m_id = 0;
-        string m_startupPath = "";
+        string m_startupPath = string.Empty;
 
         public SReportDataBase()
         {
@@ -201,11 +206,6 @@ namespace SReport_Utility
         }
 
         #region === Public ===
-
-        public int Count
-        {
-            get { return m_DataTable.Rows.Count; }
-        }
 
         public int Id
         {
