@@ -8,17 +8,17 @@ namespace SReport_Utility
 {
     public class KitConstant
     {
-        static public string Steel_st2 { get { return "Сталь Ст2"; } }
-        static public string Steel_st3 { get { return "Сталь Ст3"; } }
-        static public string Steel_20 { get { return "Сталь 20"; } }
-        static public string Steel_20x13 { get { return "Сталь 20X13"; } }
-        static public string Steel_40x { get { return "Сталь 40X"; } }
-        static public string Steel_35 { get { return "Сталь 35"; } }
-        static public string Steel_45 { get { return "Сталь 45"; } }
-        static public string Steel_09G2C { get { return "Сталь 09Г2С"; } }
-        static public string Steel_AISI { get { return "AISI"; } }
-        static public string Steel_Titan { get { return "Titan"; } }
-        static public double HydroTest_T1 { get { return 20; } }
+        static public string Steel_st2 => "Сталь Ст2";
+        static public string Steel_st3 => "Сталь Ст3";
+        static public string Steel_20 => "Сталь 20";
+        static public string Steel_20x13 => "Сталь 20X13";
+        static public string Steel_40x => "Сталь 40X";
+        static public string Steel_35 => "Сталь 35";
+        static public string Steel_45 => "Сталь 45";
+        static public string Steel_09G2C => "Сталь 09Г2С";
+        static public string Steel_AISI => "AISI"; 
+        static public string Steel_Titan => "Titan";
+        static public double HydroTest_T1 => 20;
     }
 
     public class SReport
