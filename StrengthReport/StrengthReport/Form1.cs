@@ -4419,157 +4419,175 @@ namespace StrengthReport
             double[] Rm = new double[len];
             double[] E = new double[len];
             double[] Alpha = new double[len];
-            double[] Sigma = new double[len];
+            //double[] Sigma = new double[len];
 
             // plits
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_PlitSt3 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_st3);
+            m_PlitSt3 = new SteelProperty(Rp, Rm, E, Alpha);
 
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_Plit09G2C = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_09G2C);
+            m_Plit09G2C = new SteelProperty(Rp, Rm, E, Alpha);
 
             // material - napr-up
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_NaprUpSt2 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_st2);
-
-            for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
-
-            m_NaprUpSt3 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_st3);
+            m_NaprUpSt2 = new SteelProperty(Rp, Rm, E, Alpha);
 
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_NaprUp20 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_20);
+            m_NaprUpSt3 = new SteelProperty(Rp, Rm, E, Alpha);
 
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_NaprUp20x13 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_20x13);
+            m_NaprUp20 = new SteelProperty(Rp, Rm, E, Alpha);
+
+            for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
+
+            m_NaprUp20x13 = new SteelProperty(Rp, Rm, E, Alpha);
 
             // material - napr-down
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_NaprDownSt2 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_st2);
-
-            for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
-
-            m_NaprDownSt3 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_st3);
+            m_NaprDownSt2 = new SteelProperty(Rp, Rm, E, Alpha);
 
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_NaprDown20 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_20);
+            m_NaprDownSt3 = new SteelProperty(Rp, Rm, E, Alpha);
 
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_NaprDown20x13 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_20x13);
+            m_NaprDown20 = new SteelProperty(Rp, Rm, E, Alpha);
+
+            for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
+
+            m_NaprDown20x13 = new SteelProperty(Rp, Rm, E, Alpha);
 
             // material - krepeg
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_Krepeg40x = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_40x);
+            m_Krepeg40x = new SteelProperty(Rp, Rm, E, Alpha);
 
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_Krepeg35 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_35);
+            m_Krepeg35 = new SteelProperty(Rp, Rm, E, Alpha);
 
             // material - rezba
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_Rezba09G2C = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_09G2C);
-
-            for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
-
-            m_Rezba20x13 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_20x13);
+            m_Rezba09G2C = new SteelProperty(Rp, Rm, E, Alpha);
 
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_Rezba20 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_20);
+            m_Rezba20x13 = new SteelProperty(Rp, Rm, E, Alpha);
+
+            for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
+
+            m_Rezba20 = new SteelProperty(Rp, Rm, E, Alpha);
 
             // plates
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_AISI = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_AISI);
-
-            for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
-
-            m_Titan = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_Titan);
+            m_AISI = new SteelProperty(Rp, Rm, E, Alpha);
 
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
 
-            m_Steel45 = new SteelProperty(Rp, Rm, E, Alpha, Sigma, SReport_Utility.KitConstant.Steel_45);
+            m_Titan = new SteelProperty(Rp, Rm, E, Alpha);
+
+            for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
+            for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
+            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            index++;
+
+            m_Steel45 = new SteelProperty(Rp, Rm, E, Alpha);
         }
 
         #endregion
@@ -5003,7 +5021,6 @@ namespace StrengthReport
                 
                 string sExt;
                 int count;
-
                 string StartUp = Application.StartupPath + "\\reports\\";
 
                 if (IsBig())

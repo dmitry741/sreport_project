@@ -1301,7 +1301,7 @@ namespace SReport_Utility
 
         #region === Constructors ===
 
-        public SteelProperty(double[] Rp, double[] Rm, double[] E, double[] Alpha, double[] Sigma, string Name)
+        public SteelProperty(double[] Rp, double[] Rm, double[] E, double[] Alpha)
         {
             int len = Rp.Length;
 
