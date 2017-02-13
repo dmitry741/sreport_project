@@ -1807,10 +1807,9 @@ namespace StrengthReport
             report.SetValue("Table6_d0w_up", DigitalProcess.MathTrancate(d0w_up, 1, false));
 
             // условие прочности
-            bool Condition = (dw_down < d0w_down);
-            Condition = Condition && (dw_up < d0w_up);
+            bool condition = (dw_down < d0w_down) && (dw_up < d0w_up);
 
-            if (!Condition)
+            if (!condition)
             {
                 m_messages.Add("Таблица 6, стр. 14");
             }
