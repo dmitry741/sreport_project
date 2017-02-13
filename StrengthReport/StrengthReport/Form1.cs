@@ -17,7 +17,7 @@ namespace StrengthReport
 
         #region === memebers ===
 
-        const int c_pto_count = 158;
+        const int c_pto_count = 162;
 
         PhisicFeatureManager m_manager = new PhisicFeatureManager();
         System.Globalization.NumberFormatInfo m_nfi = null;
@@ -27,7 +27,6 @@ namespace StrengthReport
 
         string m_lastError = string.Empty;
         double m_PressureCalc = 0;
-        //string m_source_path = "H:\\SReport";
         string m_source_path = Application.StartupPath;
 
         // толщины плит
@@ -466,6 +465,14 @@ namespace StrengthReport
 
             m_pto_list.Add("HH№19-C-10");   // 156
             m_pto_list.Add("HH№19-C-16");   // 157
+
+            // 53
+            m_pto_list.Add("HH№53-O-10");   // 158
+            m_pto_list.Add("HH№53-C-10");   // 159
+
+            // 160
+            m_pto_list.Add("HH№160-O-10");   // 160
+            m_pto_list.Add("HH№160-C-10");   // 161
         }
 
         private string GetPrePlaneNumber()
@@ -4186,8 +4193,7 @@ namespace StrengthReport
         private MyIntegerHashTable CreateLen()
         {
             int[] data = null;
-            int index = 0;
-            int i;
+            int index = 0, i;
             MyIntegerHashTable hashTable = new MyIntegerHashTable();
 
             // 04
@@ -4195,7 +4201,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 08
@@ -4203,7 +4209,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 07
@@ -4211,7 +4217,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 14
@@ -4219,7 +4225,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 20
@@ -4227,7 +4233,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 21
@@ -4235,19 +4241,19 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 22
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 47
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 41
@@ -4255,13 +4261,13 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 42
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 62
@@ -4269,7 +4275,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 86
@@ -4277,7 +4283,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 110
@@ -4285,7 +4291,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 43
@@ -4293,7 +4299,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 65
@@ -4301,7 +4307,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 100            
@@ -4309,19 +4315,19 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 130
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 152
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 220
@@ -4329,7 +4335,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 113
@@ -4337,7 +4343,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 81
@@ -4345,7 +4351,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 121
@@ -4353,7 +4359,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 188
@@ -4361,7 +4367,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 251
@@ -4369,7 +4375,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 145
@@ -4377,7 +4383,7 @@ namespace StrengthReport
 
             for (i = 0; i < 4; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 210
@@ -4385,7 +4391,7 @@ namespace StrengthReport
 
             for (i = 0; i < 4; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 201
@@ -4393,7 +4399,7 @@ namespace StrengthReport
 
             for (i = 0; i < 2; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             // 19
@@ -4401,7 +4407,23 @@ namespace StrengthReport
 
             for (i = 0; i < 4; i++)
             {
-                hashTable.AddValue((string)m_pto_list[index++], data);
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 53
+            data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000 };
+
+            for (i = 0; i < 2; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 160
+            data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
+
+            for (i = 0; i < 2; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
             }
 
             return hashTable;

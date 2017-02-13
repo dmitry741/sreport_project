@@ -318,14 +318,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StrengthReport.exe" size="1447936">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StrengthReport.exe" size="1448448">
       <assemblyIdentity name="StrengthReport" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>utYu9x5Ido0lRNuDE8drZ7qy+KI=</dsig:DigestValue>
+        <dsig:DigestValue>VDbEMGDAp+vst4hEbsiidYjPBpI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -337,7 +337,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>z2Ys93D9EifDex/bJpvgmPFadZA=</dsig:DigestValue>
+        <dsig:DigestValue>6xIBUxhyo70qk5YX5FzIfcISTGs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
