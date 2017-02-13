@@ -2243,7 +2243,6 @@ namespace StrengthReport
 
             // LambdaW
             double LambdaW = (lw + 0.6 * d) / (z * Ew * Aw);
-            //report.SetValue("Table10_LambdaW", DigitalProcess.MathTrancate(LambdaW, 9, false));
             report.SetValue("Table10_LambdaW", DigitalProcess.MathTrancateToDigital(LambdaW, 9));
 
             // alpha1
@@ -2268,8 +2267,7 @@ namespace StrengthReport
 
             lines = new PhisicsDependency.Lines(X, Y3);
 
-            double Alpha2 = lines.Value(T2);
-            Alpha2 *= 0.000001;
+            double Alpha2 = lines.Value(T2) * 0.000001;
             report.SetValue("Table10_Alpha2", DigitalProcess.MathTrancateToDigital(Alpha2, 9));
 
             // eta
