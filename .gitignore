@@ -3,11 +3,14 @@
 *.exe
 *.pdb
 
-# version dll
+# version
 StrengthReport/VersionControl_VB/bin/Debug/*.dll
+StrengthReport/VersionControl_VB/obj/Debug/*.dll
 
 # utility
 StrengthReport/SReport_Utility/bin/Debug/*.dll
+StrengthReport/SReport_Utility/obj/Debug/*.dll
 
 # dbReader
 StrengthReport/DbReader/bin/Debug/*.dll
+StrengthReport/DbReader/obj/Debug/*.dll
