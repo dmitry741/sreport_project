@@ -310,7 +310,7 @@ namespace SReport_Utility
         {
             m_key.Add(key);
             m_value1.Add(value);
-            m_value2.Add("");
+            m_value2.Add(string.Empty);
         }
 
         public void Add(string key, string value1, string value2)
@@ -372,21 +372,17 @@ namespace SReport_Utility
         public double GetValue(string Key, string Column)
         {
             double val = 0;
+            int index = GetItemIndex(Key);
 
-            for (int i = 0; i < m_key.Count; i++)
+            if (index >= 0)
             {
-                if (Key == m_key[i])
+                for (int j = 0; j < m_columns.Length; j++)
                 {
-                    for (int j = 0; j < m_columns.Length; j++)
+                    if (Column == m_columns[j])
                     {
-                        if (Column == m_columns[j])
-                        {
-                            val = (double)m_value[j][i];
-                            break;
-                        }
+                        val = (double)m_value[j][index];
+                        break;
                     }
-
-                    break;
                 }
             }
 
@@ -1296,38 +1292,14 @@ namespace SReport_Utility
         }
     }
 
-    public class SteelProperty : ISteelProperty
+    public class SteelProperty
     {
-        // Rp0,2 МПа
-        // Rm МПа
-        // E, МПа
-        // α 10^6
-        // sigm
-
         double[] m_Rp;
         double[] m_Rm;
         double[] m_E;
         double[] m_Alpha;
-        double[] m_Sigma;
-
-        //double[] m_T;
-        string m_Name;
 
         #region === Constructors ===
-
-        public SteelProperty()
-        {
-            int len = 6;
-
-            m_Rp = new double[len];
-            m_Rm = new double[len];
-            m_E = new double[len];
-            m_Alpha = new double[len];
-            m_Sigma = new double[len];
-
-            //m_T = null;
-            m_Name = "Noname";
-        }
 
         public SteelProperty(double[] Rp, double[] Rm, double[] E, double[] Alpha, double[] Sigma, string Name)
         {
@@ -1337,77 +1309,24 @@ namespace SReport_Utility
             m_Rm = new double[len];
             m_E = new double[len];
             m_Alpha = new double[len];
-            m_Sigma = new double[len];
 
             Rp.CopyTo(m_Rp, 0);
             Rm.CopyTo(m_Rm, 0);
             E.CopyTo(m_E, 0);
             Alpha.CopyTo(m_Alpha, 0);
-            Sigma.CopyTo(m_Sigma, 0);
-
-            //m_T = T;
-            m_Name = Name;
         }
 
         #endregion
 
         #region === Public ===
 
-        public double[] Rp
-        {
-            get { return m_Rp; }
-            set
-            {
-                int len = value.Length;
-                for (int i = 0; i < len; i++) m_Rp[i] = value[i];
-            }
-        }
+        public double[] Rp => m_Rp;
 
-        public double[] Rm
-        {
-            get { return m_Rm; }
-            set
-            {
-                int len = value.Length;
-                for (int i = 0; i < len; i++) m_Rm[i] = value[i];
-            }
-        }
+        public double[] Rm => m_Rm;
 
-        public double[] E
-        {
-            get { return m_E; }
-            set
-            {
-                int len = value.Length;
-                for (int i = 0; i < len; i++) m_E[i] = value[i];
-            }
-        }
+        public double[] E => m_E;
 
-        public double[] Alpha
-        {
-            get { return m_Alpha; }
-            set
-            {
-                int len = value.Length;
-                for (int i = 0; i < len; i++) m_Alpha[i] = value[i];
-            }
-        }
-
-        public double[] Sigma
-        {
-            get { return m_Sigma; }
-            set
-            {
-                int len = value.Length;
-                for (int i = 0; i < len; i++) m_Sigma[i] = value[i];
-            }
-        }
-
-        public string Name
-        {
-            get { return m_Name; }
-            set { m_Name = value; }
-        }
+        public double[] Alpha => m_Alpha;
 
         #endregion
     }

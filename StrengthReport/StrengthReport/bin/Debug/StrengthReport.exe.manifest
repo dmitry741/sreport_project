@@ -162,14 +162,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SReport_Utility.dll" size="35328">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SReport_Utility.dll" size="34304">
       <assemblyIdentity name="SReport_Utility" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>A+dbKFQEB9k3bxC5TmVFDR4GC5o=</dsig:DigestValue>
+        <dsig:DigestValue>IVRa2Cy6Lz+B2oesIOYn/R3Q8/0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -325,7 +325,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QFGsnUlaeyfzxvDVXmVGvLU6QM0=</dsig:DigestValue>
+        <dsig:DigestValue>OHYQbRuZPqZtn+TD4iMA4Vu6UVA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
