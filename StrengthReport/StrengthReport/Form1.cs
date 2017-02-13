@@ -1132,17 +1132,7 @@ namespace StrengthReport
             report.SetValue("Table2_Material_Row8", GetSteelValue(comboBox6.Text));
 
             // R18
-            string r18;
-
-            if (comboBox16.SelectedIndex < 3)
-            {
-                r18 = "Болт 13, 14, 15, 16; болты крепления фланцев подвода-отвода рабочих сред.";
-            }
-            else
-            {
-                r18 = "Болт 13, 14, 15, 16;";
-            }
-
+            string r18 = (comboBox16.SelectedIndex < 3) ? "Болт 13, 14, 15, 16; болты крепления фланцев подвода-отвода рабочих сред." : "Болт 13, 14, 15, 16;";
             report.SetValue("Table2_R18", r18);
 
             // расчетная температура
@@ -1527,9 +1517,6 @@ namespace StrengthReport
             MyDoubleHashTable hashTable422 = m_hashTable422;
             MyDoubleHashTable hashTable43 = m_hashTable43;
             string ptoName = comboBox1.Text;
-
-            // q0liq	q0vap	q0air	mliq	mvap	mair	eta	hi	z	d0	d0w	ksi     <- 422
-            // f	n	Am	Bm	A1	B1	b	h	dh	epsi	Epr	q	R	[p]                 <- 43
 
             // Epsilon
             double Epsilon = hashTable43.GetValue(ptoName, "epsi") * 100;
