@@ -19,6 +19,9 @@ namespace SReport_Utility
         static public string Steel_AISI => "AISI"; 
         static public string Steel_Titan => "Titan";
         static public double HydroTest_T1 => 20;
+
+        static public string companyName => "АО Ридан";
+        static public string softwareName => "Расчет на прочность";
     }
 
     public class SReport

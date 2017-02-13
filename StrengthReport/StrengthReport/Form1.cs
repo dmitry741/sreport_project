@@ -3901,7 +3901,7 @@ namespace StrengthReport
             }
             else
             {
-                MessageBox.Show("Файл данных не обнаружен.", "АО Ридан", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("Файл данных не обнаружен.", KitConstant.companyName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 Close();
             }
 
@@ -4762,7 +4762,7 @@ namespace StrengthReport
 
             // === title ===
             this.Text += (" - Новый");
-            lblVersion.Text = "АО Ридан, версия: " + VersionControl_VB.MyVersionControl.MyVersion;
+            lblVersion.Text = KitConstant.companyName + ", версия: " + VersionControl_VB.MyVersionControl.MyVersion;
             // ===============
         }
 
@@ -4770,7 +4770,7 @@ namespace StrengthReport
         {
             if (!IsValid())
             {
-                MessageBox.Show(GetLastError(), "АО Ридан: Расчет на прочность", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(GetLastError(), string.Format("{0}: {1}", KitConstant.companyName, KitConstant.softwareName), MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 
@@ -4972,12 +4972,12 @@ namespace StrengthReport
         {
             if (!IsValid())
             {
-                MessageBox.Show(GetLastError(), "АО РИДАН: Расчет на прочность", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(GetLastError(), string.Format("{0}: {1}", KitConstant.companyName, KitConstant.softwareName), MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 
             // === setup data ===
-            SReport_Utility.PrintReport report = new SReport_Utility.PrintReport();
+            PrintReport report = new PrintReport();
 
             m_messages.Clear();
 
