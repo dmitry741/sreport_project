@@ -17,9 +17,11 @@ namespace StrengthReport
 
         #region === memebers ===
 
+        const int c_pto_count = 158;
+
         PhisicFeatureManager m_manager = new PhisicFeatureManager();
         System.Globalization.NumberFormatInfo m_nfi = null;
-        System.Collections.ArrayList m_PTO_List = new System.Collections.ArrayList();
+        System.Collections.Generic.List<string> m_pto_list = new System.Collections.Generic.List<string>();
 
         MyStringHashTable m_HashSteel = new MyStringHashTable();
 
@@ -225,245 +227,245 @@ namespace StrengthReport
         private void CreatePTOList()
         {
             // 4
-            m_PTO_List.Add("HH№04-O-10"); // 0
-            m_PTO_List.Add("HH№04-O-16"); // 1
-            m_PTO_List.Add("HH№04-O-25"); // 2
+            m_pto_list.Add("HH№04-O-10"); // 0
+            m_pto_list.Add("HH№04-O-16"); // 1
+            m_pto_list.Add("HH№04-O-25"); // 2
 
-            m_PTO_List.Add("HH№04-C-10"); // 3
-            m_PTO_List.Add("HH№04-C-16"); // 4
-            m_PTO_List.Add("HH№04-C-25"); // 5
+            m_pto_list.Add("HH№04-C-10"); // 3
+            m_pto_list.Add("HH№04-C-16"); // 4
+            m_pto_list.Add("HH№04-C-25"); // 5
 
             // 8
-            m_PTO_List.Add("HH№08-O-10"); // 6
-            m_PTO_List.Add("HH№08-O-16"); // 7
-            m_PTO_List.Add("HH№08-O-25"); // 8
+            m_pto_list.Add("HH№08-O-10"); // 6
+            m_pto_list.Add("HH№08-O-16"); // 7
+            m_pto_list.Add("HH№08-O-25"); // 8
 
-            m_PTO_List.Add("HH№08-C-10"); // 9
-            m_PTO_List.Add("HH№08-C-16"); // 10
-            m_PTO_List.Add("HH№08-C-25"); // 11
+            m_pto_list.Add("HH№08-C-10"); // 9
+            m_pto_list.Add("HH№08-C-16"); // 10
+            m_pto_list.Add("HH№08-C-25"); // 11
 
             // 7
-            m_PTO_List.Add("HH№07-O-10"); // 12
-            m_PTO_List.Add("HH№07-O-16"); // 13
-            m_PTO_List.Add("HH№07-O-25"); // 14
+            m_pto_list.Add("HH№07-O-10"); // 12
+            m_pto_list.Add("HH№07-O-16"); // 13
+            m_pto_list.Add("HH№07-O-25"); // 14
 
-            m_PTO_List.Add("HH№07-C-10"); // 15
-            m_PTO_List.Add("HH№07-C-16"); // 16
-            m_PTO_List.Add("HH№07-C-25"); // 17
+            m_pto_list.Add("HH№07-C-10"); // 15
+            m_pto_list.Add("HH№07-C-16"); // 16
+            m_pto_list.Add("HH№07-C-25"); // 17
 
             // 14
-            m_PTO_List.Add("HH№14-O-10"); // 18
-            m_PTO_List.Add("HH№14-O-16"); // 19
-            m_PTO_List.Add("HH№14-O-25"); // 20
+            m_pto_list.Add("HH№14-O-10"); // 18
+            m_pto_list.Add("HH№14-O-16"); // 19
+            m_pto_list.Add("HH№14-O-25"); // 20
 
-            m_PTO_List.Add("HH№14-C-10"); // 21
-            m_PTO_List.Add("HH№14-C-16"); // 22
-            m_PTO_List.Add("HH№14-C-25"); // 23
+            m_pto_list.Add("HH№14-C-10"); // 21
+            m_pto_list.Add("HH№14-C-16"); // 22
+            m_pto_list.Add("HH№14-C-25"); // 23
 
             // 20
-            m_PTO_List.Add("HH№20-O-10"); // 24
-            m_PTO_List.Add("HH№20-O-16"); // 25
-            m_PTO_List.Add("HH№20-O-25"); // 26
+            m_pto_list.Add("HH№20-O-10"); // 24
+            m_pto_list.Add("HH№20-O-16"); // 25
+            m_pto_list.Add("HH№20-O-25"); // 26
 
-            m_PTO_List.Add("HH№20-C-10"); // 27
-            m_PTO_List.Add("HH№20-C-16"); // 28
-            m_PTO_List.Add("HH№20-C-25"); // 29
+            m_pto_list.Add("HH№20-C-10"); // 27
+            m_pto_list.Add("HH№20-C-16"); // 28
+            m_pto_list.Add("HH№20-C-25"); // 29
 
             // 21
-            m_PTO_List.Add("HH№21-O-10"); // 30
-            m_PTO_List.Add("HH№21-O-16"); // 31
-            m_PTO_List.Add("HH№21-O-25"); // 32
+            m_pto_list.Add("HH№21-O-10"); // 30
+            m_pto_list.Add("HH№21-O-16"); // 31
+            m_pto_list.Add("HH№21-O-25"); // 32
 
-            m_PTO_List.Add("HH№21-C-10"); // 33
-            m_PTO_List.Add("HH№21-C-16"); // 34
-            m_PTO_List.Add("HH№21-C-25"); // 35
+            m_pto_list.Add("HH№21-C-10"); // 33
+            m_pto_list.Add("HH№21-C-16"); // 34
+            m_pto_list.Add("HH№21-C-25"); // 35
 
             // 22
-            m_PTO_List.Add("HH№22-O-10"); // 36
-            m_PTO_List.Add("HH№22-O-16"); // 37
-            m_PTO_List.Add("HH№22-O-25"); // 38
+            m_pto_list.Add("HH№22-O-10"); // 36
+            m_pto_list.Add("HH№22-O-16"); // 37
+            m_pto_list.Add("HH№22-O-25"); // 38
 
-            m_PTO_List.Add("HH№22-C-10"); // 39
-            m_PTO_List.Add("HH№22-C-16"); // 40
-            m_PTO_List.Add("HH№22-C-25"); // 41
+            m_pto_list.Add("HH№22-C-10"); // 39
+            m_pto_list.Add("HH№22-C-16"); // 40
+            m_pto_list.Add("HH№22-C-25"); // 41
 
             // 47
-            m_PTO_List.Add("HH№47-O-10"); // 42
-            m_PTO_List.Add("HH№47-O-16"); // 43
-            m_PTO_List.Add("HH№47-O-25"); // 44
+            m_pto_list.Add("HH№47-O-10"); // 42
+            m_pto_list.Add("HH№47-O-16"); // 43
+            m_pto_list.Add("HH№47-O-25"); // 44
 
-            m_PTO_List.Add("HH№47-C-10"); // 45
-            m_PTO_List.Add("HH№47-C-16"); // 46
-            m_PTO_List.Add("HH№47-C-25"); // 47
+            m_pto_list.Add("HH№47-C-10"); // 45
+            m_pto_list.Add("HH№47-C-16"); // 46
+            m_pto_list.Add("HH№47-C-25"); // 47
 
             // 41
-            m_PTO_List.Add("HH№41-O-10"); // 48
-            m_PTO_List.Add("HH№41-O-16"); // 49
-            m_PTO_List.Add("HH№41-O-25"); // 50
+            m_pto_list.Add("HH№41-O-10"); // 48
+            m_pto_list.Add("HH№41-O-16"); // 49
+            m_pto_list.Add("HH№41-O-25"); // 50
 
-            m_PTO_List.Add("HH№41-C-10");   // 51
-            m_PTO_List.Add("HH№41-C-16");   // 52
-            m_PTO_List.Add("HH№41-C-25");   // 53
+            m_pto_list.Add("HH№41-C-10");   // 51
+            m_pto_list.Add("HH№41-C-16");   // 52
+            m_pto_list.Add("HH№41-C-25");   // 53
 
             // 42
-            m_PTO_List.Add("HH№42-O-10");   // 54
-            m_PTO_List.Add("HH№42-O-16");   // 55
-            m_PTO_List.Add("HH№42-O-25");   // 56
+            m_pto_list.Add("HH№42-O-10");   // 54
+            m_pto_list.Add("HH№42-O-16");   // 55
+            m_pto_list.Add("HH№42-O-25");   // 56
 
-            m_PTO_List.Add("HH№42-C-10");   // 57
-            m_PTO_List.Add("HH№42-C-16");   // 58
-            m_PTO_List.Add("HH№42-C-25");   // 59
+            m_pto_list.Add("HH№42-C-10");   // 57
+            m_pto_list.Add("HH№42-C-16");   // 58
+            m_pto_list.Add("HH№42-C-25");   // 59
 
             // 62
-            m_PTO_List.Add("HH№62-O-10");   // 60
-            m_PTO_List.Add("HH№62-O-16");   // 61
-            m_PTO_List.Add("HH№62-O-25");   // 62
+            m_pto_list.Add("HH№62-O-10");   // 60
+            m_pto_list.Add("HH№62-O-16");   // 61
+            m_pto_list.Add("HH№62-O-25");   // 62
 
-            m_PTO_List.Add("HH№62-C-10");   // 63
-            m_PTO_List.Add("HH№62-C-16");   // 64
-            m_PTO_List.Add("HH№62-C-25");   // 65
+            m_pto_list.Add("HH№62-C-10");   // 63
+            m_pto_list.Add("HH№62-C-16");   // 64
+            m_pto_list.Add("HH№62-C-25");   // 65
 
             // 86
-            m_PTO_List.Add("HH№86-O-10");   // 66
-            m_PTO_List.Add("HH№86-O-16");   // 67
-            m_PTO_List.Add("HH№86-O-25");   // 68
+            m_pto_list.Add("HH№86-O-10");   // 66
+            m_pto_list.Add("HH№86-O-16");   // 67
+            m_pto_list.Add("HH№86-O-25");   // 68
 
-            m_PTO_List.Add("HH№86-C-10");   // 69
-            m_PTO_List.Add("HH№86-C-16");   // 70
-            m_PTO_List.Add("HH№86-C-25");   // 71
+            m_pto_list.Add("HH№86-C-10");   // 69
+            m_pto_list.Add("HH№86-C-16");   // 70
+            m_pto_list.Add("HH№86-C-25");   // 71
 
             // 110
-            m_PTO_List.Add("HH№110-O-10");   // 72
-            m_PTO_List.Add("HH№110-O-16");   // 73
-            m_PTO_List.Add("HH№110-O-25");   // 74
+            m_pto_list.Add("HH№110-O-10");   // 72
+            m_pto_list.Add("HH№110-O-16");   // 73
+            m_pto_list.Add("HH№110-O-25");   // 74
 
-            m_PTO_List.Add("HH№110-C-10");   // 75
-            m_PTO_List.Add("HH№110-C-16");   // 76
-            m_PTO_List.Add("HH№110-C-25");   // 77
+            m_pto_list.Add("HH№110-C-10");   // 75
+            m_pto_list.Add("HH№110-C-16");   // 76
+            m_pto_list.Add("HH№110-C-25");   // 77
 
             // 43
-            m_PTO_List.Add("HH№43-O-10");   // 78
-            m_PTO_List.Add("HH№43-O-16");   // 79
-            m_PTO_List.Add("HH№43-O-25");   // 80
+            m_pto_list.Add("HH№43-O-10");   // 78
+            m_pto_list.Add("HH№43-O-16");   // 79
+            m_pto_list.Add("HH№43-O-25");   // 80
 
-            m_PTO_List.Add("HH№43-C-10");   // 81
-            m_PTO_List.Add("HH№43-C-16");   // 82
-            m_PTO_List.Add("HH№43-C-25");   // 83
+            m_pto_list.Add("HH№43-C-10");   // 81
+            m_pto_list.Add("HH№43-C-16");   // 82
+            m_pto_list.Add("HH№43-C-25");   // 83
 
             // 65
-            m_PTO_List.Add("HH№65-O-10");   // 84
-            m_PTO_List.Add("HH№65-O-16");   // 85
-            m_PTO_List.Add("HH№65-O-25");   // 86
+            m_pto_list.Add("HH№65-O-10");   // 84
+            m_pto_list.Add("HH№65-O-16");   // 85
+            m_pto_list.Add("HH№65-O-25");   // 86
 
-            m_PTO_List.Add("HH№65-C-10");   // 87
-            m_PTO_List.Add("HH№65-C-16");   // 88
-            m_PTO_List.Add("HH№65-C-25");   // 89
+            m_pto_list.Add("HH№65-C-10");   // 87
+            m_pto_list.Add("HH№65-C-16");   // 88
+            m_pto_list.Add("HH№65-C-25");   // 89
 
             // 100
-            m_PTO_List.Add("HH№100-O-10");   // 90
-            m_PTO_List.Add("HH№100-O-16");   // 91
-            m_PTO_List.Add("HH№100-O-25");   // 92
+            m_pto_list.Add("HH№100-O-10");   // 90
+            m_pto_list.Add("HH№100-O-16");   // 91
+            m_pto_list.Add("HH№100-O-25");   // 92
 
-            m_PTO_List.Add("HH№100-C-10");   // 93
-            m_PTO_List.Add("HH№100-C-16");   // 94
-            m_PTO_List.Add("HH№100-C-25");   // 95
+            m_pto_list.Add("HH№100-C-10");   // 93
+            m_pto_list.Add("HH№100-C-16");   // 94
+            m_pto_list.Add("HH№100-C-25");   // 95
 
             // 130
-            m_PTO_List.Add("HH№130-O-10");   // 96
-            m_PTO_List.Add("HH№130-O-16");   // 97
-            m_PTO_List.Add("HH№130-O-25");   // 98
+            m_pto_list.Add("HH№130-O-10");   // 96
+            m_pto_list.Add("HH№130-O-16");   // 97
+            m_pto_list.Add("HH№130-O-25");   // 98
 
-            m_PTO_List.Add("HH№130-C-10");   // 99
-            m_PTO_List.Add("HH№130-C-16");   // 100
-            m_PTO_List.Add("HH№130-C-25");   // 101
+            m_pto_list.Add("HH№130-C-10");   // 99
+            m_pto_list.Add("HH№130-C-16");   // 100
+            m_pto_list.Add("HH№130-C-25");   // 101
 
             // 152
-            m_PTO_List.Add("HH№152-O-10");   // 102
-            m_PTO_List.Add("HH№152-O-16");   // 103
-            m_PTO_List.Add("HH№152-O-25");   // 104
+            m_pto_list.Add("HH№152-O-10");   // 102
+            m_pto_list.Add("HH№152-O-16");   // 103
+            m_pto_list.Add("HH№152-O-25");   // 104
 
-            m_PTO_List.Add("HH№152-C-10");   // 105
-            m_PTO_List.Add("HH№152-C-16");   // 106
-            m_PTO_List.Add("HH№152-C-25");   // 107
+            m_pto_list.Add("HH№152-C-10");   // 105
+            m_pto_list.Add("HH№152-C-16");   // 106
+            m_pto_list.Add("HH№152-C-25");   // 107
 
             // 220
-            m_PTO_List.Add("HH№220-O-10");   // 108
-            m_PTO_List.Add("HH№220-O-16");   // 109
-            m_PTO_List.Add("HH№220-O-25");   // 110
+            m_pto_list.Add("HH№220-O-10");   // 108
+            m_pto_list.Add("HH№220-O-16");   // 109
+            m_pto_list.Add("HH№220-O-25");   // 110
 
-            m_PTO_List.Add("HH№220-C-10");   // 111
-            m_PTO_List.Add("HH№220-C-16");   // 112
-            m_PTO_List.Add("HH№220-C-25");   // 113
+            m_pto_list.Add("HH№220-C-10");   // 111
+            m_pto_list.Add("HH№220-C-16");   // 112
+            m_pto_list.Add("HH№220-C-25");   // 113
 
             // 113
-            m_PTO_List.Add("HH№113-O-10");   // 114
-            m_PTO_List.Add("HH№113-O-16");   // 115
-            m_PTO_List.Add("HH№113-O-25");   // 116
+            m_pto_list.Add("HH№113-O-10");   // 114
+            m_pto_list.Add("HH№113-O-16");   // 115
+            m_pto_list.Add("HH№113-O-25");   // 116
 
-            m_PTO_List.Add("HH№113-C-10");   // 117
-            m_PTO_List.Add("HH№113-C-16");   // 118
-            m_PTO_List.Add("HH№113-C-25");   // 119
+            m_pto_list.Add("HH№113-C-10");   // 117
+            m_pto_list.Add("HH№113-C-16");   // 118
+            m_pto_list.Add("HH№113-C-25");   // 119
 
             // 81
-            m_PTO_List.Add("HH№81-O-10");   // 120
-            m_PTO_List.Add("HH№81-O-16");   // 121
-            m_PTO_List.Add("HH№81-O-25");   // 122
+            m_pto_list.Add("HH№81-O-10");   // 120
+            m_pto_list.Add("HH№81-O-16");   // 121
+            m_pto_list.Add("HH№81-O-25");   // 122
 
-            m_PTO_List.Add("HH№81-C-10");   // 123
-            m_PTO_List.Add("HH№81-C-16");   // 124
-            m_PTO_List.Add("HH№81-C-25");   // 125
+            m_pto_list.Add("HH№81-C-10");   // 123
+            m_pto_list.Add("HH№81-C-16");   // 124
+            m_pto_list.Add("HH№81-C-25");   // 125
 
             // 121
-            m_PTO_List.Add("HH№121-O-10");   // 126
-            m_PTO_List.Add("HH№121-O-16");   // 127
-            m_PTO_List.Add("HH№121-O-25");   // 128
+            m_pto_list.Add("HH№121-O-10");   // 126
+            m_pto_list.Add("HH№121-O-16");   // 127
+            m_pto_list.Add("HH№121-O-25");   // 128
 
-            m_PTO_List.Add("HH№121-C-10");   // 129
-            m_PTO_List.Add("HH№121-C-16");   // 130
-            m_PTO_List.Add("HH№121-C-25");   // 131
+            m_pto_list.Add("HH№121-C-10");   // 129
+            m_pto_list.Add("HH№121-C-16");   // 130
+            m_pto_list.Add("HH№121-C-25");   // 131
 
             // 188
-            m_PTO_List.Add("HH№188-O-10");   // 132
-            m_PTO_List.Add("HH№188-O-16");   // 133
-            m_PTO_List.Add("HH№188-O-25");   // 134
+            m_pto_list.Add("HH№188-O-10");   // 132
+            m_pto_list.Add("HH№188-O-16");   // 133
+            m_pto_list.Add("HH№188-O-25");   // 134
 
-            m_PTO_List.Add("HH№188-C-10");   // 135
-            m_PTO_List.Add("HH№188-C-16");   // 136
-            m_PTO_List.Add("HH№188-C-25");   // 137
+            m_pto_list.Add("HH№188-C-10");   // 135
+            m_pto_list.Add("HH№188-C-16");   // 136
+            m_pto_list.Add("HH№188-C-25");   // 137
 
             // 251
-            m_PTO_List.Add("HH№251-O-10");   // 138
-            m_PTO_List.Add("HH№251-O-16");   // 139
-            m_PTO_List.Add("HH№251-O-25");   // 140
+            m_pto_list.Add("HH№251-O-10");   // 138
+            m_pto_list.Add("HH№251-O-16");   // 139
+            m_pto_list.Add("HH№251-O-25");   // 140
 
-            m_PTO_List.Add("HH№251-C-10");   // 141
-            m_PTO_List.Add("HH№251-C-16");   // 142
-            m_PTO_List.Add("HH№251-C-25");   // 143
+            m_pto_list.Add("HH№251-C-10");   // 141
+            m_pto_list.Add("HH№251-C-16");   // 142
+            m_pto_list.Add("HH№251-C-25");   // 143
 
             // 145
-            m_PTO_List.Add("HH№145-O-10");   // 144
-            m_PTO_List.Add("HH№145-O-16");   // 145
+            m_pto_list.Add("HH№145-O-10");   // 144
+            m_pto_list.Add("HH№145-O-16");   // 145
 
-            m_PTO_List.Add("HH№145-C-10");   // 146
-            m_PTO_List.Add("HH№145-C-16");   // 147
+            m_pto_list.Add("HH№145-C-10");   // 146
+            m_pto_list.Add("HH№145-C-16");   // 147
 
             // 210
-            m_PTO_List.Add("HH№210-O-10");   // 148
-            m_PTO_List.Add("HH№210-O-16");   // 149
+            m_pto_list.Add("HH№210-O-10");   // 148
+            m_pto_list.Add("HH№210-O-16");   // 149
 
-            m_PTO_List.Add("HH№210-C-10");   // 150
-            m_PTO_List.Add("HH№210-C-16");   // 151
+            m_pto_list.Add("HH№210-C-10");   // 150
+            m_pto_list.Add("HH№210-C-16");   // 151
 
             // 201
-            m_PTO_List.Add("HH№201-O-10");   // 152
-            m_PTO_List.Add("HH№201-C-10");   // 153
+            m_pto_list.Add("HH№201-O-10");   // 152
+            m_pto_list.Add("HH№201-C-10");   // 153
 
             // 19
-            m_PTO_List.Add("HH№19-O-10");   // 154
-            m_PTO_List.Add("HH№19-O-16");   // 155
+            m_pto_list.Add("HH№19-O-10");   // 154
+            m_pto_list.Add("HH№19-O-16");   // 155
 
-            m_PTO_List.Add("HH№19-C-10");   // 156
-            m_PTO_List.Add("HH№19-C-16");   // 157
+            m_pto_list.Add("HH№19-C-10");   // 156
+            m_pto_list.Add("HH№19-C-16");   // 157
         }
 
         private string GetPrePlaneNumber()
@@ -497,10 +499,7 @@ namespace StrengthReport
 
         private string GetPtoString()
         {
-            string sPto = "";
-
-            sPto += comboBox1.Text;
-
+            string sPto = comboBox1.Text;
             int pos = sPto.IndexOf('-');
 
             if (pos > 0)
@@ -3002,16 +3001,12 @@ namespace StrengthReport
             report.SetValue("Table11_Sigma_2", DigitalProcess.GetDoubleFormat(Sigma2, 2));
 
             // Направляющая верхняя
-            //report.SetValue("Table2_Sigma_21", DigitalProcess.MathTrancate(val1, sign, Formated));
-            // report.SetValue("Table2_Sigma_22", DigitalProcess.GetDoubleFormat(val2, 1));
             double SigmaSquare1, SigmaSquare2;
 
             string sVal1 = report.GetValue("Table2_Sigma_22");
             double.TryParse(sVal1, out SigmaSquare1);
 
             // Направляющая нижняя
-            //report.SetValue("Table2_Sigma_31", DigitalProcess.MathTrancate(val1, sign, Formated));
-            //report.SetValue("Table2_Sigma_32", DigitalProcess.GetDoubleFormat(val2, 1));
             string sVal2 = report.GetValue("Table2_Sigma_32");
             double.TryParse(sVal2, out SigmaSquare2);
 
@@ -3909,516 +3904,14 @@ namespace StrengthReport
         private void FillHashTable(ref double[,] DoubleValue, ref MyDoubleHashTable hashTable, int len)
         {
             double[] data = new double[len];
-            int i;
-            int index = 0;
 
-            // 04
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+            for (int j = 0; j < c_pto_count; j++)
+            {
+                for (int i = 0; i < len; i++)
+                    data[i] = DoubleValue[j, i];
 
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 08
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 07
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 14
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 20
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 21
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 22
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 47 - O
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 47 - C
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 41 - O
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 41 - C
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 42 - O
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 42 - C
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 62 - O
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 62 - C
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 86
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 110
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 43 - O
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 43 - C
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 65 - O
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 65 - C
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 100
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 130
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 152
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 220
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 113
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 81
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 121
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 188
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 251
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 145
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 210
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 201
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            // 19
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
-
-            for (i = 0; i < len; i++) data[i] = DoubleValue[index, i];
-            hashTable.AddValue((string)m_PTO_List[index], data); index++;
+                hashTable.AddValue(m_pto_list[j], data);
+            }
         }
 
         private MyDoubleHashTable ReadHashTable43(string source)
@@ -4551,8 +4044,6 @@ namespace StrengthReport
             MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
             FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
 
-            //double val = hashTable.GetValue(comboBox1.Text, "aisim4");
-
             return hashTable;
         }
 
@@ -4681,7 +4172,6 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader(m_source_path + "\\data.xls", fields, "Temperature");
 
             double[,] DoubleValue = excelReader.GetDoubleTable();
-
             int len = m_T.Length;
 
             // === setup data ===
@@ -4705,7 +4195,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 08
@@ -4713,7 +4203,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 07
@@ -4721,7 +4211,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 14
@@ -4729,7 +4219,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 20
@@ -4737,7 +4227,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 21
@@ -4745,19 +4235,19 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 22
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 47
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 41
@@ -4765,13 +4255,13 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 42
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 62
@@ -4779,7 +4269,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 86
@@ -4787,7 +4277,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 110
@@ -4795,7 +4285,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 43
@@ -4803,7 +4293,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 65
@@ -4811,7 +4301,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 100            
@@ -4819,19 +4309,19 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 130
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 152
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 220
@@ -4839,7 +4329,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 113
@@ -4847,7 +4337,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 81
@@ -4855,7 +4345,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 121
@@ -4863,7 +4353,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 188
@@ -4871,7 +4361,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 251
@@ -4879,7 +4369,7 @@ namespace StrengthReport
 
             for (i = 0; i < 6; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 145
@@ -4887,7 +4377,7 @@ namespace StrengthReport
 
             for (i = 0; i < 4; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 210
@@ -4895,7 +4385,7 @@ namespace StrengthReport
 
             for (i = 0; i < 4; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 201
@@ -4903,7 +4393,7 @@ namespace StrengthReport
 
             for (i = 0; i < 2; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             // 19
@@ -4911,7 +4401,7 @@ namespace StrengthReport
 
             for (i = 0; i < 4; i++)
             {
-                hashTable.AddValue((string)m_PTO_List[index++], data);
+                hashTable.AddValue((string)m_pto_list[index++], data);
             }
 
             return hashTable;
@@ -5109,7 +4599,7 @@ namespace StrengthReport
             // === PTO ===
             comboBox1.BeginUpdate();
 
-            foreach (string name in m_PTO_List)
+            foreach (string name in m_pto_list)
             {
                 comboBox1.Items.Add(name);
             }

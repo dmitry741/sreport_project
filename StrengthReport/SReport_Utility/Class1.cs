@@ -67,7 +67,6 @@ namespace SReport_Utility
         }
 
         #endregion
-
     }
 
     public class SReportArchive : SReport
