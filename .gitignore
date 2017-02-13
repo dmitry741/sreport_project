@@ -14,3 +14,6 @@ StrengthReport/SReport_Utility/obj/Debug/*.*
 # dbReader
 StrengthReport/DbReader/bin/Debug/*.*
 StrengthReport/DbReader/obj/Debug/*.*
+
+# the main project
+StrengthReport/StrengthReport/obj/Debug/*.*
