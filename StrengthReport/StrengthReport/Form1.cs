@@ -4191,7 +4191,7 @@ namespace StrengthReport
             }
 
             // 08
-            data = new int[] { 250, 330, 500 };
+            //data = new int[] { 250, 330, 500 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4207,7 +4207,7 @@ namespace StrengthReport
             }
 
             // 14
-            data = new int[] { 400, 600, 800 };
+            //data = new int[] { 400, 600, 800 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4215,7 +4215,7 @@ namespace StrengthReport
             }
 
             // 20
-            data = new int[] { 400, 600, 800 };
+            //data = new int[] { 400, 600, 800 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4257,8 +4257,6 @@ namespace StrengthReport
             }
 
             // 62
-            data = new int[] { 600, 1000, 1500, 2000, 2500, 3000 };
-
             for (i = 0; i < 6; i++)
             {
                 hashTable.AddValue(m_pto_list[index++], data);
@@ -4273,7 +4271,7 @@ namespace StrengthReport
             }
 
             // 110
-            data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
+            //data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4289,7 +4287,7 @@ namespace StrengthReport
             }
 
             // 65
-            data = new int[] { 600, 1000, 1500, 2000, 2500, 3000, 4000 };
+            //data = new int[] { 600, 1000, 1500, 2000, 2500, 3000, 4000 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4325,7 +4323,7 @@ namespace StrengthReport
             }
 
             // 113
-            data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
+            //data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4341,7 +4339,7 @@ namespace StrengthReport
             }
 
             // 121
-            data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
+            //data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4349,7 +4347,7 @@ namespace StrengthReport
             }
 
             // 188
-            data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
+            //data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4357,7 +4355,7 @@ namespace StrengthReport
             }
 
             // 251
-            data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
+            //data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4373,7 +4371,7 @@ namespace StrengthReport
             }
 
             // 210
-            data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
+            //data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
             for (i = 0; i < 4; i++)
             {
@@ -4381,7 +4379,7 @@ namespace StrengthReport
             }
 
             // 201
-            data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
+            //data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
 
             for (i = 0; i < 2; i++)
             {
@@ -5134,9 +5132,9 @@ namespace StrengthReport
             string startupPath = m_source_path + "\\";
 
             // === version ==
-            StreamWriter sw1 = new StreamWriter(startupPath + "version.txt");
-            sw1.WriteLine(VersionControl_VB.MyVersionControl.MyVersion);
-            sw1.Close();
+            //StreamWriter sw1 = new StreamWriter(startupPath + "version.txt");
+            //sw1.WriteLine(VersionControl_VB.MyVersionControl.MyVersion);
+            //sw1.Close();
             // ==============
 
             // === Ответственные ===

@@ -157,7 +157,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2lUYjZT/roO6Mb9U1gYh8S4Pwkw=</dsig:DigestValue>
+        <dsig:DigestValue>/9D4QgTLSyLHeuO4B3wxPT97yCo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -169,7 +169,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>4P366ryIVzn5q6vo0nu3CAJI8o4=</dsig:DigestValue>
+        <dsig:DigestValue>yHrsPzg9RhEvrqRe2YTh4sVAFcM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -318,14 +318,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StrengthReport.exe" size="1448448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StrengthReport.exe" size="1447936">
       <assemblyIdentity name="StrengthReport" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bTm7S/QvLFWQ4EfO7t1Ho8opgA0=</dsig:DigestValue>
+        <dsig:DigestValue>IfUwgFK8sS/28h31S9kml4fO+aM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -337,7 +337,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>LfRz5t9VdsoNWHwnJtBNW8r2p4E=</dsig:DigestValue>
+        <dsig:DigestValue>QHrptyfgc0WAf/eWDEv89pRz62Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
