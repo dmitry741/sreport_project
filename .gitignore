@@ -4,13 +4,13 @@
 *.pdb
 
 # version
-StrengthReport/VersionControl_VB/bin/Debug/*.dll
-StrengthReport/VersionControl_VB/obj/Debug/*.dll
+StrengthReport/VersionControl_VB/bin/Debug/*.*
+StrengthReport/VersionControl_VB/obj/Debug/*.*
 
 # utility
-StrengthReport/SReport_Utility/bin/Debug/*.dll
-StrengthReport/SReport_Utility/obj/Debug/*.dll
+StrengthReport/SReport_Utility/bin/Debug/*.*
+StrengthReport/SReport_Utility/obj/Debug/*.*
 
 # dbReader
-StrengthReport/DbReader/bin/Debug/*.dll
-StrengthReport/DbReader/obj/Debug/*.dll
+StrengthReport/DbReader/bin/Debug/*.*
+StrengthReport/DbReader/obj/Debug/*.*

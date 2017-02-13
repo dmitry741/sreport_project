@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 
 namespace SReport_Utility
 {
@@ -256,15 +257,17 @@ namespace SReport_Utility
     {
         #region === Memebers ===
 
-        protected ArrayList m_key = new ArrayList();
+        protected List<string> m_key = new List<string>();
 
         #endregion
 
-        #region === Public ===
+        protected int GetItemIndex(string key)
+        {
+            var ar = m_key.ToArray();
+            var query = ar.FirstOrDefault(s => key == s);
 
-        public int KeyCount { get { return m_key.Count; } }
-
-        #endregion
+            return (query != null) ? Array.IndexOf(ar, query) : -1;
+        }
     }
 
     public class MyIntegerHashTable : MyHashTable
@@ -285,18 +288,8 @@ namespace SReport_Utility
 
         public int[] GetValue(string Key)
         {
-            int[] value = null;
-
-            for (int i = 0; i < KeyCount; i++)
-            {
-                if (Key == (string)m_key[i])
-                {
-                    value = (int[])m_value[i];
-                    break;
-                }
-            }
-
-            return value;
+            int index = GetItemIndex(Key);
+            return (index >= 0) ? (int[])m_value[index] : null;
         }
 
         #endregion
@@ -306,8 +299,8 @@ namespace SReport_Utility
     {
         #region === Memeber ===
 
-        ArrayList m_value1 = new ArrayList();
-        ArrayList m_value2 = new ArrayList();
+        List<string> m_value1 = new List<string>();
+        List<string> m_value2 = new List<string>();
 
         #endregion
 
@@ -329,34 +322,14 @@ namespace SReport_Utility
 
         public string GetValue1(string key)
         {
-            string value = "";
-
-            for (int i = 0; i < m_key.Count; i++)
-            {
-                if ((string)m_key[i] == key)
-                {
-                    value = (string)m_value1[i];
-                    break;
-                }
-            }
-            
-            return value;
+            int index = GetItemIndex(key);
+            return (index >= 0) ? m_value1[index] : string.Empty;
         }
 
         public string GetValue2(string key)
         {
-            string value = "";
-
-            for (int i = 0; i < m_key.Count; i++)
-            {
-                if ((string)m_key[i] == key)
-                {
-                    value = (string)m_value2[i];
-                    break;
-                }
-            }
-
-            return value;
+            int index = GetItemIndex(key);
+            return (index >= 0) ? m_value2[index] : string.Empty;
         }
 
         #endregion
@@ -402,7 +375,7 @@ namespace SReport_Utility
 
             for (int i = 0; i < m_key.Count; i++)
             {
-                if (Key == (string)m_key[i])
+                if (Key == m_key[i])
                 {
                     for (int j = 0; j < m_columns.Length; j++)
                     {
@@ -1283,14 +1256,6 @@ namespace SReport_Utility
         {
             DataRow dr = m_DataTable.Rows[0];
             dr[Name] = bm;
-        }
-
-        public Bitmap GetPicture(string Name)
-        {
-            DataRow dr = m_DataTable.Rows[0];
-            Bitmap result = (Bitmap)dr[Name];
-
-            return result;
         }
     }
 

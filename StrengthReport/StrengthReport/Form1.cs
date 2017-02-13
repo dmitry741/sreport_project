@@ -2119,7 +2119,7 @@ namespace StrengthReport
             
             // epsilon
             double epsilon = dh / h;
-            report.SetValue("Table9_epsilon", DigitalProcess.MathTrancate(epsilon, 2, false));
+            report.SetValue("Table9_epsilon", DigitalProcess.MathTrancate(epsilon * 100, 2, false));
 
             // b
             double b = hashTable.GetValue(ptoName, "b");
@@ -5131,12 +5131,6 @@ namespace StrengthReport
         {
             string startupPath = m_source_path + "\\";
 
-            // === version ==
-            //StreamWriter sw1 = new StreamWriter(startupPath + "version.txt");
-            //sw1.WriteLine(VersionControl_VB.MyVersionControl.MyVersion);
-            //sw1.Close();
-            // ==============
-
             // === Ответственные ===
             StreamWriter sw2 = new StreamWriter(startupPath + "people.txt");
 
@@ -5157,7 +5151,7 @@ namespace StrengthReport
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 // save
-                SReport_Utility.SReportArchive archive = new SReportArchive();
+                SReportArchive archive = new SReportArchive();
 
                 archive.SetValue("PTO_Type", comboBox1.SelectedIndex);
                 archive.SetValue("PTO_PlateCount", textBox3.Text);
