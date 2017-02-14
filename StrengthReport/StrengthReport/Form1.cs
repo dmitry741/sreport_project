@@ -4419,7 +4419,7 @@ namespace StrengthReport
             double[] Rm = new double[len];
             double[] E = new double[len];
             double[] Alpha = new double[len];
-            double[] Sigma = new double[len];
+            //double[] Sigma = new double[len];
 
             // plits
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
@@ -4463,7 +4463,7 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprUp20 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4472,7 +4472,7 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprUp20x13 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4482,7 +4482,7 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprDownSt2 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4491,7 +4491,7 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprDownSt3 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4500,7 +4500,7 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprDown20 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4509,7 +4509,7 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprDown20x13 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4519,7 +4519,7 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
+            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_Krepeg40x = new SteelProperty(Rp, Rm, E, Alpha);
