@@ -1173,8 +1173,7 @@ namespace StrengthReport
             double Rmin = double.MaxValue;
             double Rc = 0;
             double SigmaTH = 1;
-            double SigmaT = 1;
-            SteelProperty steel;
+            double SigmaT = 1;            
 
             // расчетная температура
             double T1 = KitConstant.HydroTest_T1;
@@ -1183,14 +1182,7 @@ namespace StrengthReport
             double.TryParse(textBox11.Text, out T2);
 
             // 1. плита неподвижная
-            if (KitConstant.Steel_st3 == comboBox5.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            SteelProperty steel = (KitConstant.Steel_st3 == comboBox5.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y1 = steel.Rp;
             Y2 = steel.Rm;
@@ -1310,14 +1302,7 @@ namespace StrengthReport
             }
 
             // 8. плита прижимная
-            if (KitConstant.Steel_st3 == comboBox6.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            steel = (KitConstant.Steel_st3 == comboBox6.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y1 = steel.Rp;
             Y2 = steel.Rm;
