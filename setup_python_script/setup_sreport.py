@@ -2,6 +2,9 @@ from my_remove_file import my_copy_files
 from my_remove_file import my_file_remove
 import shutil
 import os
+from datetime import datetime
+
+start_time = datetime.now()
 
 s_dir = r'C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\bin\Debug'
 d_dir = r'C:\Dmitry\ExportSReport'
@@ -34,9 +37,13 @@ for p in single_files:
     shutil.copy(full_path, dest)
 
 # copy reports
-for p in rep_dir_list:
-    pass
+for d in rep_dir_list:
+    dd = ''.join([d_dir, '\\reports\\', d])
+    ss = ''.join([s_dir, '\\reports\\', d])
+    print('copy reports from {} to {}'.format(ss, dd))
+    my_copy_files(ss, dd, '*.mrt')
 
 
-
-print('Export files is completed')
+print('Export files is completed at: ', datetime.strftime(datetime.now(), "%Y.%m.%d %H:%M:%S"))
+end_time = datetime.now()
+print('Elapsed time:', end_time - start_time)
