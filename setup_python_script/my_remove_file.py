@@ -19,7 +19,7 @@ def my_copy_files (s_dir, d_dir, file_mask):
             print('copy ', dd)                        
             shutil.copy(ff, dd)
 
-def my_remove_files(s_dir, file_mask):
+def my_file_remove(s_dir, file_mask):
     ''' Remove files from s_dir according to file_mask '''
     
     list_dir = os.listdir(s_dir)
@@ -27,13 +27,6 @@ def my_remove_files(s_dir, file_mask):
 
     for p in files:
         ff = ''.join([s_dir, '\\', p])
-        print('remove ', ff)                        
-
-        result, reason = os.remove(ff)
-  
-        if result:
-            print('File {} removed'.format(ff))
-        else:
-            print('Cannot remove file: ', reason)
-
+        print('remove ', ff)
+        os.remove(ff)
 
