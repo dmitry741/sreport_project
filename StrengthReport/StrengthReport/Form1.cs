@@ -1438,18 +1438,9 @@ namespace StrengthReport
 
             bool Formated = false;
             int sign = 1;
-            SteelProperty steel;
 
             // 1. плита неподвижная
-            if (KitConstant.Steel_st3 == comboBox5.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
-
+            SteelProperty steel = (KitConstant.Steel_st3 == comboBox5.Text) ? m_PlitSt3 : m_Plit09G2C;
             Y1 = steel.Rp;
             PhisicsDependency.Lines lines = new PhisicsDependency.Lines(X, Y1);
 
@@ -1457,15 +1448,7 @@ namespace StrengthReport
             report.SetValue("Table4_SigmaH", DigitalProcess.MathTrancate(SigmaH_stat, sign, Formated));
 
             // 2. плита прижимная
-            if (KitConstant.Steel_st3 == comboBox6.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
-
+            steel = (KitConstant.Steel_st3 == comboBox6.Text) ? m_PlitSt3 : m_Plit09G2C;
             Y1 = steel.Rp;
             lines = new PhisicsDependency.Lines(X, Y1);
 
