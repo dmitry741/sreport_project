@@ -19,4 +19,4 @@ StrengthReport/DbReader/obj/Debug/*.*
 StrengthReport/StrengthReport/obj/Debug/*.*
 
 #ignore python compiled files
-sreport_project/setup_python_script/__pycache__/
+setup_python_script/__pycache__/
