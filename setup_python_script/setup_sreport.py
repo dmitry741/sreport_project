@@ -4,6 +4,8 @@ import shutil
 import os
 from datetime import datetime
 
+''' script deployes sreport project '''
+
 start_time = datetime.now()
 
 s_dir = r'C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\bin\Debug'
