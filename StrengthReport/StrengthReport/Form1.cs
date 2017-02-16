@@ -25,6 +25,9 @@ namespace StrengthReport
 
         MyStringHashTable m_HashSteel = new MyStringHashTable();
 
+        protected delegate string GDF(double val, int sign);
+        protected GDF GetDoubleFormat = (x, sign) => Math.Round(x, sign).ToString();
+
         string m_lastError = string.Empty;
         double m_PressureCalc = 0;
         string m_source_path = Application.StartupPath;
@@ -814,7 +817,7 @@ namespace StrengthReport
             val2 = Math.Min(lines1.Value(T2) / Np, lines2.Value(T2) / Nm);
 
             report.SetValue("Table2_Sigma_21", DigitalProcess.MathTrancate(val1, sign, Formated));
-            report.SetValue("Table2_Sigma_22", DigitalProcess.GetDoubleFormat(val2, 1));
+            report.SetValue("Table2_Sigma_22", GetDoubleFormat(val2, 1));
 
             // 3. Направляющая нижняя
             steel = GetNaprDown();
@@ -829,7 +832,7 @@ namespace StrengthReport
             val2 = Math.Min(lines1.Value(T2) / Np, lines2.Value(T2) / Nm);
 
             report.SetValue("Table2_Sigma_31", DigitalProcess.MathTrancate(val1, sign, Formated));
-            report.SetValue("Table2_Sigma_32", DigitalProcess.GetDoubleFormat(val2, 1));
+            report.SetValue("Table2_Sigma_32", GetDoubleFormat(val2, 1));
 
             // 4. резьбовая часть в напрявляющих (крепеж)
             steel = RezbaInNapr();
@@ -1488,15 +1491,15 @@ namespace StrengthReport
 
             // Epsilon
             double Epsilon = hashTable43.GetValue(ptoName, "epsi") * 100;
-            report.SetValue("Table5_Epsilon", DigitalProcess.GetDoubleFormat(Epsilon, 0));
+            report.SetValue("Table5_Epsilon", GetDoubleFormat(Epsilon, 0));
 
             // A
             double A = hashTable43.GetValue(ptoName, "Am");
-            report.SetValue("Table5_Am", DigitalProcess.GetDoubleFormat(A, 0));
+            report.SetValue("Table5_Am", GetDoubleFormat(A, 0));
 
             // B
             double B = hashTable43.GetValue(ptoName, "Bm");
-            report.SetValue("Table5_Bm", DigitalProcess.GetDoubleFormat(B, 0));
+            report.SetValue("Table5_Bm", GetDoubleFormat(B, 0));
 
             // b
             double b = hashTable43.GetValue(ptoName, "b");
@@ -1539,7 +1542,7 @@ namespace StrengthReport
             q0_Cold = hashTable422.GetValue(ptoName, sQuery);
 
             double q0 = Math.Max(q0_Hot, q0_Cold);
-            report.SetValue("Table5_Q0", DigitalProcess.GetDoubleFormat(q0, 0));
+            report.SetValue("Table5_Q0", GetDoubleFormat(q0, 0));
 
             // Fob
             double Fob = 2 * (A + B) * b * q0;
@@ -1636,11 +1639,11 @@ namespace StrengthReport
 
             // z
             double z = hashTable422.GetValue(ptoName, "z");
-            report.SetValue("Table5_z", DigitalProcess.GetDoubleFormat(z, 0));
+            report.SetValue("Table5_z", GetDoubleFormat(z, 0));
 
             // d0
             double d0 = hashTable422.GetValue(ptoName, "d0");
-            report.SetValue("Table5_d0", DigitalProcess.GetDoubleFormat(d0, 0));
+            report.SetValue("Table5_d0", GetDoubleFormat(d0, 0));
 
             // ksi
             double ksi = hashTable422.GetValue(ptoName, "ksi");
@@ -1715,11 +1718,11 @@ namespace StrengthReport
 
             // d0 - down
             double d0_down = hashTable423.GetValue(ptoName, "d0down");
-            report.SetValue("Table6_d0_down", DigitalProcess.GetDoubleFormat(d0_down, 0));
+            report.SetValue("Table6_d0_down", GetDoubleFormat(d0_down, 0));
 
             // d0 - up
             double d0_up = hashTable423.GetValue(ptoName, "d0up");
-            report.SetValue("Table6_d0_up", DigitalProcess.GetDoubleFormat(d0_up, 0));
+            report.SetValue("Table6_d0_up", GetDoubleFormat(d0_up, 0));
 
             // dc
             int dc = 0;
@@ -1727,11 +1730,11 @@ namespace StrengthReport
 
             // Mk - down
             double Mk_down = hashTable423.GetValue(ptoName, "Мкdown");
-            report.SetValue("Table6_Mk_down", DigitalProcess.GetDoubleFormat(Mk_down, 0));
+            report.SetValue("Table6_Mk_down", GetDoubleFormat(Mk_down, 0));
 
             // Mk - up
             double Mk_up = hashTable423.GetValue(ptoName, "Mkup");
-            report.SetValue("Table6_Mk_up", DigitalProcess.GetDoubleFormat(Mk_up, 0));
+            report.SetValue("Table6_Mk_up", GetDoubleFormat(Mk_up, 0));
 
             // ksi
             double ksi = hashTable423.GetValue(ptoName, "ksi");
@@ -1989,11 +1992,11 @@ namespace StrengthReport
 
                 // z
                 double z = hashTable.GetValue(ptoName, "z");
-                report.SetValue("Table8_z", DigitalProcess.GetDoubleFormat(z, 0));
+                report.SetValue("Table8_z", GetDoubleFormat(z, 0));
 
                 // d0
                 double d0 = hashTable.GetValue(ptoName, "d0");
-                report.SetValue("Table8_d0", DigitalProcess.GetDoubleFormat(d0, 0));
+                report.SetValue("Table8_d0", GetDoubleFormat(d0, 0));
 
                 // ksi
                 double ksi = hashTable.GetValue(ptoName, "ksi");
@@ -2030,7 +2033,7 @@ namespace StrengthReport
 
                 // dc
                 double dc = hashTable.GetValue(ptoName, "dc");
-                report.SetValue("Table8_dc", DigitalProcess.GetDoubleFormat(dc, 0));
+                report.SetValue("Table8_dc", GetDoubleFormat(dc, 0));
 
                 // dw
                 double dw;
@@ -2199,7 +2202,7 @@ namespace StrengthReport
 
             // Ew
             double Ew = lines.Value(T2);
-            report.SetValue("Table10_Ew", DigitalProcess.GetDoubleFormat(Ew, 0));
+            report.SetValue("Table10_Ew", GetDoubleFormat(Ew, 0));
 
             // dw
             double dw = hashTable422.GetValue(ptoName, "d0w");
@@ -2207,7 +2210,7 @@ namespace StrengthReport
 
             // Aw
             double Aw = 0.785 * dw * dw;
-            report.SetValue("Table10_Aw", DigitalProcess.GetDoubleFormat(Aw, 0));
+            report.SetValue("Table10_Aw", GetDoubleFormat(Aw, 0));
 
             // LambdaW
             double LambdaW = (lw + 0.6 * d) / (z * Ew * Aw);
@@ -2881,7 +2884,7 @@ namespace StrengthReport
             Q *= 10;
             Q /= L1;
 
-            report.SetValue("Table11_Q_2", DigitalProcess.GetDoubleFormat(Q, 1));
+            report.SetValue("Table11_Q_2", GetDoubleFormat(Q, 1));
 
             // F - 1
             double F = m_list52.GetValue(ptoName, "F");
@@ -2916,7 +2919,7 @@ namespace StrengthReport
                 M2 = 0;
 
                 report.SetPicture("Picture9", bitmap1);
-                report.SetValue("Table11_Ra", DigitalProcess.GetDoubleFormat(Ra, 0));
+                report.SetValue("Table11_Ra", GetDoubleFormat(Ra, 0));
             }
             else
             {
@@ -2956,8 +2959,8 @@ namespace StrengthReport
                 Sigma1 += Sigma2;
             }
 
-            report.SetValue("Table11_Sigma_1", DigitalProcess.GetDoubleFormat(Sigma1, 2));
-            report.SetValue("Table11_Sigma_2", DigitalProcess.GetDoubleFormat(Sigma2, 2));
+            report.SetValue("Table11_Sigma_1", GetDoubleFormat(Sigma1, 2));
+            report.SetValue("Table11_Sigma_2", GetDoubleFormat(Sigma2, 2));
 
             // Направляющая верхняя
             double SigmaSquare1, SigmaSquare2;
@@ -3018,7 +3021,7 @@ namespace StrengthReport
                 double sigma = Q / (L1 * t);
                 double h = 8.2; // for all pto from HH41 etc.
 
-                report.SetValue("Table11_Q", DigitalProcess.GetDoubleFormat(Q, 1));
+                report.SetValue("Table11_Q", GetDoubleFormat(Q, 1));
                 report.SetValue("Table11_L", Ls.ToString());
                 report.SetValue("Table11_t", t.ToString());
                 report.SetValue("Table11_Sigma", DigitalProcess.MathTrancate(sigma, 1, false));
@@ -3490,13 +3493,13 @@ namespace StrengthReport
             double W1, W2, W3;
 
             W1 = b1 * h * h / 6;
-            report.SetValue("Table14_W1", DigitalProcess.GetDoubleFormat(W1, 0));
+            report.SetValue("Table14_W1", GetDoubleFormat(W1, 0));
 
             W2 = b2 * h * h / 6;
-            report.SetValue("Table14_W2", DigitalProcess.GetDoubleFormat(W2, 0));
+            report.SetValue("Table14_W2", GetDoubleFormat(W2, 0));
 
             W3 = b3 * h * h / 6;
-            report.SetValue("Table14_W3", DigitalProcess.GetDoubleFormat(W3, 0));
+            report.SetValue("Table14_W3", GetDoubleFormat(W3, 0));
 
             // Sigma square
             double SigmaSquare;
@@ -3623,18 +3626,18 @@ namespace StrengthReport
             double.TryParse(report.GetValue("Table10_Sigma4W_Round_3"), out Sigma4w2);
             double.TryParse(report.GetValue("Table10_Sigma4W_Round_4"), out Sigma4w3);
 
-            report.SetValue("Table16_Sigma4w_1", DigitalProcess.GetDoubleFormat(Sigma4w1, 0));
-            report.SetValue("Table16_Sigma4w_2", DigitalProcess.GetDoubleFormat(Sigma4w2, 0));
-            report.SetValue("Table16_Sigma4w_3", DigitalProcess.GetDoubleFormat(Sigma4w3, 0));
+            report.SetValue("Table16_Sigma4w_1", GetDoubleFormat(Sigma4w1, 0));
+            report.SetValue("Table16_Sigma4w_2", GetDoubleFormat(Sigma4w2, 0));
+            report.SetValue("Table16_Sigma4w_3", GetDoubleFormat(Sigma4w3, 0));
 
             // Sigma A
             double SigmaA1 = K * Sigma4w1;
             double SigmaA2 = K * Sigma4w2;
             double SigmaA3 = K * Sigma4w3;
 
-            report.SetValue("Table16_SigmaA_1", DigitalProcess.GetDoubleFormat(SigmaA1, 0));
-            report.SetValue("Table16_SigmaA_2", DigitalProcess.GetDoubleFormat(SigmaA2, 0));
-            report.SetValue("Table16_SigmaA_3", DigitalProcess.GetDoubleFormat(SigmaA3, 0));
+            report.SetValue("Table16_SigmaA_1", GetDoubleFormat(SigmaA1, 0));
+            report.SetValue("Table16_SigmaA_2", GetDoubleFormat(SigmaA2, 0));
+            report.SetValue("Table16_SigmaA_3", GetDoubleFormat(SigmaA3, 0));
 
             // N square
             double s;
@@ -3644,19 +3647,19 @@ namespace StrengthReport
             s = A * (2300 - t) / ((SigmaA1 - B / Nsigma) * 2300);
             Nsquare1 = s * s / nN;
 
-            report.SetValue("Table16_NSquare_1", DigitalProcess.GetDoubleFormat(Nsquare1, 0));
+            report.SetValue("Table16_NSquare_1", GetDoubleFormat(Nsquare1, 0));
 
             // 2
             s = A * (2300 - t) / ((SigmaA2 - B / Nsigma) * 2300);
             Nsquare2 = s * s / nN;
 
-            report.SetValue("Table16_NSquare_2", DigitalProcess.GetDoubleFormat(Nsquare2, 0));
+            report.SetValue("Table16_NSquare_2", GetDoubleFormat(Nsquare2, 0));
 
             // 3
             s = A * (2300 - t) / ((SigmaA3 - B / Nsigma) * 2300);
             Nsquare3 = s * s / nN;
 
-            report.SetValue("Table16_NSquare_3", DigitalProcess.GetDoubleFormat(Nsquare3, 0));
+            report.SetValue("Table16_NSquare_3", GetDoubleFormat(Nsquare3, 0));
 
             // N
             double N2 = m_list57.GetValue(ptoName, "N2");

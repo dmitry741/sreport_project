@@ -435,11 +435,6 @@ namespace SReport_Utility
             return result;
         }
 
-        static public string GetDoubleFormat(double Val, int Sign)
-        {
-            return Math.Round(Val, Sign).ToString();
-        }
-
         static public string MathTrancate(double Val, int Sign, bool Formated)
         {
             if (Sign < 0)
