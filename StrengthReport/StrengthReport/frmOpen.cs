@@ -54,7 +54,7 @@ namespace StrengthReport
                 DataRow dr = m_db.GetDataRow(index);
                 string Name = (string)dr["BD_Name"];
 
-                if (MessageBox.Show("Вы действительно хотите удалить расчет: " + Name, "Расчет на прочность", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Вы действительно хотите удалить расчет: " + Name, KitConstant.softwareName, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     string pathToRemove = (string)dr["BD_Path"];
 
@@ -68,7 +68,7 @@ namespace StrengthReport
                     }
                     else
                     {
-                        MessageBox.Show("Невозможно удалить расчет. Файл данных поврежден или отсутствует", "Расчет на прочность", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        MessageBox.Show("Невозможно удалить расчет. Файл отсутствует", KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     }
                 }
             }

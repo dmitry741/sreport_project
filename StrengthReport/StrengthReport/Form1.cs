@@ -4769,8 +4769,7 @@ namespace StrengthReport
 
             if (m_messages.Count > 0)
             {
-                Form2 dlg = new Form2();
-                dlg.SetData(ref m_messages);
+                Form2 dlg = new Form2(m_messages);
 
                 if (dlg.ShowDialog() != DialogResult.OK)
                 {
@@ -4969,13 +4968,10 @@ namespace StrengthReport
             // ==================
             if (m_messages.Count > 0)
             {
-                Form2 dlg = new Form2();
-                dlg.SetData(ref m_messages);
+                Form2 dlg = new Form2(m_messages);
 
                 if (dlg.ShowDialog() != DialogResult.OK)
-                {
                     return;
-                }
             }
             // ==================
 

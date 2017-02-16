@@ -1,32 +1,19 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace StrengthReport
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(System.Collections.ArrayList list)
         {
             InitializeComponent();
-        }
-
-        #region === Members ===
-
-        System.Collections.ArrayList m_list = null;
-
-        #endregion
-
-        #region === Public ===
-
-        public void SetData(ref System.Collections.ArrayList list)
-        {
             m_list = list;
         }
+
+        #region === members ===
+
+        System.Collections.ArrayList m_list = null;
 
         #endregion
 
@@ -44,11 +31,10 @@ namespace StrengthReport
         {
             if (m_list != null)
             {
-                foreach (string item in m_list)
-                {
-                    listBox1.Items.Add(item);
-                }
+                listBox1.Items.AddRange(m_list.ToArray());
             }
+
+            this.Text = string.Format("{0}: {1}", SReport_Utility.KitConstant.companyName, SReport_Utility.KitConstant.softwareName);
         }
     }
 }
