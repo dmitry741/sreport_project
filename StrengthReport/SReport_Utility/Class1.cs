@@ -376,13 +376,12 @@ namespace SReport_Utility
 
             if (index >= 0)
             {
-                for (int j = 0; j < m_columns.Length; j++)
+                string query = m_columns.FirstOrDefault(s => s == Column);
+
+                if (!string.IsNullOrEmpty(query))
                 {
-                    if (Column == m_columns[j])
-                    {
-                        val = (double)m_value[j][index];
-                        break;
-                    }
+                    int k = Array.IndexOf(m_columns, query);
+                    val = (double)m_value[k][index];
                 }
             }
 
