@@ -48,4 +48,4 @@ for d in rep_dir_list:
 
 print('Export files is completed at: ', datetime.strftime(datetime.now(), "%Y.%m.%d %H:%M:%S"))
 end_time = datetime.now()
-print('Elapsed time:', end_time - start_time)
+print('Elapsed time: ', end_time - start_time)

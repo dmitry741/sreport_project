@@ -3,6 +3,8 @@ import os
 import shutil
 import fnmatch
 
+''' copy and delete files from directory specified by parameters '''
+
 def my_copy_files (s_dir, d_dir, file_mask):
     ''' method copies files from s_dir to d_dir according to file_mask '''
     
