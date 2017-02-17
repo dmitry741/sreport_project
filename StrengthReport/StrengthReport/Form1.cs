@@ -563,10 +563,10 @@ namespace StrengthReport
             report.SetValue("PTO_Plates_1", nPlates.ToString());
             // ===================
 
-            Bitmap bitmap1 = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.PTO, 241, 350);
+            Bitmap bitmap1 = SimpleImageProccessing.Zoom(Properties.Resources.PTO, 241, 350);
             report.SetPicture("Picture1", bitmap1);
 
-            Bitmap bitmap2 = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.PTO2, 1021, 1165);
+            Bitmap bitmap2 = SimpleImageProccessing.Zoom(Properties.Resources.PTO2, 1021, 1165);
             report.SetPicture("Picture2", bitmap2);
 
             return true;
@@ -782,17 +782,10 @@ namespace StrengthReport
             double val1, val2;
             int sign = 1;
             bool Formated = false;
-            SteelProperty steel;
+
 
             // 1. плита неподвижная
-            if (KitConstant.Steel_st3 == comboBox5.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            SteelProperty steel = (KitConstant.Steel_st3 == comboBox5.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y1 = steel.Rp;
             Y2 = steel.Rm;
@@ -876,14 +869,7 @@ namespace StrengthReport
             report.SetValue("Table2_Sigma_72", DigitalProcess.MathTrancate(val2, sign, Formated));
 
             // 8. плита прижимная
-            if (KitConstant.Steel_st3 == comboBox6.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            steel = (KitConstant.Steel_st3 == comboBox6.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y1 = steel.Rp;
             Y2 = steel.Rm;
@@ -4732,7 +4718,7 @@ namespace StrengthReport
             textBox5.Text = "1"; // объем ПТО
 
             // === title ===
-            this.Text += (" - Новый");
+            this.Text = string.Format("{0}: Новый", KitConstant.softwareName);
             lblVersion.Text = KitConstant.companyName + ", версия: " + VersionControl_VB.MyVersionControl.MyVersion;
             // ===============
         }
@@ -5230,7 +5216,7 @@ namespace StrengthReport
                 }
 
                 // change title
-                this.Text = "Расчет на прочность - " + dlg.ReportName;
+                this.Text = string.Format("{0}: {1}", KitConstant.softwareName, dlg.ReportName);
 
                 comboBox1.SelectedIndex = archive.GetIntegerValue("PTO_Type");
                 textBox3.Text = archive.GetStringValue("PTO_PlateCount");
