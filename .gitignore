@@ -23,3 +23,7 @@ setup_python_script/__pycache__/
 
 #ignore vs settings
 StrengthReport/.vs/
+
+#ignore temp files
+StrengthReport/StrengthReport/bin/Debug/*.application
+StrengthReport/StrengthReport/bin/Debug/*.manifest

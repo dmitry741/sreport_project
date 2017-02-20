@@ -5206,7 +5206,6 @@ namespace StrengthReport
 
             if (dlg.ShowDialog() == DialogResult.OK)
             {
-                // declare archive object
                 SReportArchive archive = new SReportArchive();
 
                 // open report
