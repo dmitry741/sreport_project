@@ -57,9 +57,10 @@ namespace StrengthReport
 
                     if (bEqual)
                         break;
-
-                    result = true;
                 }
+
+                result = true;
+
             } while (false);
 
             return result;
