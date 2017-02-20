@@ -95,37 +95,25 @@ namespace StrengthReport
         // флажок - true если ПТО > 47  и верхняя направляющая крепится встык, false в противном случае
         bool m_bNaprIn = true;
 
+        // dictionary with steel
+        System.Collections.Generic.Dictionary<string, SteelProperty> m_dicNaprUp = new System.Collections.Generic.Dictionary<string, SteelProperty>();
+
         #endregion
 
         #region === private ===
 
+        private void FillDictNaprUp()
+        {
+            m_dicNaprUp.Add(KitConstant.Steel_st2, m_NaprUpSt2);
+            m_dicNaprUp.Add(KitConstant.Steel_st3, m_NaprUpSt3);
+            m_dicNaprUp.Add(KitConstant.Steel_20, m_NaprUp20);
+            m_dicNaprUp.Add(KitConstant.Steel_20x13, m_NaprUp20x13);
+            m_dicNaprUp.Add(KitConstant.Steel_45, m_Steel45);
+        }
+
         private SteelProperty GetNaprUp()
         {
-            SteelProperty steel;
-
-            // Направляющая верхняя
-            if (KitConstant.Steel_st2 == comboBox7.Text)
-            {
-                steel = m_NaprUpSt2;
-            }
-            else if (KitConstant.Steel_st3 == comboBox7.Text)
-            {
-                steel = m_NaprUpSt3;
-            }
-            else if (KitConstant.Steel_20 == comboBox7.Text)
-            {
-                steel = m_NaprUp20;
-            }
-            else if (KitConstant.Steel_20x13 == comboBox7.Text)
-            {
-                steel = m_NaprUp20x13;
-            }
-            else
-            {
-                steel = m_Steel45;
-            }
-
-            return steel;
+            return m_dicNaprUp[comboBox7.Text];
         }
 
         private SteelProperty GetNaprDown()
@@ -4376,14 +4364,12 @@ namespace StrengthReport
             double[] Rm = new double[len];
             double[] E = new double[len];
             double[] Alpha = new double[len];
-            //double[] Sigma = new double[len];
 
             // plits
             for (i = 0; i < len; i++) Rp[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_PlitSt3 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4392,7 +4378,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_Plit09G2C = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4402,7 +4387,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprUpSt2 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4411,7 +4395,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprUpSt3 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4420,7 +4403,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprUp20 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4429,7 +4411,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprUp20x13 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4439,7 +4420,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprDownSt2 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4448,7 +4428,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprDownSt3 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4457,7 +4436,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprDown20 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4466,7 +4444,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_NaprDown20x13 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4476,7 +4453,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            // for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_Krepeg40x = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4485,7 +4461,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_Krepeg35 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4495,7 +4470,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_Rezba09G2C = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4504,7 +4478,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_Rezba20x13 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4513,7 +4486,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_Rezba20 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4523,7 +4495,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_AISI = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4532,7 +4503,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_Titan = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4541,7 +4511,6 @@ namespace StrengthReport
             for (i = 0; i < len; i++) Rm[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) E[i] = DoubleValue[index, i]; index++;
             for (i = 0; i < len; i++) Alpha[i] = DoubleValue[index, i]; index++;
-            //for (i = 0; i < len; i++) Sigma[i] = DoubleValue[index, i]; index++;
             index++;
 
             m_Steel45 = new SteelProperty(Rp, Rm, E, Alpha);
@@ -4716,6 +4685,9 @@ namespace StrengthReport
             textBox8.Text = "-20"; // минимально-допустимая температура
 
             textBox5.Text = "1"; // объем ПТО
+
+            // fill dictionaries
+            FillDictNaprUp();
 
             // === title ===
             this.Text = string.Format("{0}: Новый", KitConstant.softwareName);
