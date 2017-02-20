@@ -9,7 +9,7 @@ from datetime import datetime
 start_time = datetime.now()
 
 s_dir = r'C:\Dmitry\GitHub\SReport\sreport_project\StrengthReport\StrengthReport\bin\Debug'
-d_dir = r'C:\Dmitry\ExportSReport'
+d_dir = r'X:\DEN\RUDH\Technical\Technical_All\Pavlov\Расчет на прочность\ExportSReport'
 rep_dir_list = ['0408', '212247', 'big', 'new']
 
 # remove files from the current directory 
