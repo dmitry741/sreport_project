@@ -20,3 +20,6 @@ StrengthReport/StrengthReport/obj/Debug/*.*
 
 #ignore python compiled files
 setup_python_script/__pycache__/
+
+#ignore vs settings
+StrengthReport/.vs/
