@@ -102,6 +102,67 @@ namespace StrengthReport
 
         #region === private ===
 
+        private bool FillTables(ref PrintReport report)
+        {
+            bool result = false;
+
+            do
+            {
+                if (!FillPersonal(ref report))
+                    break;
+
+                if (!FillTable1(ref report))
+                    break;
+
+                if (!FillTable2(ref report))
+                    break;
+
+                if (!FillTable3(ref report))
+                    break;
+
+                if (!FillTable4(ref report))
+                    break;
+
+                if (!FillTable5(ref report))
+                    break;
+
+                if (!FillTable6(ref report))
+                    break;
+
+                if (!FillTable8(ref report))
+                    break;
+
+                if (!FillTable9(ref report))
+                    break;
+
+                if (!FillTable10(ref report))
+                    break;
+
+                if (!FillTable11(ref report))
+                    break;
+
+                if (!FillTable12(ref report))
+                    break;
+
+                if (!FillTable13(ref report))
+                    break;
+
+                if (!FillTable14(ref report))
+                    break;
+
+                if (!FillTable15(ref report))
+                    break;
+
+                if (!FillTable16(ref report))
+                    break;
+
+                result = true;
+
+            } while (false);
+
+            return result;
+        }
+
         private void FillDictNaprUp()
         {
             m_dicNaprUp.Add(KitConstant.Steel_st2, m_NaprUpSt2);
@@ -193,7 +254,7 @@ namespace StrengthReport
         private bool IsBig()
         {
             int ptoIndex = comboBox1.SelectedIndex;
-            bool result = (ptoIndex > 47) && (ptoIndex < 154);
+            bool result = (ptoIndex > 47) && (ptoIndex < 154); // || (ptoIndex == 179 || ptoIndex == 180);
 
             return result;
         }
@@ -466,28 +527,28 @@ namespace StrengthReport
             m_pto_list.Add("HH№160-C-10");   // 161
 
             // 19
-            m_pto_list.Add("HH№-19-O-25"); // 162
-            m_pto_list.Add("HH№-19-C-25"); // 163
+            m_pto_list.Add("HH№19-O-25"); // 162
+            m_pto_list.Add("HH№19-C-25"); // 163
 
-            m_pto_list.Add("HH№-19w-O-10"); // 164
-            m_pto_list.Add("HH№-19w-O-16"); // 165
-            m_pto_list.Add("HH№-19w-C-10"); // 166
-            m_pto_list.Add("HH№-19w-C-16"); // 167
-            m_pto_list.Add("HH№-19w-O-25"); // 168
-            m_pto_list.Add("HH№-19w-C-25"); // 169
+            m_pto_list.Add("HH№19w-O-10"); // 164
+            m_pto_list.Add("HH№19w-O-16"); // 165
+            m_pto_list.Add("HH№19w-C-10"); // 166
+            m_pto_list.Add("HH№19w-C-16"); // 167
+            m_pto_list.Add("HH№19w-O-25"); // 168
+            m_pto_list.Add("HH№19w-C-25"); // 169
 
             // 26
-            m_pto_list.Add("HH№-26-O-10"); // 170
-            m_pto_list.Add("HH№-26-O-16"); // 171
-            m_pto_list.Add("HH№-26-O-25"); // 172
-            m_pto_list.Add("HH№-26-C-10"); // 173
-            m_pto_list.Add("HH№-26-C-16"); // 174
-            m_pto_list.Add("HH№-26-C-25"); // 175
+            m_pto_list.Add("HH№26-O-10"); // 170
+            m_pto_list.Add("HH№26-O-16"); // 171
+            m_pto_list.Add("HH№26-O-25"); // 172
+            m_pto_list.Add("HH№26-C-10"); // 173
+            m_pto_list.Add("HH№26-C-16"); // 174
+            m_pto_list.Add("HH№26-C-25"); // 175
 
             // XG-31
-            m_pto_list.Add("XG-31-C-10"); // 176
-            m_pto_list.Add("XG-31-C-16"); // 177
-            m_pto_list.Add("XG-31-C-25"); // 178
+            m_pto_list.Add("XG31-C-10"); // 176
+            m_pto_list.Add("XG31-C-16"); // 177
+            m_pto_list.Add("XG31-C-25"); // 178
 
             // 229
             m_pto_list.Add("HH№229-O-10"); // 179
@@ -2828,6 +2889,10 @@ namespace StrengthReport
             // L1
             double L1;
             double k = hashTable51.GetValue(ptoName, "k" + (comboBox3.SelectedIndex + 4).ToString());
+
+            if (k == 0)
+                return false;
+
             L1 = N * k;
             report.SetValue("Table11_L1_1", L1.ToString());
 
@@ -4381,6 +4446,38 @@ namespace StrengthReport
                 hashTable.AddValue(m_pto_list[index++], data);
             }
 
+            // 19
+            data = new int[] { 400, 500, 600, 750, 800, 1000 };
+
+            for (i = 0; i < 8; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 26
+            data = new int[] { 600, 1000, 1500, 200, 2500, 3000, 4000 };
+
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // XG-31
+            data = new int[] { 400, 600, 750, 900 };
+
+            for (i = 0; i < 3; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 229
+            data = new int[] { 600, 1000, 1300, 1500, 2000, 2500, 3000, 4000 };
+
+            for (i = 0; i < 2; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
             return hashTable;
         }
 
@@ -4590,9 +4687,9 @@ namespace StrengthReport
             ReadExcelData();
 
             // === Материал пластин ===
-            comboBox2.Items.Add("AISI 316");
-            comboBox2.Items.Add("SMO 254");
-            comboBox2.Items.Add("Titan");
+            comboBox2.Items.Add(Utility.KitConstant.AISI_316);
+            comboBox2.Items.Add(Utility.KitConstant.SMO_254);
+            comboBox2.Items.Add(Utility.KitConstant.Titan);
             comboBox2.SelectedIndex = 0;
             // ========================
 
@@ -4737,33 +4834,21 @@ namespace StrengthReport
 
             // === setup data ===
             m_messages.Clear();
-
-            FillPersonal(ref report);
-            FillTable1(ref report);
-            FillTable2(ref report);
-            FillTable3(ref report);
-            FillTable4(ref report);
-            FillTable5(ref report);
-            FillTable6(ref report);
-            FillTable8(ref report);
-            FillTable9(ref report);
-            FillTable10(ref report);
-            FillTable11(ref report);
-            FillTable12(ref report);
-            FillTable13(ref report);
-            FillTable14(ref report);
-            FillTable15(ref report);
-            FillTable16(ref report);
+            bool bf = FillTables(ref report);
             // ==================
+
+            if (!bf)
+            {
+                MessageBox.Show("Данные в файле data.xml для выбранного ПТО не корректны или не заданы.", SReport_Utility.KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
 
             if (m_messages.Count > 0)
             {
                 Form2 dlg = new Form2(m_messages);
 
                 if (dlg.ShowDialog() != DialogResult.OK)
-                {
                     return;
-                }
             }
             // ==================
 
@@ -4936,25 +5021,15 @@ namespace StrengthReport
             PrintReport report = new PrintReport();
 
             m_messages.Clear();
-
-            FillPersonal(ref report);
-            FillTable1(ref report);
-            FillTable2(ref report);
-            FillTable3(ref report);
-            FillTable4(ref report);
-            FillTable5(ref report);
-            FillTable6(ref report);
-            FillTable8(ref report);
-            FillTable9(ref report);
-            FillTable10(ref report);
-            FillTable11(ref report);
-            FillTable12(ref report);
-            FillTable13(ref report);
-            FillTable14(ref report);
-            FillTable15(ref report);
-            FillTable16(ref report);
-
+            bool bf = FillTables(ref report);
             // ==================
+
+            if (!bf)
+            {
+                MessageBox.Show("Данные в файле data.xml для выбранного ПТО не корректны или не заданы.", SReport_Utility.KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
             if (m_messages.Count > 0)
             {
                 Form2 dlg = new Form2(m_messages);
