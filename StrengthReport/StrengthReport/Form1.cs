@@ -17,7 +17,7 @@ namespace StrengthReport
 
         #region === memebers ===
 
-        const int c_pto_count = 162;
+        const int c_pto_count = 181;
 
         PhisicFeatureManager m_manager = new PhisicFeatureManager();
         System.Globalization.NumberFormatInfo m_nfi = null;
@@ -464,6 +464,34 @@ namespace StrengthReport
             // 160
             m_pto_list.Add("HH№160-O-10");   // 160
             m_pto_list.Add("HH№160-C-10");   // 161
+
+            // 19
+            m_pto_list.Add("HH№-19-O-25");
+            m_pto_list.Add("HH№-19-C-25");
+
+            m_pto_list.Add("HH№-19w-O-10");
+            m_pto_list.Add("HH№-19w-O-16");
+            m_pto_list.Add("HH№-19w-C-10");
+            m_pto_list.Add("HH№-19w-C-16");
+            m_pto_list.Add("HH№-19w-O-25");
+            m_pto_list.Add("HH№-19w-C-25");
+
+            // 26
+            m_pto_list.Add("HH№-26-O-10");
+            m_pto_list.Add("HH№-26-O-16");
+            m_pto_list.Add("HH№-26-O-25");
+            m_pto_list.Add("HH№-26-C-10");
+            m_pto_list.Add("HH№-26-C-16");
+            m_pto_list.Add("HH№-26-C-25");
+
+            // XG-31
+            m_pto_list.Add("XG-31-C-10");
+            m_pto_list.Add("XG-31-C-16");
+            m_pto_list.Add("XG-31-C-25");
+
+            // 229
+            m_pto_list.Add("HH№229-O-10");
+            m_pto_list.Add("HH№229-C-10");
         }
 
         private string GetPrePlaneNumber()
