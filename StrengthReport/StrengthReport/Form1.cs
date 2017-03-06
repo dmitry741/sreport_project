@@ -466,32 +466,32 @@ namespace StrengthReport
             m_pto_list.Add("HH№160-C-10");   // 161
 
             // 19
-            m_pto_list.Add("HH№-19-O-25");
-            m_pto_list.Add("HH№-19-C-25");
+            m_pto_list.Add("HH№-19-O-25"); // 162
+            m_pto_list.Add("HH№-19-C-25"); // 163
 
-            m_pto_list.Add("HH№-19w-O-10");
-            m_pto_list.Add("HH№-19w-O-16");
-            m_pto_list.Add("HH№-19w-C-10");
-            m_pto_list.Add("HH№-19w-C-16");
-            m_pto_list.Add("HH№-19w-O-25");
-            m_pto_list.Add("HH№-19w-C-25");
+            m_pto_list.Add("HH№-19w-O-10"); // 164
+            m_pto_list.Add("HH№-19w-O-16"); // 165
+            m_pto_list.Add("HH№-19w-C-10"); // 166
+            m_pto_list.Add("HH№-19w-C-16"); // 167
+            m_pto_list.Add("HH№-19w-O-25"); // 168
+            m_pto_list.Add("HH№-19w-C-25"); // 169
 
             // 26
-            m_pto_list.Add("HH№-26-O-10");
-            m_pto_list.Add("HH№-26-O-16");
-            m_pto_list.Add("HH№-26-O-25");
-            m_pto_list.Add("HH№-26-C-10");
-            m_pto_list.Add("HH№-26-C-16");
-            m_pto_list.Add("HH№-26-C-25");
+            m_pto_list.Add("HH№-26-O-10"); // 170
+            m_pto_list.Add("HH№-26-O-16"); // 171
+            m_pto_list.Add("HH№-26-O-25"); // 172
+            m_pto_list.Add("HH№-26-C-10"); // 173
+            m_pto_list.Add("HH№-26-C-16"); // 174
+            m_pto_list.Add("HH№-26-C-25"); // 175
 
             // XG-31
-            m_pto_list.Add("XG-31-C-10");
-            m_pto_list.Add("XG-31-C-16");
-            m_pto_list.Add("XG-31-C-25");
+            m_pto_list.Add("XG-31-C-10"); // 176
+            m_pto_list.Add("XG-31-C-16"); // 177
+            m_pto_list.Add("XG-31-C-25"); // 178
 
             // 229
-            m_pto_list.Add("HH№229-O-10");
-            m_pto_list.Add("HH№229-C-10");
+            m_pto_list.Add("HH№229-O-10"); // 179
+            m_pto_list.Add("HH№229-C-10"); // 180
         }
 
         private string GetPrePlaneNumber()
