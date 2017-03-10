@@ -97,6 +97,9 @@ namespace StrengthReport
 
         // dictionary with steel
         System.Collections.Generic.Dictionary<string, SteelProperty> m_dicNaprUp = new System.Collections.Generic.Dictionary<string, SteelProperty>();
+        System.Collections.Generic.Dictionary<string, SteelProperty> m_dicNaprDown = new System.Collections.Generic.Dictionary<string, SteelProperty>();
+        System.Collections.Generic.Dictionary<string, SteelProperty> m_dicRezbaInNapr = new System.Collections.Generic.Dictionary<string, SteelProperty>();
+        System.Collections.Generic.Dictionary<string, SteelProperty> m_dicGaika = new System.Collections.Generic.Dictionary<string, SteelProperty>();
 
         #endregion
 
@@ -163,13 +166,28 @@ namespace StrengthReport
             return result;
         }
 
-        private void FillDictNaprUp()
+        private void FillDictSteel()
         {
             m_dicNaprUp.Add(KitConstant.Steel_st2, m_NaprUpSt2);
             m_dicNaprUp.Add(KitConstant.Steel_st3, m_NaprUpSt3);
             m_dicNaprUp.Add(KitConstant.Steel_20, m_NaprUp20);
             m_dicNaprUp.Add(KitConstant.Steel_20x13, m_NaprUp20x13);
             m_dicNaprUp.Add(KitConstant.Steel_45, m_Steel45);
+
+            m_dicNaprDown.Add(KitConstant.Steel_st2, m_NaprDownSt2);
+            m_dicNaprDown.Add(KitConstant.Steel_st3, m_NaprDownSt3);
+            m_dicNaprDown.Add(KitConstant.Steel_20, m_NaprDown20);
+            m_dicNaprDown.Add(KitConstant.Steel_20x13, m_NaprUp20x13);
+            m_dicNaprDown.Add(KitConstant.Steel_45, m_Steel45);
+
+            m_dicRezbaInNapr.Add(KitConstant.Steel_09G2C, m_Rezba09G2C);
+            m_dicRezbaInNapr.Add(KitConstant.Steel_20x13, m_Rezba20x13);
+            m_dicRezbaInNapr.Add(KitConstant.Steel_20, m_Rezba20);
+            m_dicRezbaInNapr.Add(KitConstant.Steel_45, m_Steel45);
+
+            m_dicGaika.Add(KitConstant.Steel_35, m_Krepeg35);
+            //m_dicGaika.Add(KitConstant.Steel_35, m_Krepeg35);
+            // TODO:
         }
 
         private SteelProperty GetNaprUp()
@@ -179,56 +197,12 @@ namespace StrengthReport
 
         private SteelProperty GetNaprDown()
         {
-            SteelProperty steel;
-
-            // Направляющая нижняя
-            if (KitConstant.Steel_st2 == comboBox8.Text)
-            {
-                steel = m_NaprDownSt2;
-            }
-            else if (KitConstant.Steel_st3 == comboBox8.Text)
-            {
-                steel = m_NaprDownSt3;
-            }
-            else if (KitConstant.Steel_20 == comboBox8.Text)
-            {
-                steel = m_NaprDown20;
-            }
-            else if (KitConstant.Steel_20x13 == comboBox8.Text)
-            {
-                steel = m_NaprUp20x13;
-            }
-            else
-            {
-                steel = m_Steel45;
-            }
-
-            return steel;
+            return m_dicNaprDown[comboBox8.Text];
         }
 
         private SteelProperty RezbaInNapr()
         {
-            SteelProperty steel;
-
-            // резьбовая часть в напрявляющих
-            if (KitConstant.Steel_09G2C == comboBox12.Text)
-            {
-                steel = m_Rezba09G2C;
-            }
-            else if (KitConstant.Steel_20x13 == comboBox12.Text)
-            {
-                steel = m_Rezba20x13;
-            }
-            else if (KitConstant.Steel_20 == comboBox12.Text)
-            {
-                steel = m_Rezba20;
-            }
-            else
-            {
-                steel = m_Steel45;
-            }
-
-            return steel;
+            return m_dicRezbaInNapr[comboBox12.Text];
         }
 
         private SteelProperty Gaika()
@@ -2156,7 +2130,7 @@ namespace StrengthReport
             report.SetValue("Table9_epsilon", DigitalProcess.MathTrancate(epsilon * 100, 2, false));
 
             // b
-            double b = hashTable.GetValue(ptoName, "b");
+            double b = hashTable.GetValue(ptoName, "Bm");
             report.SetValue("Table9_b", DigitalProcess.MathTrancate(b, 1, false));
 
             // Epr
@@ -2997,10 +2971,10 @@ namespace StrengthReport
                 // M2
                 M2 = F * L1 * L2 / L;
 
-                if (Is212247())
-                {
-                    M1 += M2;
-                }
+                //if (Is212247())
+                //{
+                //    M1 += M2;
+                //}
             }
 
             report.SetValue("Table11_M_1", DigitalProcess.MathTrancate(Convert.ToInt32(M1), 1).ToString());
@@ -4812,7 +4786,7 @@ namespace StrengthReport
             textBox5.Text = "1"; // объем ПТО
 
             // fill dictionaries
-            FillDictNaprUp();
+            FillDictSteel();
 
             // === title ===
             this.Text = string.Format("{0}: Новый", KitConstant.softwareName);
@@ -5049,29 +5023,29 @@ namespace StrengthReport
                 
                 string sExt;
                 int count;
-                string StartUp = Application.StartupPath + "\\reports\\";
+                string startUp = Application.StartupPath + "\\reports\\";
 
                 if (IsBig())
                 {
-                    StartUp += "big\\";
+                    startUp += "big\\";
                     sExt = "_new_big.mrt";
                     count = 16;
                 }
                 else if (Is0408())
                 {
-                    StartUp += "0408\\";
+                    startUp += "0408\\";
                     sExt = "_new_0408.mrt";
                     count = 15;
                 }
                 else if (Is212247())
                 {
-                    StartUp += "212247\\";
+                    startUp += "212247\\";
                     sExt = "_212247.mrt";
                     count = 16;
                 }
                 else
                 {
-                    StartUp += "new\\";
+                    startUp += "new\\";
                     sExt = "_new.mrt";
                     count = 16;
                 }
@@ -5079,7 +5053,7 @@ namespace StrengthReport
                 // fill file collection
                 for (int i = 0; i < count; i++)
                 {
-                    reportList.Add(StartUp + "myreport_" + i.ToString() + sExt);
+                    reportList.Add(startUp + "myreport_" + i.ToString() + sExt);
                 }
 
                 foreach (string file in reportList)
@@ -5122,7 +5096,7 @@ namespace StrengthReport
                     stireport.Print(false, prnDlg.PrinterSettings);
                     //stireport.Clear();
 
-                    System.Threading.Thread.Sleep(500);
+                    System.Threading.Thread.Sleep(250);
                 }
             }
         }
