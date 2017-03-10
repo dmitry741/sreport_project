@@ -186,8 +186,8 @@ namespace StrengthReport
             m_dicRezbaInNapr.Add(KitConstant.Steel_45, m_Steel45);
 
             m_dicGaika.Add(KitConstant.Steel_35, m_Krepeg35);
-            //m_dicGaika.Add(KitConstant.Steel_35, m_Krepeg35);
-            // TODO:
+            m_dicGaika.Add(KitConstant.Steel_45, m_Steel45);
+            m_dicGaika.Add(KitConstant.Steel_40x, m_Krepeg40x);
         }
 
         private SteelProperty GetNaprUp()
@@ -207,22 +207,7 @@ namespace StrengthReport
 
         private SteelProperty Gaika()
         {
-            SteelProperty steel;
-
-            if (KitConstant.Steel_35 == comboBox10.Text)
-            {
-                steel = m_Krepeg35;
-            }
-            else if (KitConstant.Steel_45 == comboBox10.Text)
-            {
-                steel = m_Steel45;
-            }
-            else
-            {
-                steel = m_Krepeg40x;
-            }
-
-            return steel;
+            return m_dicGaika[comboBox10.Text];
         }
 
         private bool IsBig()
@@ -3859,11 +3844,6 @@ namespace StrengthReport
             return result;
         }
 
-        private string GetLastError()
-        {
-            return m_lastError;
-        }
-
         private bool ReadExcelData()
         {
             string sData = m_source_path + "\\data.xls";
@@ -4429,7 +4409,7 @@ namespace StrengthReport
             }
 
             // 26
-            data = new int[] { 600, 1000, 1500, 200, 2500, 3000, 4000 };
+            data = new int[] { 600, 1000, 1500, 2000, 2500, 3000, 4000 };
 
             for (i = 0; i < 6; i++)
             {
@@ -4798,7 +4778,7 @@ namespace StrengthReport
         {
             if (!IsValid())
             {
-                MessageBox.Show(GetLastError(), string.Format("{0}: {1}", KitConstant.companyName, KitConstant.softwareName), MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(m_lastError, string.Format("{0}: {1}", KitConstant.companyName, KitConstant.softwareName), MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 
@@ -4987,7 +4967,7 @@ namespace StrengthReport
         {
             if (!IsValid())
             {
-                MessageBox.Show(GetLastError(), string.Format("{0}: {1}", KitConstant.companyName, KitConstant.softwareName), MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(m_lastError, string.Format("{0}: {1}", KitConstant.companyName, KitConstant.softwareName), MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 
