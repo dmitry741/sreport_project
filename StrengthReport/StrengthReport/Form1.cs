@@ -657,10 +657,9 @@ namespace StrengthReport
             double[] Y = null;
             bool Formated = false;
             int sign = 1;
-            SteelProperty steel;
 
             // 1. плита неподвижная
-            steel = (KitConstant.Steel_st3 == comboBox5.Text) ? m_PlitSt3 : m_Plit09G2C;
+            SteelProperty steel = (KitConstant.Steel_st3 == comboBox5.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y = steel.Rp;
             PhisicsDependency.Lines lines = new PhisicsDependency.Lines(X, Y);
@@ -735,17 +734,9 @@ namespace StrengthReport
             double[] Y = null;
             int sign = 1;
             bool Formated = false;
-            SteelProperty steel;
 
             // 1. плита неподвижная, плита прижимная
-            if (KitConstant.Steel_st3 == comboBox5.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            SteelProperty steel = (KitConstant.Steel_st3 == comboBox5.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y = steel.Rm;
             PhisicsDependency.Lines lines = new PhisicsDependency.Lines(X, Y);
@@ -805,14 +796,7 @@ namespace StrengthReport
             report.SetValue("Table2_PredelProch_72", DigitalProcess.MathTrancate(lines.Value(T2), sign, Formated));
 
             // 8. плита прижимная
-            if (KitConstant.Steel_st3 == comboBox6.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            steel = (KitConstant.Steel_st3 == comboBox6.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y = steel.Rm;
             lines = new PhisicsDependency.Lines(X, Y);
@@ -831,7 +815,6 @@ namespace StrengthReport
             double val1, val2;
             int sign = 1;
             bool Formated = false;
-
 
             // 1. плита неподвижная
             SteelProperty steel = (KitConstant.Steel_st3 == comboBox5.Text) ? m_PlitSt3 : m_Plit09G2C;
@@ -941,17 +924,9 @@ namespace StrengthReport
             int sign = 2;
             string S1, S2;
             double val1, val2;
-            SteelProperty steel;
 
             // 1. плита неподвижная
-            if (KitConstant.Steel_st3 == comboBox5.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            SteelProperty steel = (KitConstant.Steel_st3 == comboBox5.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y = steel.E;
             PhisicsDependency.Lines lines = new PhisicsDependency.Lines(X, Y);
@@ -1039,14 +1014,7 @@ namespace StrengthReport
             report.SetValue("Table2_ModuleUpr_72", S2);
 
             // 8. плита прижимная
-            if (KitConstant.Steel_st3 == comboBox6.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            steel = (KitConstant.Steel_st3 == comboBox6.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y = steel.E;
             lines = new PhisicsDependency.Lines(X, Y);
@@ -1064,17 +1032,9 @@ namespace StrengthReport
             double[] X = m_T;
             double[] Y = null;
             int sign = 2;
-            SteelProperty steel;
 
             // 1. плита неподвижная
-            if (KitConstant.Steel_st3 == comboBox5.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            SteelProperty steel = (KitConstant.Steel_st3 == comboBox5.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y = steel.Alpha;
             PhisicsDependency.Lines lines = new PhisicsDependency.Lines(X, Y);
@@ -1128,14 +1088,7 @@ namespace StrengthReport
             report.SetValue("Table2_LinearExt_72", DigitalProcess.MathTrancate(lines.Value(T2), sign, true));
 
             // 8. плита прижимная
-            if (KitConstant.Steel_st3 == comboBox6.Text)
-            {
-                steel = m_PlitSt3;
-            }
-            else
-            {
-                steel = m_Plit09G2C;
-            }
+            steel = (KitConstant.Steel_st3 == comboBox6.Text) ? m_PlitSt3 : m_Plit09G2C;
 
             Y = steel.Alpha;
             lines = new PhisicsDependency.Lines(X, Y);
@@ -4799,7 +4752,7 @@ namespace StrengthReport
 
             if (!FillTables(ref report))
             {
-                MessageBox.Show("Данные в файле data.xml для выбранного ПТО не корректны или не заданы.", SReport_Utility.KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("Данные в файле data.xml для выбранного ПТО не корректны или не заданы.", KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 

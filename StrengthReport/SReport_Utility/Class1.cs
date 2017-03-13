@@ -1342,11 +1342,6 @@ namespace SReport_Utility
 
         #region === public ===
 
-        public void Add(int item)
-        {
-            m_set.Add(item);
-        }
-
         public void AddRange(int begin, int end)
         {
             for (int x = begin; x <= end; x++)
