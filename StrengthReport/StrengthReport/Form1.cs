@@ -32,6 +32,11 @@ namespace StrengthReport
         double m_PressureCalc = 0;
         string m_source_path = Application.StartupPath;
 
+        // sets
+        Set m_set_0408 = null;
+        Set m_setBig = null;
+        Set m_set212247 = null;
+
         // толщины плит
         double[] m_s = { 0.4, 0.5, 0.6, 0.7, 0.8 };
 
@@ -104,6 +109,20 @@ namespace StrengthReport
         #endregion
 
         #region === private ===
+
+        private void StartSets()
+        {
+            m_set_0408 = new Set(0, 11);   
+                     
+            m_set212247 = new Set();
+            m_set212247.AddRange(30, 37);
+            m_set212247.AddRange(170, 175); // 26
+
+            m_setBig = new Set();
+            m_setBig.AddRange(48, 153); 
+            m_setBig.AddRange(158, 161); // 53, 160
+            m_setBig.AddRange(179, 180); // 229
+        }
 
         private bool FillTables(ref PrintReport report)
         {
@@ -213,25 +232,19 @@ namespace StrengthReport
         private bool IsBig()
         {
             int ptoIndex = comboBox1.SelectedIndex;
-            bool result = (ptoIndex > 47) && (ptoIndex < 154); // || (ptoIndex == 179 || ptoIndex == 180);
-
-            return result;
+            return m_setBig.In(ptoIndex);
         }
 
         private bool Is0408()
         {
             int ptoIndex = comboBox1.SelectedIndex;
-            bool result = (ptoIndex < 12);
-
-            return result;
+            return m_set_0408.In(ptoIndex);
         }
 
         private bool Is212247()
         {
             int ptoIndex = comboBox1.SelectedIndex;
-            bool result = (ptoIndex >= 30) && (ptoIndex <= 47);
-
-            return result;
+            return m_set212247.In(ptoIndex);
         }
 
         private void CreatePTOList()
@@ -2547,7 +2560,7 @@ namespace StrengthReport
             // Рисунок 3 (сечение)
 
             // 04-08
-            Set set0408 = new Set(0, 11);
+            Set set0408 = m_set_0408;
 
             Set setSmall1 = new Set(12, 23);
             Set setSmall2 = new Set(24, 47);            
@@ -4620,20 +4633,16 @@ namespace StrengthReport
                 contextMenuStrip2.Items.Add(ph.Name);
             }
 
+            StartSets();
             CreatePTOList();
             m_ptoHashLen = CreateLen();
 
             // === PTO ===
             comboBox1.BeginUpdate();
-
-            foreach (string name in m_pto_list)
-            {
-                comboBox1.Items.Add(name);
-            }
-
-            //comboBox1.SelectedIndex = 19;
+            comboBox1.Items.AddRange(m_pto_list.ToArray());
             comboBox1.SelectedIndex = 31;
             comboBox1.EndUpdate();
+
             comboBox1.Select();
             // ===========
 
@@ -4786,12 +4795,9 @@ namespace StrengthReport
             Stimulsoft.Report.StiReport stireport = new Stimulsoft.Report.StiReport();
             PrintReport report = new PrintReport();
 
-            // === setup data ===
             m_messages.Clear();
-            bool bf = FillTables(ref report);
-            // ==================
 
-            if (!bf)
+            if (!FillTables(ref report))
             {
                 MessageBox.Show("Данные в файле data.xml для выбранного ПТО не корректны или не заданы.", SReport_Utility.KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
@@ -4971,14 +4977,10 @@ namespace StrengthReport
                 return;
             }
 
-            // === setup data ===
             PrintReport report = new PrintReport();
-
             m_messages.Clear();
-            bool bf = FillTables(ref report);
-            // ==================
 
-            if (!bf)
+            if (!FillTables(ref report))
             {
                 MessageBox.Show("Данные в файле data.xml для выбранного ПТО не корректны или не заданы.", SReport_Utility.KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
