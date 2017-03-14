@@ -2,7 +2,7 @@
 
     Public Shared ReadOnly Property MyVersion()
         Get
-            Return "v1.197"
+            Return "v1.198"
         End Get
     End Property
 

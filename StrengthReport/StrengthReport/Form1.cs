@@ -498,7 +498,7 @@ namespace StrengthReport
             m_pto_list.Add("HH№160-O-10");   // 160
             m_pto_list.Add("HH№160-C-10");   // 161
 
-            // 19
+            // 19w
             m_pto_list.Add("HH№19-O-25"); // 162
             m_pto_list.Add("HH№19-C-25"); // 163
 
@@ -2213,16 +2213,7 @@ namespace StrengthReport
             report.SetValue("Table10_Alpha1", DigitalProcess.MathTrancateToDigital(Alpha1, 9));
 
             // alpha2
-            double[] Y3;
-
-            if (comboBox2.SelectedIndex == 0) // AISI or SMO
-            {
-                Y3 = new double[] { 0, 16.4, 16.6, 16.8, 17, 17.2 };
-            }
-            else // Titan
-            {
-                Y3 = new double[] { 0, 7.8, 7.8, 8,	8.3, 8.5 };
-            }
+            double[] Y3 = (comboBox2.SelectedIndex == 0) ? new double[] { 0, 16.4, 16.6, 16.8, 17, 17.2 } : new double[] { 0, 7.8, 7.8, 8, 8.3, 8.5 };
 
             lines = new PhisicsDependency.Lines(X, Y3);
 
@@ -2572,7 +2563,25 @@ namespace StrengthReport
 
             // 210
             Set set210 = new Set(148, 151);
-           
+
+            // 53
+            Set set53 = new Set(158, 159);
+
+            // 160
+            Set set160 = new Set(160, 161);
+
+            // 229
+            Set set229 = new Set(179, 180);
+
+            // 26
+            Set set26 = new Set(170, 175);
+
+            // 31
+            Set set31 = new Set(176, 178);
+
+            // 19w
+            Set set19w = new Set(162, 169);
+
             int ptoIndex = comboBox1.SelectedIndex;
             
             if (set0408.In(ptoIndex))
@@ -2583,15 +2592,15 @@ namespace StrengthReport
             {
                 scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Sech_07_20, 650, 650);
             }
-            else if (setSmall2.In(ptoIndex))
+            else if (setSmall2.In(ptoIndex) || set26.In(ptoIndex))
             {
                 scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Sech_21_47, 1021, 1021);
             }
-            else if (setSmall3.In(ptoIndex))
+            else if (setSmall3.In(ptoIndex) || set19w.In(ptoIndex) || set31.In(ptoIndex))
             {
                 scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.sech_19, 650, 650);
             }
-            else if (set41.In(ptoIndex))
+            else if (set41.In(ptoIndex) || set53.In(ptoIndex))
             {
                 scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._41_42_62_86__110_, 639, 639);
             }
@@ -2611,7 +2620,7 @@ namespace StrengthReport
             {
                 scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
             }
-            else if (set43.In(ptoIndex))
+            else if (set43.In(ptoIndex) || set160.In(ptoIndex) || set229.In(ptoIndex))
             {
                 scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
             }
