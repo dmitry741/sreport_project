@@ -3693,20 +3693,10 @@ namespace StrengthReport
         private bool IsValid()
         {
             m_lastError = "";
-
             bool result = false;
 
             do
             {
-                // Тип ПТО
-                //int index = comboBox1.SelectedIndex;
-
-                //if (index >= 6 && index < 12) // считаем пока только 04 (08 позже)
-                //{
-                //    m_LastError = "Расчет на прочность для данного теплообменника не предусмотрен.";
-                //    break;
-                //}
-
                 int nVal;
 
                 // количество пластин
