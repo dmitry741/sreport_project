@@ -117,6 +117,9 @@ namespace StrengthReport
             m_set212247 = new Set();
             m_set212247.AddRange(30, 37);
             m_set212247.AddRange(170, 175); // 26
+            m_set212247.AddRange(154, 157); // 19
+            m_set212247.AddRange(162, 169); // 19w
+            m_set212247.AddRange(176, 178); // 19
 
             m_setBig = new Set();
             m_setBig.AddRange(48, 153); 
