@@ -3057,17 +3057,14 @@ namespace StrengthReport
             double.TryParse(report.GetValue("Table6_Fow_up"), out Fup);
             report.SetValue(sPrefix + "F_1516", report.GetValue("Table6_Fow_up"));
 
-            // A
-            double Adown, Aup;
-
             // d0w - down
             double d0w_down = m_hashTable423.GetValue(ptoName, "d0wdown");
-            Adown = Math.PI / 4 * d0w_down * d0w_down;
+            double Adown = Math.PI / 4 * d0w_down * d0w_down;
             report.SetValue(sPrefix + "A_1314", DigitalProcess.MathTrancate(Adown, 1, false));
 
             // d0w - up
             double d0w_up = m_hashTable423.GetValue(ptoName, "d0wup");
-            Aup = Math.PI / 4 * d0w_up * d0w_up;
+            double Aup = Math.PI / 4 * d0w_up * d0w_up;
             report.SetValue(sPrefix + "A_1516", DigitalProcess.MathTrancate(Aup, 1, false));
 
             // Sigma
@@ -3101,11 +3098,9 @@ namespace StrengthReport
             // масса среды
             double Msh = MBrutto - MNetto;
 
-            string sQuery;
-
             // Масса прокладки
             string wrapper = comboBoxWrapper.Text;
-            sQuery = wrapper.ToLower();
+            string sQuery = wrapper.ToLower();
             double Mwr = m_list52.GetValue(ptoName, sQuery);
 
             // Масса пластины
@@ -3214,7 +3209,7 @@ namespace StrengthReport
             }
 
             // picture = tauK, page 25
-            Bitmap bitmap1 = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.TauK_25, 508, 208);
+            Bitmap bitmap1 = SimpleImageProccessing.Zoom(Properties.Resources.TauK_25, 508, 208);
 
             report.SetPicture("Picture8", bitmap1);
             
