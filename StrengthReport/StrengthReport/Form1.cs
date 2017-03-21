@@ -2940,23 +2940,21 @@ namespace StrengthReport
                 //}
             }
 
-            report.SetValue("Table11_M_1", DigitalProcess.MathTrancate(Convert.ToInt32(M1), 1).ToString());
+            report.SetValue("Table11_M_1", DigitalProcess.MathTrancate(Convert.ToInt32(M1 + M2), 1).ToString());
             report.SetValue("Table11_M_2", DigitalProcess.MathTrancate(Convert.ToInt32(M2), 1).ToString());
 
             // W - 1
-            double W1;
             sQuery = "W1" + comboBox17.Text;
-            W1 = m_len52.GetValue(ptoName, sQuery);
+            double W1 = m_len52.GetValue(ptoName, sQuery);
             report.SetValue("Table11_W_1", W1.ToString());
 
             // W - 2
-            double W2;
-            W2 = m_len52.GetValue(ptoName, "W2");
+            double W2 = m_len52.GetValue(ptoName, "W2");
             report.SetValue("Table11_W_2", W2.ToString());
 
             // Sigma - 1
             double Sigma1 = M1 / W1;
-            double Sigma2 = M2 / W2;
+            double Sigma2 = M2 / W1;
 
             if (Is212247())
             {
@@ -5086,15 +5084,14 @@ namespace StrengthReport
             string startupPath = m_source_path + "\\";
 
             // === Ответственные ===
-            StreamWriter sw2 = new StreamWriter(startupPath + "people.txt");
-
-            sw2.WriteLine(textBox13.Text);
-            sw2.WriteLine(textBox14.Text);
-            sw2.WriteLine(textBox15.Text);
-            sw2.WriteLine(textBox16.Text);
-            sw2.WriteLine(textBox17.Text);
-
-            sw2.Close();
+            using (StreamWriter sw2 = new StreamWriter(startupPath + "people.txt"))
+            {
+                sw2.WriteLine(textBox13.Text);
+                sw2.WriteLine(textBox14.Text);
+                sw2.WriteLine(textBox15.Text);
+                sw2.WriteLine(textBox16.Text);
+                sw2.WriteLine(textBox17.Text);
+            }
             // =====================
         }
 
@@ -5153,15 +5150,17 @@ namespace StrengthReport
 
                 if (File.Exists(startupPath + "id.txt"))
                 {
-                    StreamReader sr = new StreamReader(startupPath + "id.txt");
-                    sId = sr.ReadLine();
-                    sr.Close();
+                    using (StreamReader sr = new StreamReader(startupPath + "id.txt"))
+                    {
+                        sId = sr.ReadLine();
+                    }
                 }
                 else
                 {
-                    StreamWriter swId = new StreamWriter(startupPath + "id.txt");
-                    swId.Write("1");
-                    swId.Close();
+                    using (StreamWriter swId = new StreamWriter(startupPath + "id.txt"))
+                    {
+                        swId.Write("1");
+                    }
                 }
 
                 int id = 0;
@@ -5180,9 +5179,10 @@ namespace StrengthReport
                 archive.Save(db.Add(dlg.ReportName, dlg.Comment));
                 db.Save(startupPath + "db.xml");
 
-                StreamWriter sw = new StreamWriter(startupPath + "id.txt");
-                sw.WriteLine(db.Id.ToString());
-                sw.Close();
+                using (StreamWriter sw = new StreamWriter(startupPath + "id.txt"))
+                {
+                    sw.WriteLine(db.Id.ToString());
+                }
             }
         }
 
@@ -5197,7 +5197,7 @@ namespace StrengthReport
                 // open report
                 if (!archive.Open(dlg.Path))
                 {
-                    MessageBox.Show("Невозможно открыть расчет" + dlg.ReportName, "Расчет на прочность", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show("Невозможно открыть расчет: " + dlg.ReportName, KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
 
                 // change title
