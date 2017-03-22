@@ -2083,8 +2083,12 @@ namespace StrengthReport
             double epsilon = dh / h;
             report.SetValue("Table9_epsilon", DigitalProcess.MathTrancate(epsilon * 100, 2, false));
 
+            // B
+            double B = hashTable.GetValue(ptoName, "Bm");
+            report.SetValue("Table9_Bm", DigitalProcess.MathTrancate(B, 1, false));
+
             // b
-            double b = hashTable.GetValue(ptoName, "Bm");
+            double b = hashTable.GetValue(ptoName, "b");
             report.SetValue("Table9_b", DigitalProcess.MathTrancate(b, 1, false));
 
             // Epr
@@ -2097,11 +2101,7 @@ namespace StrengthReport
 
             // A
             double A = hashTable.GetValue(ptoName, "Am");
-            report.SetValue("Table9_A", DigitalProcess.MathTrancate(A, 1, false));
-
-            // B
-            double B = hashTable.GetValue(ptoName, "Bm");
-            report.SetValue("Table9_B", DigitalProcess.MathTrancate(B, 1, false));
+            report.SetValue("Table9_A", DigitalProcess.MathTrancate(A, 1, false));            
 
             // A1
             double A1 = hashTable.GetValue(ptoName, "A1");
@@ -4649,9 +4649,9 @@ namespace StrengthReport
             m_HashSteel.Add(KitConstant.Steel_20, "ГОСТ 1050-2013");
             m_HashSteel.Add(KitConstant.Steel_20x13, "ГОСТ 5949-75");
             m_HashSteel.Add(KitConstant.Steel_40x, "ГОСТ 4543-71", "КП 8");
-            m_HashSteel.Add(KitConstant.Steel_35, "ГОСТ 1050-88", "КП 8");
+            m_HashSteel.Add(KitConstant.Steel_35, "ГОСТ 1050-2013", "КП 8");
             m_HashSteel.Add(KitConstant.Steel_09G2C, "ГОСТ 19281-2014");
-            m_HashSteel.Add(KitConstant.Steel_45, "ГОСТ 1050-88", "КП 8");
+            m_HashSteel.Add(KitConstant.Steel_45, "ГОСТ 1050-2013", "КП 8");
             
             comboBox7.Items.Add(KitConstant.Steel_st2);
             comboBox7.Items.Add(KitConstant.Steel_st3);

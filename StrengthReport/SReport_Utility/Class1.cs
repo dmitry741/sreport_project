@@ -929,12 +929,12 @@ namespace SReport_Utility
             list.Add("Table9_Epr");
             list.Add("Table9_q");
             list.Add("Table9_A");
-            list.Add("Table9_B");
             list.Add("Table9_A1");
             list.Add("Table9_B1");
             list.Add("Table9_R");
             list.Add("Table9_tpt");
             list.Add("Table9_p");
+            list.Add("Table9_Bm");
 
             // table 10
             list.Add("Table10_n"); 
