@@ -226,6 +226,7 @@
     <None Include="Resources\PTO2.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sech_21_47_new.emf" />
     <None Include="Resources\TauK_25.PNG" />
   </ItemGroup>
   <ItemGroup>
@@ -298,6 +299,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\направляющая 004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sech_21_47_new.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2597,7 +2597,8 @@ namespace StrengthReport
             }
             else if (setSmall2.In(ptoIndex) || set26.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Sech_21_47, 1021, 1021);
+                //scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Sech_21_47, 1021, 1021);
+                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.sech_21_47_new, 294, 294);
             }
             else if (setSmall3.In(ptoIndex) || set19w.In(ptoIndex) || set31.In(ptoIndex))
             {
