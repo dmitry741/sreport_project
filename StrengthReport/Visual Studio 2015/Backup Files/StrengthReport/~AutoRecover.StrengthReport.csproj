@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D13B693B-8CD0-4596-A31D-287B511608AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StrengthReport</RootNamespace>
+    <AssemblyName>StrengthReport</AssemblyName>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>3A061397627E1EA2AC30713C23462FA1DF0FF169</ManifestCertificateThumbprint>
+    <ManifestKeyFile>StrengthReport_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>false</SignManifests>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>X:\Павлов\Расчет на прочность\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Calc.HotExchangerSolver.CompanySolution2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Refrences\Calc.HotExchangerSolver.CompanySolution2.dll</HintPath>
+    </Reference>
+    <Reference Include="Calc.HotExchangerSolver.CompanySolution_Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Refrences\Calc.HotExchangerSolver.CompanySolution_Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Calc.HotExchangerSolver.MathCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Refrences\Calc.HotExchangerSolver.MathCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Calc.HotExchangerSolver.PhisicsDependency, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Refrences\Calc.HotExchangerSolver.PhisicsDependency.dll</HintPath>
+    </Reference>
+    <Reference Include="Calc.HotExchangerSolver.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Refrences\Calc.HotExchangerSolver.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Database, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Design, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StimulReport\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpen.Designer.cs">
+      <DependentUpon>frmOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSave.Designer.cs">
+      <DependentUpon>frmSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSave.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="reports\0408\myreport_0_new_0408.mrt" />
+    <None Include="reports\0408\myreport_10_new_0408.mrt" />
+    <None Include="reports\0408\myreport_11_new_0408.mrt" />
+    <None Include="reports\0408\myreport_12_new_0408.mrt" />
+    <None Include="reports\0408\myreport_13_new_0408.mrt" />
+    <None Include="reports\0408\myreport_14_new_0408.mrt" />
+    <None Include="reports\0408\myreport_15_new_0408.mrt" />
+    <None Include="reports\0408\myreport_1_new_0408.mrt" />
+    <None Include="reports\0408\myreport_2_new_0408.mrt" />
+    <None Include="reports\0408\myreport_3_new_0408.mrt" />
+    <None Include="reports\0408\myreport_4_new_0408.mrt" />
+    <None Include="reports\0408\myreport_5_new_0408.mrt" />
+    <None Include="reports\0408\myreport_6_new_0408.mrt" />
+    <None Include="reports\0408\myreport_7_new_0408.mrt" />
+    <None Include="reports\0408\myreport_8_new_0408.mrt" />
+    <None Include="reports\0408\myreport_9_new_0408.mrt" />
+    <None Include="reports\212247\myreport_0_212247.mrt" />
+    <None Include="reports\212247\myreport_10_212247.mrt" />
+    <None Include="reports\212247\myreport_11_212247.mrt" />
+    <None Include="reports\212247\myreport_12_212247.mrt" />
+    <None Include="reports\212247\myreport_13_212247.mrt" />
+    <None Include="reports\212247\myreport_14_212247.mrt" />
+    <None Include="reports\212247\myreport_15_212247.mrt" />
+    <None Include="reports\212247\myreport_1_212247.mrt" />
+    <None Include="reports\212247\myreport_2_212247.mrt" />
+    <None Include="reports\212247\myreport_3_212247.mrt" />
+    <None Include="reports\212247\myreport_4_212247.mrt" />
+    <None Include="reports\212247\myreport_5_212247.mrt" />
+    <None Include="reports\212247\myreport_6_212247.mrt" />
+    <None Include="reports\212247\myreport_7_212247.mrt" />
+    <None Include="reports\212247\myreport_8_212247.mrt" />
+    <None Include="reports\212247\myreport_9_212247.mrt" />
+    <None Include="reports\big\myreport_0_new_big.mrt" />
+    <None Include="reports\big\myreport_10_new_big.mrt" />
+    <None Include="reports\big\myreport_11_new_big.mrt" />
+    <None Include="reports\big\myreport_12_new_big.mrt" />
+    <None Include="reports\big\myreport_13_new_big.mrt" />
+    <None Include="reports\big\myreport_14_new_big.mrt" />
+    <None Include="reports\big\myreport_15_new_big.mrt" />
+    <None Include="reports\big\myreport_16_new_big.mrt" />
+    <None Include="reports\big\myreport_1_new_big.mrt" />
+    <None Include="reports\big\myreport_2_new_big.mrt" />
+    <None Include="reports\big\myreport_3_new_big.mrt" />
+    <None Include="reports\big\myreport_4_new_big.mrt" />
+    <None Include="reports\big\myreport_5_new_big.mrt" />
+    <None Include="reports\big\myreport_6_new_big.mrt" />
+    <None Include="reports\big\myreport_7_new_big.mrt" />
+    <None Include="reports\big\myreport_8_new_big.mrt" />
+    <None Include="reports\big\myreport_9_new_big.mrt" />
+    <None Include="reports\new\myreport_0_new.mrt" />
+    <None Include="reports\new\myreport_10_new.mrt" />
+    <None Include="reports\new\myreport_11_new.mrt" />
+    <None Include="reports\new\myreport_12_new.mrt" />
+    <None Include="reports\new\myreport_13_new.mrt" />
+    <None Include="reports\new\myreport_14_new.mrt" />
+    <None Include="reports\new\myreport_15_new.mrt" />
+    <None Include="reports\new\myreport_1_new.mrt" />
+    <None Include="reports\new\myreport_2_new.mrt" />
+    <None Include="reports\new\myreport_3_new.mrt" />
+    <None Include="reports\new\myreport_4_new.mrt" />
+    <None Include="reports\new\myreport_5_new.mrt" />
+    <None Include="reports\new\myreport_6_new.mrt" />
+    <None Include="reports\new\myreport_7_new.mrt" />
+    <None Include="reports\new\myreport_8_new.mrt" />
+    <None Include="reports\new\myreport_9_new.mrt" />
+    <None Include="Resources\logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sech-21-47.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sech-07-20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PTO.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PTO2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sech_21_47_new.emf" />
+    <None Include="Resources\TauK_25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_Universal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic4_big.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_big.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_big.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6_big.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7_big.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8_big.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_big.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_big.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_big.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sech_19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schema1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DbReader\DbReader.csproj">
+      <Project>{cdcb6618-5040-4df7-9692-e640620e1ad2}</Project>
+      <Name>DbReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SReport_Utility\SReport_Utility.csproj">
+      <Project>{e16d3158-2235-416c-b024-e4a894f602d4}</Project>
+      <Name>SReport_Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VersionControl_VB\VersionControl_VB.vbproj">
+      <Project>{d40e97b3-b128-482f-b512-8c2e1f5990b7}</Project>
+      <Name>VersionControl_VB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kozenkova_luba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81_8_9_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41-42-62-86-110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_41_42_62_86_ 110..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\направляющая 004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sech_21_47_new.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -16,6 +16,13 @@
     <GenerateManifests>true</GenerateManifests>
     <TargetZone>LocalIntranet</TargetZone>
     <SignManifests>false</SignManifests>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
     <PublishUrl>X:\Павлов\Расчет на прочность\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -27,16 +34,10 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>2.0</OldToolsVersion>
     <ApplicationRevision>1</ApplicationRevision>
-    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -206,6 +207,11 @@
       <ProductName>.NET Framework 2.0</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sech-21-47.jpg" />
@@ -302,6 +308,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sech_21_47_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="reports\0408\" />
+    <Folder Include="reports\212247\" />
+    <Folder Include="reports\big\" />
+    <Folder Include="reports\new\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

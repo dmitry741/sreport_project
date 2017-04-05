@@ -30,7 +30,7 @@ namespace StrengthReport
 
         string m_lastError = string.Empty;
         double m_PressureCalc = 0;
-        string m_source_path = Application.StartupPath;
+        string m_source_path = Application.StartupPath + "\\" + Environment.UserName;
 
         // sets
         Set m_set_0408 = null;
