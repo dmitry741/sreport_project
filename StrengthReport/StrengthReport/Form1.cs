@@ -3808,7 +3808,7 @@ namespace StrengthReport
 
         private bool ReadExcelData()
         {
-            string sData = m_source_path + "\\data.xls";
+            string sData = Application.StartupPath + "\\data.xls";
             //string SharedPath = "X:\\Павлов\\Расчет на прочность\\Data\\data.xls";
 
             //if (File.Exists(SharedPath))
