@@ -114,7 +114,7 @@ namespace StrengthReport
         {
             get
             {
-                m_source_path = Application.StartupPath + "\\" + Environment.UserName;
+                m_source_path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\SReport";
 
                 if (!Directory.Exists(m_source_path))
                     Directory.CreateDirectory(m_source_path);

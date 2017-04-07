@@ -10,7 +10,7 @@ namespace StrengthReport
         SReportDataBase m_db = new SReportDataBase();
         string m_path = "";
         string m_ReportName = "";
-        string m_db_path = Application.StartupPath + "\\" + Environment.UserName + "\\db.xml";
+        string m_db_path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\SReport\\db.xml";
         bool m_bUpdate = false;
 
         public frmOpen()
