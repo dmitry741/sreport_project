@@ -10,6 +10,7 @@ namespace StrengthReport
         SReportDataBase m_db = new SReportDataBase();
         string m_path = "";
         string m_ReportName = "";
+        string m_db_path = Application.StartupPath + "\\" + Environment.UserName + "\\db.xml";
         bool m_bUpdate = false;
 
         public frmOpen()
@@ -80,7 +81,7 @@ namespace StrengthReport
 
         private void frmOpen_Load(object sender, EventArgs e)
         {            
-            string startupPath = Application.StartupPath + "\\db.xml";
+            string startupPath = m_db_path;
 
             if (System.IO.File.Exists(startupPath))
             {
@@ -109,7 +110,7 @@ namespace StrengthReport
         {
             if (m_bUpdate)
             {
-                string startupPath = Application.StartupPath + "\\db.xml";
+                string startupPath = m_db_path;
                 m_db.Save(startupPath);
             }
         }
