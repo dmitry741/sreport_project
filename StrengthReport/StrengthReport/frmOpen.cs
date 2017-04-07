@@ -81,11 +81,9 @@ namespace StrengthReport
 
         private void frmOpen_Load(object sender, EventArgs e)
         {            
-            string startupPath = m_db_path;
-
-            if (System.IO.File.Exists(startupPath))
+            if (System.IO.File.Exists(m_db_path))
             {
-                m_db.Open(startupPath);
+                m_db.Open(m_db_path);
 
                 for (int i = 0; i < m_db.count; i++)
                 {
@@ -110,8 +108,7 @@ namespace StrengthReport
         {
             if (m_bUpdate)
             {
-                string startupPath = m_db_path;
-                m_db.Save(startupPath);
+                m_db.Save(m_db_path);
             }
         }
 
