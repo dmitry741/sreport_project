@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
-    <PublishUrlHistory>X:\Павлов\Расчет на прочность\|publish\</PublishUrlHistory>
+    <PublishUrlHistory>X:\DEN\RUDH\Technical\Technical_All\Pavlov\SReport\|X:\Павлов\Расчет на прочность\|publish\</PublishUrlHistory>
     <InstallUrlHistory>
     </InstallUrlHistory>
     <SupportUrlHistory>
@@ -14,5 +14,6 @@
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
     <EnableSecurityDebugging>false</EnableSecurityDebugging>
     <ErrorReportUrlHistory />
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>

@@ -23,7 +23,7 @@
     </UpgradeBackupLocation>
     <OldToolsVersion>2.0</OldToolsVersion>
     <TargetFrameworkProfile />
-    <PublishUrl>X:\Павлов\Расчет на прочность\</PublishUrl>
+    <PublishUrl>X:\DEN\RUDH\Technical\Technical_All\Pavlov\SReport\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -34,9 +34,10 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -199,6 +200,71 @@
   </ItemGroup>
   <ItemGroup>
     <BaseApplicationManifest Include="Properties\app.manifest" />
+    <Content Include="reports\0408\myreport_0_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_10_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_11_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_12_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_13_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_14_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_15_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_1_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_2_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_3_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_4_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_5_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_6_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_7_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_8_new_0408.mrt" />
+    <Content Include="reports\0408\myreport_9_new_0408.mrt" />
+    <Content Include="reports\212247\myreport_0_212247.mrt" />
+    <Content Include="reports\212247\myreport_10_212247.mrt" />
+    <Content Include="reports\212247\myreport_11_212247.mrt" />
+    <Content Include="reports\212247\myreport_12_212247.mrt" />
+    <Content Include="reports\212247\myreport_13_212247.mrt" />
+    <Content Include="reports\212247\myreport_14_212247.mrt" />
+    <Content Include="reports\212247\myreport_15_212247.mrt" />
+    <Content Include="reports\212247\myreport_1_212247.mrt" />
+    <Content Include="reports\212247\myreport_2_212247.mrt" />
+    <Content Include="reports\212247\myreport_3_212247.mrt" />
+    <Content Include="reports\212247\myreport_4_212247.mrt" />
+    <Content Include="reports\212247\myreport_5_212247.mrt" />
+    <Content Include="reports\212247\myreport_6_212247.mrt" />
+    <Content Include="reports\212247\myreport_7_212247.mrt" />
+    <Content Include="reports\212247\myreport_8_212247.mrt" />
+    <Content Include="reports\212247\myreport_9_212247.mrt" />
+    <Content Include="reports\big\myreport_0_new_big.mrt" />
+    <Content Include="reports\big\myreport_10_new_big.mrt" />
+    <Content Include="reports\big\myreport_11_new_big.mrt" />
+    <Content Include="reports\big\myreport_12_new_big.mrt" />
+    <Content Include="reports\big\myreport_13_new_big.mrt" />
+    <Content Include="reports\big\myreport_14_new_big.mrt" />
+    <Content Include="reports\big\myreport_15_new_big.mrt" />
+    <Content Include="reports\big\myreport_16_new_big.mrt" />
+    <Content Include="reports\big\myreport_1_new_big.mrt" />
+    <Content Include="reports\big\myreport_2_new_big.mrt" />
+    <Content Include="reports\big\myreport_3_new_big.mrt" />
+    <Content Include="reports\big\myreport_4_new_big.mrt" />
+    <Content Include="reports\big\myreport_5_new_big.mrt" />
+    <Content Include="reports\big\myreport_6_new_big.mrt" />
+    <Content Include="reports\big\myreport_7_new_big.mrt" />
+    <Content Include="reports\big\myreport_8_new_big.mrt" />
+    <Content Include="reports\big\myreport_9_new_big.mrt" />
+    <Content Include="reports\new\myreport_0_new.mrt" />
+    <Content Include="reports\new\myreport_10_new.mrt" />
+    <Content Include="reports\new\myreport_11_new.mrt" />
+    <Content Include="reports\new\myreport_12_new.mrt" />
+    <Content Include="reports\new\myreport_13_new.mrt" />
+    <Content Include="reports\new\myreport_14_new.mrt" />
+    <Content Include="reports\new\myreport_15_new.mrt" />
+    <Content Include="reports\new\myreport_1_new.mrt" />
+    <Content Include="reports\new\myreport_2_new.mrt" />
+    <Content Include="reports\new\myreport_3_new.mrt" />
+    <Content Include="reports\new\myreport_4_new.mrt" />
+    <Content Include="reports\new\myreport_5_new.mrt" />
+    <Content Include="reports\new\myreport_6_new.mrt" />
+    <Content Include="reports\new\myreport_7_new.mrt" />
+    <Content Include="reports\new\myreport_8_new.mrt" />
+    <Content Include="reports\new\myreport_9_new.mrt" />
     <None Include="Resources\logo.bmp" />
   </ItemGroup>
   <ItemGroup>
@@ -309,12 +375,7 @@
   <ItemGroup>
     <None Include="Resources\sech_21_47_new.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="reports\0408\" />
-    <Folder Include="reports\212247\" />
-    <Folder Include="reports\big\" />
-    <Folder Include="reports\new\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
