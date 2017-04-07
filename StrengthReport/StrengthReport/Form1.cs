@@ -15,7 +15,7 @@ namespace StrengthReport
             InitializeComponent();
         }
 
-        #region === memebers ===
+        #region === members ===
 
         const int c_pto_count = 181;
 
@@ -30,7 +30,7 @@ namespace StrengthReport
 
         string m_lastError = string.Empty;
         double m_PressureCalc = 0;
-        string m_source_path = Application.StartupPath + "\\" + Environment.UserName;
+        string m_source_path = string.Empty;
 
         // sets
         Set m_set_0408 = null;
@@ -105,6 +105,23 @@ namespace StrengthReport
         System.Collections.Generic.Dictionary<string, SteelProperty> m_dicNaprDown = new System.Collections.Generic.Dictionary<string, SteelProperty>();
         System.Collections.Generic.Dictionary<string, SteelProperty> m_dicRezbaInNapr = new System.Collections.Generic.Dictionary<string, SteelProperty>();
         System.Collections.Generic.Dictionary<string, SteelProperty> m_dicGaika = new System.Collections.Generic.Dictionary<string, SteelProperty>();
+
+        #endregion
+
+        #region === public ===
+
+        public string Source_Path
+        {
+            get
+            {
+                m_source_path = Application.StartupPath + "\\" + Environment.UserName;
+
+                if (!Directory.Exists(m_source_path))
+                    Directory.CreateDirectory(m_source_path);
+
+                return m_source_path;
+            }
+        }
 
         #endregion
 
@@ -3865,7 +3882,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = new string[] { "f", "n", "Am", "Bm", "A1", "B1", "b", "h", "dh", "epsi", "Epr", "q", "R", "ps" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list43";
 
@@ -3884,7 +3901,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "Bm", "B", "Am", "A", "b1", "Bsh", "d", "z", "c111", "c112", "c12", "c2", "S1", "S2" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list41";
 
@@ -3903,7 +3920,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "q0liq", "q0vap", "q0air", "mliq", "mvap", "mair", "eta", "hi", "z", "d0", "d0w", "ksi" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list422";
 
@@ -3922,7 +3939,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "d0up", "d0wup", "Mkup", "zc", "d0down", "d0wdown", "Мкdown", "zdown", "ksi" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list423";
 
@@ -3941,7 +3958,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "k4", "k5", "k6", "k7", "k8" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list51";
 
@@ -3960,7 +3977,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "b01", "Dm1", "b02", "Dm2", "b03", "Dm3", "b1rib", "b2rib", "b3rib", "deltarib", "q0liqrib", "q0vaprib", "q0airrib", "mliqrib", "mvaprib", "mairrib", "nurib", "b1paronit", "b2paronit", "b3paronit", "deltaparonit", "q0liqparonit", "q0vapparonit", "q0airparonit", "mliqparonit", "mvapparonit", "mairparonit", "nuparonit", "hi", "ksi", "dc", "z", "d0", "d0w" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list424";
 
@@ -3979,7 +3996,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "aisim4", "aisim5",	"aisim6", "aisim7", "aisim8", "aisim9", "titanm5", "titanm6", "titanm7", "titanm8", "titanm9", "hasm5", "hasm6", "hasm7", "hasm8", "hasm9", "epdm", "nitril", "viton", "F" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list52";
 
@@ -3998,7 +4015,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "W1250", "W1330", "W1400", "W1500", "W1600", "W1800", "W1900", "W11000", "W11200", "W11300", "W11500", "W12000", "W12500", "W13000", "W14000", "W15000", "W16000", "W2", "W1750" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "len52";
 
@@ -4019,7 +4036,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "K1sh", "K1g", "Km", "h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list54";
 
@@ -4040,7 +4057,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "z1", "z2", "z3", "b1", "b2", "b3" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list55";
 
@@ -4059,7 +4076,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "A1", "A2" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list56";
 
@@ -4078,7 +4095,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "N1", "N2", "N3", "NSigma", "NN", "A", "B", "K" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list57";
 
@@ -4097,7 +4114,7 @@ namespace StrengthReport
             ExcelReader excelReader = new ExcelReader();
             string[] fields = { "mu" };
 
-            excelReader.DbPath = m_source_path + "\\data.xls";
+            excelReader.DbPath = source;
             excelReader.Fields = fields;
             excelReader.Page = "list53";
 
@@ -4114,7 +4131,7 @@ namespace StrengthReport
         {
             // declare excel reader
             string[] fields = { "t1", "t2", "t3", "t4", "t5", "t6" };
-            ExcelReader excelReader = new ExcelReader(m_source_path + "\\data.xls", fields, "Temperature");
+            ExcelReader excelReader = new ExcelReader(source, fields, "Temperature");
 
             double[,] DoubleValue = excelReader.GetDoubleTable();
             int len = m_T.Length;
@@ -4693,7 +4710,7 @@ namespace StrengthReport
             textBox3.Text = "22";
 
             // === Ответственные ===
-            string sConfig = m_source_path + "\\people.txt";
+            string sConfig = Source_Path + "\\people.txt";
 
             if (File.Exists(sConfig))
             {
@@ -5077,7 +5094,7 @@ namespace StrengthReport
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            string startupPath = m_source_path + "\\";
+            string startupPath = Source_Path + "\\";
 
             // === Ответственные ===
             using (StreamWriter sw2 = new StreamWriter(startupPath + "people.txt"))
@@ -5141,7 +5158,7 @@ namespace StrengthReport
                 archive.SetValue("Material_Gaika", comboBox10.SelectedIndex);
                 archive.SetValue("Material_Phlance", comboBox16.SelectedIndex);
 
-                string startupPath = m_source_path + "\\";
+                string startupPath = Source_Path + "\\";
                 string sId = "1";
 
                 if (File.Exists(startupPath + "id.txt"))

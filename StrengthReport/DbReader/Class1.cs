@@ -63,7 +63,7 @@ namespace DbReader
             DbProviderFactory factory = DbProviderFactories.GetFactory("System.Data.OleDb");
             DbConnection connection = factory.CreateConnection();
 
-            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;"""; ;
+            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
 
             DbCommand command = connection.CreateCommand();
 
