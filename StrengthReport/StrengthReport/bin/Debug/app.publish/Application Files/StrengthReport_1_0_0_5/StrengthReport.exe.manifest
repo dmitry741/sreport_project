@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="StrengthReport.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="StrengthReport.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="StrengthReport" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
@@ -54,26 +54,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Calc.HotExchangerSolver.CompanySolution_Base.dll" size="94720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Calc.HotExchangerSolver.CompanySolution_Base.dll" size="95232">
       <assemblyIdentity name="Calc.HotExchangerSolver.CompanySolution_Base" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>G1UlcFJ1cc82OKhLM8Qz9LyQzcs=</dsig:DigestValue>
+        <dsig:DigestValue>63dQLyYAhgK5Xam6LG1Bn4DyyKc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Calc.HotExchangerSolver.CompanySolution2.dll" size="753664">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Calc.HotExchangerSolver.CompanySolution2.dll" size="754688">
       <assemblyIdentity name="Calc.HotExchangerSolver.CompanySolution2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>gBB/iGxMkydQzdFFcg7C3x1jQ0I=</dsig:DigestValue>
+        <dsig:DigestValue>SQGtpGSqAZBonP1QBYOzesZTcEw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,7 +97,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BRb/+1WOg2JmDmNB3l6+4pV7uDs=</dsig:DigestValue>
+        <dsig:DigestValue>HaghXchGoAIE5oCWUesibFt/5wc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -121,7 +121,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vMRQyK0o1m3xT7UZlPrAVVp4KrQ=</dsig:DigestValue>
+        <dsig:DigestValue>7auQHoqDcuMNrtH4zvOhymBA8rg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -133,7 +133,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bkb+mzw+r6rScjxnVDk/52VBaFg=</dsig:DigestValue>
+        <dsig:DigestValue>yBuzgul532QXgsozAEXfEvatlT8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -145,7 +145,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>+wZFZSH0GgrazM1PedL4gnVJaNc=</dsig:DigestValue>
+        <dsig:DigestValue>mDrTOMsTIwKGJHFopsEHfBZdOII=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -325,7 +325,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>FKwG65ALOGYtylLE6prmhdxA0o4=</dsig:DigestValue>
+        <dsig:DigestValue>1DDIPAEekP6u+0XOtRGuCkFtU70=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
