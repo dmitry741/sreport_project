@@ -38,7 +38,7 @@ namespace StrengthReport
         Set m_set212247 = null;
 
         // толщины плит
-        double[] m_s = { 0.4, 0.5, 0.6, 0.7, 0.8 };
+        double[] m_s = { 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 };
 
         // hash tables
         MyDoubleHashTable m_hashTable43 = null;
@@ -2157,7 +2157,7 @@ namespace StrengthReport
             // q0-liq	q0-vap	q0-air	m-liq	m-vap	m-air	eta	hi	z	d0	d0w	ksi
 
             // 51
-            // "k-4", "k-5", "k-6", "k-7", "k-8" 
+            // "k-4", "k-5", "k-6", "k-7", "k-8", "k-9" 
 
             MyDoubleHashTable hashTable41 = m_hashTablePlit;
             MyDoubleHashTable hashTable422 = m_hashTable422;
@@ -2191,6 +2191,12 @@ namespace StrengthReport
             double s1 = hashTable41.GetValue(ptoName, "S1");
             double s2 = hashTable41.GetValue(ptoName, "S2");
             double k = hashTable51.GetValue(ptoName, "k" + (comboBox3.SelectedIndex + 4).ToString());
+
+            if (k == 0)
+            {
+                m_lastError = $"Расчет с толщиной пластины {m_s[comboBox3.SelectedIndex]} мм не предусмотрен для этого ПТО.";
+                return false;
+            }
 
             double lw = n * k + s1 + s2;
             report.SetValue("Table10_lw", DigitalProcess.MathTrancate(lw, 1, false));
@@ -2846,14 +2852,16 @@ namespace StrengthReport
             double k = hashTable51.GetValue(ptoName, "k" + (comboBox3.SelectedIndex + 4).ToString());
 
             if (k == 0)
+            {
+                m_lastError = "Расчет с данной толщиной пластины не предусмотрен для этого ПТО.";
                 return false;
+            }
 
             L1 = N * k;
             report.SetValue("Table11_L1_1", L1.ToString());
 
             // L2
-            double L2;
-            double L;
+            double L, L2;
             double.TryParse(comboBox17.Text, out L);
             L2 = L - L1;
             report.SetValue("Table11_L2_1", L2.ToString());
@@ -3956,7 +3964,7 @@ namespace StrengthReport
         {
             // declare excel reader
             ExcelReader excelReader = new ExcelReader();
-            string[] fields = { "k4", "k5", "k6", "k7", "k8" };
+            string[] fields = { "k4", "k5", "k6", "k7", "k8", "k9" };
 
             excelReader.DbPath = source;
             excelReader.Fields = fields;
@@ -4765,7 +4773,7 @@ namespace StrengthReport
 
             if (!FillTables(ref report))
             {
-                MessageBox.Show("Данные в файле data.xml для выбранного ПТО не корректны или не заданы.", KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(m_lastError, KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 
@@ -4948,7 +4956,7 @@ namespace StrengthReport
 
             if (!FillTables(ref report))
             {
-                MessageBox.Show("Данные в файле data.xml для выбранного ПТО не корректны или не заданы.", SReport_Utility.KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(m_lastError, SReport_Utility.KitConstant.softwareName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 
