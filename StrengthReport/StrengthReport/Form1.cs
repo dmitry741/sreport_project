@@ -2194,7 +2194,7 @@ namespace StrengthReport
 
             if (k == 0)
             {
-                m_lastError = $"Расчет с толщиной пластины {m_s[comboBox3.SelectedIndex]} мм не предусмотрен для этого ПТО.";
+                m_lastError = $"Расчет с толщиной пластины {m_s[comboBox3.SelectedIndex]} мм не предусмотрен для {ptoName}.";
                 return false;
             }
 
@@ -2853,7 +2853,7 @@ namespace StrengthReport
 
             if (k == 0)
             {
-                m_lastError = "Расчет с данной толщиной пластины не предусмотрен для этого ПТО.";
+                m_lastError = $"Расчет с толщиной пластины {m_s[comboBox3.SelectedIndex]} мм не предусмотрен для {ptoName}.";
                 return false;
             }
 
