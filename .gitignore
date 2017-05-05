@@ -24,6 +24,9 @@ setup_python_script/__pycache__/
 #ignore vs settings
 StrengthReport/.vs/
 
+#ignore publish
+StrengthReport/StrengthReport/bin/Debug/app.publish
+
 #ignore temp files
 StrengthReport/StrengthReport/bin/Debug/*.application
 StrengthReport/StrengthReport/bin/Debug/*.manifest
