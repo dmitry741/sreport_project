@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <SReport Ref="2" type="DataTableSource" isKey="true">
+        <Alias>SReport</Alias>
+        <Columns isList="true" count="436">
+          <value>PTO,System.String</value>
+          <value>PTO_Plane_Number,System.String</value>
+          <value>PTO_Full_Plane_Number,System.String</value>
+          <value>PTO_Plates,System.String</value>
+          <value>PTO_Plates_1,System.String</value>
+          <value>PTO_OriginalName,System.String</value>
+          <value>Medium_Hot_Name,System.String</value>
+          <value>Medium_Cold_Name,System.String</value>
+          <value>Medium_Hot_MaxT,System.String</value>
+          <value>Medium_Cold_MaxT,System.String</value>
+          <value>Medium_MinT,System.String</value>
+          <value>Medium_WallT,System.String</value>
+          <value>Weight_Netto,System.String</value>
+          <value>Weight_Brutto,System.String</value>
+          <value>Pmax,System.String</value>
+          <value>People_Developer,System.String</value>
+          <value>People_Auditor,System.String</value>
+          <value>People_NachPodrz,System.String</value>
+          <value>People_Ncontr,System.String</value>
+          <value>People_Utverdil,System.String</value>
+          <value>Table1_Period,System.String</value>
+          <value>Table1_Phrase1,System.String</value>
+          <value>Table2_Material_Row1,System.String</value>
+          <value>Table2_Material_Row2,System.String</value>
+          <value>Table2_Material_Row3,System.String</value>
+          <value>Table2_Material_Row4,System.String</value>
+          <value>Table2_Material_Row5,System.String</value>
+          <value>Table2_Material_Row6,System.String</value>
+          <value>Table2_Material_Row7,System.String</value>
+          <value>Table2_Material_Row8,System.String</value>
+          <value>Table2_T1,System.String</value>
+          <value>Table2_T2,System.String</value>
+          <value>Table2_PredelTech_11,System.String</value>
+          <value>Table2_PredelTech_12,System.String</value>
+          <value>Table2_PredelTech_21,System.String</value>
+          <value>Table2_PredelTech_22,System.String</value>
+          <value>Table2_PredelTech_31,System.String</value>
+          <value>Table2_PredelTech_32,System.String</value>
+          <value>Table2_PredelTech_41,System.String</value>
+          <value>Table2_PredelTech_42,System.String</value>
+          <value>Table2_PredelTech_51,System.String</value>
+          <value>Table2_PredelTech_52,System.String</value>
+          <value>Table2_PredelTech_61,System.String</value>
+          <value>Table2_PredelTech_62,System.String</value>
+          <value>Table2_PredelTech_71,System.String</value>
+          <value>Table2_PredelTech_72,System.String</value>
+          <value>Table2_PredelTech_81,System.String</value>
+          <value>Table2_PredelTech_82,System.String</value>
+          <value>Table2_PredelProch_11,System.String</value>
+          <value>Table2_PredelProch_12,System.String</value>
+          <value>Table2_PredelProch_21,System.String</value>
+          <value>Table2_PredelProch_22,System.String</value>
+          <value>Table2_PredelProch_31,System.String</value>
+          <value>Table2_PredelProch_32,System.String</value>
+          <value>Table2_PredelProch_41,System.String</value>
+          <value>Table2_PredelProch_42,System.String</value>
+          <value>Table2_PredelProch_51,System.String</value>
+          <value>Table2_PredelProch_52,System.String</value>
+          <value>Table2_PredelProch_61,System.String</value>
+          <value>Table2_PredelProch_62,System.String</value>
+          <value>Table2_PredelProch_71,System.String</value>
+          <value>Table2_PredelProch_72,System.String</value>
+          <value>Table2_PredelProch_81,System.String</value>
+          <value>Table2_PredelProch_82,System.String</value>
+          <value>Table2_Sigma_11,System.String</value>
+          <value>Table2_Sigma_12,System.String</value>
+          <value>Table2_Sigma_21,System.String</value>
+          <value>Table2_Sigma_22,System.String</value>
+          <value>Table2_Sigma_31,System.String</value>
+          <value>Table2_Sigma_32,System.String</value>
+          <value>Table2_Sigma_41,System.String</value>
+          <value>Table2_Sigma_42,System.String</value>
+          <value>Table2_Sigma_51,System.String</value>
+          <value>Table2_Sigma_52,System.String</value>
+          <value>Table2_Sigma_61,System.String</value>
+          <value>Table2_Sigma_62,System.String</value>
+          <value>Table2_Sigma_71,System.String</value>
+          <value>Table2_Sigma_72,System.String</value>
+          <value>Table2_Sigma_81,System.String</value>
+          <value>Table2_Sigma_82,System.String</value>
+          <value>Table2_ModuleUpr_11,System.String</value>
+          <value>Table2_ModuleUpr_12,System.String</value>
+          <value>Table2_ModuleUpr_21,System.String</value>
+          <value>Table2_ModuleUpr_22,System.String</value>
+          <value>Table2_ModuleUpr_31,System.String</value>
+          <value>Table2_ModuleUpr_32,System.String</value>
+          <value>Table2_ModuleUpr_41,System.String</value>
+          <value>Table2_ModuleUpr_42,System.String</value>
+          <value>Table2_ModuleUpr_51,System.String</value>
+          <value>Table2_ModuleUpr_52,System.String</value>
+          <value>Table2_ModuleUpr_61,System.String</value>
+          <value>Table2_ModuleUpr_62,System.String</value>
+          <value>Table2_ModuleUpr_71,System.String</value>
+          <value>Table2_ModuleUpr_72,System.String</value>
+          <value>Table2_ModuleUpr_81,System.String</value>
+          <value>Table2_ModuleUpr_82,System.String</value>
+          <value>Table2_LinearExt_12,System.String</value>
+          <value>Table2_LinearExt_22,System.String</value>
+          <value>Table2_LinearExt_32,System.String</value>
+          <value>Table2_LinearExt_42,System.String</value>
+          <value>Table2_LinearExt_52,System.String</value>
+          <value>Table2_LinearExt_62,System.String</value>
+          <value>Table2_LinearExt_72,System.String</value>
+          <value>Table2_LinearExt_82,System.String</value>
+          <value>Table3_P,System.String</value>
+          <value>Table3_SigmaTH,System.String</value>
+          <value>Table3_SigmaT,System.String</value>
+          <value>Table3_PH,System.String</value>
+          <value>Presuure_HydroTest,System.String</value>
+          <value>Pressure_Calc,System.String</value>
+          <value>Table4_B,System.String</value>
+          <value>Table_Bm,System.String</value>
+          <value>Table_Am,System.String</value>
+          <value>Table_A,System.String</value>
+          <value>Table_bb,System.String</value>
+          <value>Table_Bsh,System.String</value>
+          <value>Table_d,System.String</value>
+          <value>Table_z,System.String</value>
+          <value>Table_c111,System.String</value>
+          <value>Table_c112,System.String</value>
+          <value>Table_c12,System.String</value>
+          <value>Table_c2,System.String</value>
+          <value>Table_S1,System.String</value>
+          <value>Table_S2,System.String</value>
+          <value>Table4_Y,System.String</value>
+          <value>Table4_Km,System.String</value>
+          <value>Table4_Ko,System.String</value>
+          <value>Table4_c_stat,System.String</value>
+          <value>Table4_c_pri,System.String</value>
+          <value>Table4_SR1,System.String</value>
+          <value>Table4_SR2,System.String</value>
+          <value>Table4_SR12,System.String</value>
+          <value>Table4_SR22,System.String</value>
+          <value>Table4_Sigma,System.String</value>
+          <value>Table4_SigmaH,System.String</value>
+          <value>Table4_Sigma_pri,System.String</value>
+          <value>Table4_SigmaH_pri,System.String</value>
+          <value>Table4_SR11_plus_C,System.String</value>
+          <value>Table4_SR12_plus_C,System.String</value>
+          <value>Table4_SR21_plus_C,System.String</value>
+          <value>Table4_SR22_plus_C,System.String</value>
+          <value>Table5_Epsilon,System.String</value>
+          <value>Table5_Am,System.String</value>
+          <value>Table5_Bm,System.String</value>
+          <value>Table5_b,System.String</value>
+          <value>Table5_Q0,System.String</value>
+          <value>Table5_Fob,System.String</value>
+          <value>Table5_P,System.String</value>
+          <value>Table5_Ph,System.String</value>
+          <value>Table5_Eta,System.String</value>
+          <value>Table5_Fp,System.String</value>
+          <value>Table5_Fd,System.String</value>
+          <value>Table5_Hi,System.String</value>
+          <value>Table5_m,System.String</value>
+          <value>Table5_F2,System.String</value>
+          <value>Table5_F2_plus,System.String</value>
+          <value>Table5_Fph,System.String</value>
+          <value>Table5_F2h,System.String</value>
+          <value>Table5_F2h_plus,System.String</value>
+          <value>Table5_z,System.String</value>
+          <value>Table5_d0,System.String</value>
+          <value>Table5_ksi,System.String</value>
+          <value>Table5_MomentK,System.String</value>
+          <value>Table5_Fow,System.String</value>
+          <value>Table5_Fw,System.String</value>
+          <value>Table5_dc,System.String</value>
+          <value>Table5_SigmaW,System.String</value>
+          <value>Table5_dw,System.String</value>
+          <value>Table5_dow,System.String</value>
+          <value>Table6_d0_down,System.String</value>
+          <value>Table6_d0_up,System.String</value>
+          <value>Table6_dc,System.String</value>
+          <value>Table6_Mk_down,System.String</value>
+          <value>Table6_Mk_up,System.String</value>
+          <value>Table6_ksi,System.String</value>
+          <value>Table6_Fow_down,System.String</value>
+          <value>Table6_Fow_up,System.String</value>
+          <value>Table6_SigmaW,System.String</value>
+          <value>Table6_dw_down,System.String</value>
+          <value>Table6_dw_up,System.String</value>
+          <value>Table6_d0w_down,System.String</value>
+          <value>Table6_d0w_up,System.String</value>
+          <value>Table8_b0,System.String</value>
+          <value>Table8_b,System.String</value>
+          <value>Table8_delta,System.String</value>
+          <value>Table8_q0,System.String</value>
+          <value>Table8_Fob,System.String</value>
+          <value>Table8_P,System.String</value>
+          <value>Table8_Ph,System.String</value>
+          <value>Table8_Dm,System.String</value>
+          <value>Table8_Fp,System.String</value>
+          <value>Table8_Fd,System.String</value>
+          <value>Table8_hi,System.String</value>
+          <value>Table8_m,System.String</value>
+          <value>Table8_eta,System.String</value>
+          <value>Table8_F2,System.String</value>
+          <value>Table8_F2_plus,System.String</value>
+          <value>Table8_Fph,System.String</value>
+          <value>Table8_F2h,System.String</value>
+          <value>Table8_F2h_plus,System.String</value>
+          <value>Table8_z,System.String</value>
+          <value>Table8_d0,System.String</value>
+          <value>Table8_ksi,System.String</value>
+          <value>Table8_Mk,System.String</value>
+          <value>Table8_Fow,System.String</value>
+          <value>Table8_Fw,System.String</value>
+          <value>Table8_dc,System.String</value>
+          <value>Table8_dw,System.String</value>
+          <value>Table8_d0w,System.String</value>
+          <value>Table9_n,System.String</value>
+          <value>Table9_f,System.String</value>
+          <value>Table9_h,System.String</value>
+          <value>Table9_dh,System.String</value>
+          <value>Table9_epsilon,System.String</value>
+          <value>Table9_b,System.String</value>
+          <value>Table9_Epr,System.String</value>
+          <value>Table9_q,System.String</value>
+          <value>Table9_A,System.String</value>
+          <value>Table9_B,System.String</value>
+          <value>Table9_A1,System.String</value>
+          <value>Table9_B1,System.String</value>
+          <value>Table9_R,System.String</value>
+          <value>Table9_tpt,System.String</value>
+          <value>Table9_p,System.String</value>
+          <value>Table10_n,System.String</value>
+          <value>Table10_s,System.String</value>
+          <value>Table10_l1,System.String</value>
+          <value>Table10_dT,System.String</value>
+          <value>Table10_lw,System.String</value>
+          <value>Table10_d,System.String</value>
+          <value>Table10_z,System.String</value>
+          <value>Table10_Ew,System.String</value>
+          <value>Table10_dw,System.String</value>
+          <value>Table10_Aw,System.String</value>
+          <value>Table10_LambdaW,System.String</value>
+          <value>Table10_Alpha1,System.String</value>
+          <value>Table10_Alpha2,System.String</value>
+          <value>Table10_eta,System.String</value>
+          <value>Table10_Mk,System.String</value>
+          <value>Table10_Fw,System.String</value>
+          <value>Table10_Fp_1,System.String</value>
+          <value>Table10_Fp_2,System.String</value>
+          <value>Table10_Fp_3,System.String</value>
+          <value>Table10_Fp_4,System.String</value>
+          <value>Table10_Ft_1,System.String</value>
+          <value>Table10_Ft_2,System.String</value>
+          <value>Table10_Ft_3,System.String</value>
+          <value>Table10_Ft_4,System.String</value>
+          <value>Table10_Fph_1,System.String</value>
+          <value>Table10_Fph_2,System.String</value>
+          <value>Table10_Fph_3,System.String</value>
+          <value>Table10_Fph_4,System.String</value>
+          <value>Table10_Fwp_1,System.String</value>
+          <value>Table10_Fwp_2,System.String</value>
+          <value>Table10_Fwp_3,System.String</value>
+          <value>Table10_Fwp_4,System.String</value>
+          <value>Table10_SigmaW_Round_1,System.String</value>
+          <value>Table10_SigmaW_Round_2,System.String</value>
+          <value>Table10_SigmaW_Round_3,System.String</value>
+          <value>Table10_SigmaW_Round_4,System.String</value>
+          <value>Table10_SigmaW_Square_1,System.String</value>
+          <value>Table10_SigmaW_Square_2,System.String</value>
+          <value>Table10_SigmaW_Square_3,System.String</value>
+          <value>Table10_SigmaW_Square_4,System.String</value>
+          <value>Table10_Tau,System.String</value>
+          <value>Table10_Sigma4W_Round_1,System.String</value>
+          <value>Table10_Sigma4W_Round_2,System.String</value>
+          <value>Table10_Sigma4W_Round_3,System.String</value>
+          <value>Table10_Sigma4W_Round_4,System.String</value>
+          <value>Table10_Sigma4W_Square_1,System.String</value>
+          <value>Table10_Sigma4W_Square_2,System.String</value>
+          <value>Table10_Sigma4W_Square_3,System.String</value>
+          <value>Table10_Sigma4W_Square_4,System.String</value>
+          <value>Table11_Q_1,System.String</value>
+          <value>Table11_L1_1,System.String</value>
+          <value>Table11_L2_1,System.String</value>
+          <value>Table11_L3_1,System.String</value>
+          <value>Table11_F_1,System.String</value>
+          <value>Table11_M_1,System.String</value>
+          <value>Table11_W_1,System.String</value>
+          <value>Table11_Sigma_1,System.String</value>
+          <value>Table11_13Sigma_1,System.String</value>
+          <value>Table11_Q_2,System.String</value>
+          <value>Table11_F_2,System.String</value>
+          <value>Table11_M_2,System.String</value>
+          <value>Table11_W_2,System.String</value>
+          <value>Table11_Sigma_2,System.String</value>
+          <value>Table11_13Sigma_2,System.String</value>
+          <value>Table12_F_1314,System.String</value>
+          <value>Table12_A_1314,System.String</value>
+          <value>Table12_Sigma_1314,System.String</value>
+          <value>Table12_SigmaSquare_1314,System.String</value>
+          <value>Table12_Q1_1314,System.String</value>
+          <value>Table12_mu_1314,System.String</value>
+          <value>Table12_z_1314,System.String</value>
+          <value>Table12_Ft_1314,System.String</value>
+          <value>Table12_Q_1314,System.String</value>
+          <value>Table12_d0_1314,System.String</value>
+          <value>Table12_tau_1314,System.String</value>
+          <value>Table12_tauSquare_1314,System.String</value>
+          <value>Table12_Mk_1314,System.String</value>
+          <value>Table12_tauK_1314,System.String</value>
+          <value>Table12_Sigma4w_1314,System.String</value>
+          <value>Table12_17Sigma_1314,System.String</value>
+          <value>Table12_F_1516,System.String</value>
+          <value>Table12_A_1516,System.String</value>
+          <value>Table12_Sigma_1516,System.String</value>
+          <value>Table12_SigmaSquare_1516,System.String</value>
+          <value>Table12_Q1_1516,System.String</value>
+          <value>Table12_mu_1516,System.String</value>
+          <value>Table12_z_1516,System.String</value>
+          <value>Table12_Ft_1516,System.String</value>
+          <value>Table12_Q_1516,System.String</value>
+          <value>Table12_d0_1516,System.String</value>
+          <value>Table12_tau_1516,System.String</value>
+          <value>Table12_tauSquare_1516,System.String</value>
+          <value>Table12_Mk_1516,System.String</value>
+          <value>Table12_tauK_1516,System.String</value>
+          <value>Table12_Sigma4w_1516,System.String</value>
+          <value>Table12_17Sigma_1516,System.String</value>
+          <value>Table13_F_1,System.String</value>
+          <value>Table13_F_2,System.String</value>
+          <value>Table13_F_3,System.String</value>
+          <value>Table13_F_4,System.String</value>
+          <value>Table13_F_5,System.String</value>
+          <value>Table13_F_6,System.String</value>
+          <value>Table13_F_7,System.String</value>
+          <value>Table13_F_8,System.String</value>
+          <value>Table13_d_1,System.String</value>
+          <value>Table13_d_2,System.String</value>
+          <value>Table13_d_3,System.String</value>
+          <value>Table13_d_4,System.String</value>
+          <value>Table13_d_5,System.String</value>
+          <value>Table13_d_6,System.String</value>
+          <value>Table13_d_7,System.String</value>
+          <value>Table13_d_8,System.String</value>
+          <value>Table13_h_1,System.String</value>
+          <value>Table13_h_2,System.String</value>
+          <value>Table13_h_3,System.String</value>
+          <value>Table13_h_4,System.String</value>
+          <value>Table13_h_5,System.String</value>
+          <value>Table13_h_6,System.String</value>
+          <value>Table13_h_7,System.String</value>
+          <value>Table13_h_8,System.String</value>
+          <value>Table13_K1_1,System.String</value>
+          <value>Table13_K1_2,System.String</value>
+          <value>Table13_K1_3,System.String</value>
+          <value>Table13_K1_4,System.String</value>
+          <value>Table13_K1_5,System.String</value>
+          <value>Table13_K1_6,System.String</value>
+          <value>Table13_K1_7,System.String</value>
+          <value>Table13_K1_8,System.String</value>
+          <value>Table13_Km,System.String</value>
+          <value>Table13_z_1,System.String</value>
+          <value>Table13_z_2,System.String</value>
+          <value>Table13_z_3,System.String</value>
+          <value>Table13_z_4,System.String</value>
+          <value>Table13_z_5,System.String</value>
+          <value>Table13_z_6,System.String</value>
+          <value>Table13_z_7,System.String</value>
+          <value>Table13_z_8,System.String</value>
+          <value>Table13_TauP_1,System.String</value>
+          <value>Table13_TauP_2,System.String</value>
+          <value>Table13_TauP_3,System.String</value>
+          <value>Table13_TauP_4,System.String</value>
+          <value>Table13_TauP_5,System.String</value>
+          <value>Table13_TauP_6,System.String</value>
+          <value>Table13_TauP_7,System.String</value>
+          <value>Table13_TauP_8,System.String</value>
+          <value>Table13_TauSquareP_1,System.String</value>
+          <value>Table13_TauSquareP_2,System.String</value>
+          <value>Table13_TauSquareP_3,System.String</value>
+          <value>Table13_TauSquareP_4,System.String</value>
+          <value>Table13_TauSquareP_5,System.String</value>
+          <value>Table13_TauSquareP_6,System.String</value>
+          <value>Table13_TauSquareP_7,System.String</value>
+          <value>Table13_TauSquareP_8,System.String</value>
+          <value>Table14_P,System.String</value>
+          <value>Table14_F,System.String</value>
+          <value>Table14_Apr,System.String</value>
+          <value>Table14_q,System.String</value>
+          <value>Table14_L,System.String</value>
+          <value>Table14_z1,System.String</value>
+          <value>Table14_z2,System.String</value>
+          <value>Table14_z3,System.String</value>
+          <value>Table14_Bpr,System.String</value>
+          <value>Table14_a,System.String</value>
+          <value>Table14_M1,System.String</value>
+          <value>Table14_M2,System.String</value>
+          <value>Table14_M3,System.String</value>
+          <value>Table14_b1,System.String</value>
+          <value>Table14_b2,System.String</value>
+          <value>Table14_b3,System.String</value>
+          <value>Table14_h,System.String</value>
+          <value>Table14_W1,System.String</value>
+          <value>Table14_W2,System.String</value>
+          <value>Table14_W3,System.String</value>
+          <value>Table14_SigmaSquare,System.String</value>
+          <value>Table14_SigmaIs1,System.String</value>
+          <value>Table14_SigmaIs2,System.String</value>
+          <value>Table14_SigmaIs3,System.String</value>
+          <value>Table14_SSIs,System.String</value>
+          <value>Table15_A_1,System.String</value>
+          <value>Table15_A_2,System.String</value>
+          <value>Table15_Sigma_1,System.String</value>
+          <value>Table15_Sigma_2,System.String</value>
+          <value>Table15_SigmaSquare,System.String</value>
+          <value>Table16_NSigma,System.String</value>
+          <value>Table16_NN,System.String</value>
+          <value>Table16_A,System.String</value>
+          <value>Table16_B,System.String</value>
+          <value>Table16_t,System.String</value>
+          <value>Table16_K,System.String</value>
+          <value>Table16_Sigma4w_1,System.String</value>
+          <value>Table16_Sigma4w_2,System.String</value>
+          <value>Table16_Sigma4w_3,System.String</value>
+          <value>Table16_SigmaA_1,System.String</value>
+          <value>Table16_SigmaA_2,System.String</value>
+          <value>Table16_SigmaA_3,System.String</value>
+          <value>Table16_NSquare_1,System.String</value>
+          <value>Table16_NSquare_2,System.String</value>
+          <value>Table16_NSquare_3,System.String</value>
+          <value>Table16_N1,System.String</value>
+          <value>Table16_N2,System.String</value>
+          <value>Table16_N3,System.String</value>
+          <value>Table16_al,System.String</value>
+          <value>Table16_N1M,System.String</value>
+          <value>Table16_BM,System.String</value>
+          <value>Picture1,System.Drawing.Bitmap</value>
+          <value>Picture2,System.Drawing.Bitmap</value>
+          <value>Picture3,System.Drawing.Bitmap</value>
+          <value>Picture4,System.Drawing.Bitmap</value>
+          <value>Picture5,System.Drawing.Bitmap</value>
+          <value>Picture7,System.Drawing.Bitmap</value>
+          <value>Picture8,System.Drawing.Bitmap</value>
+          <value>WorkAge,System.String</value>
+        </Columns>
+        <DataName>SReport</DataName>
+        <Dictionary isRef="1" />
+        <Name>SReport</Name>
+      </SReport>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="10">
+        <Text4 Ref="4" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.2,9.31,8.3,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,15,Bold,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>АППАРАТ ТЕПЛООБМЕННЫЙ </Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="5" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text4>
+        <Text1 Ref="6" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.2,10.11,8.3,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,15,Bold,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>ПЛАСТИНЧАТЫЙ РАЗБОРНЫЙ</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="7" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text1>
+        <Text2 Ref="8" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.2,12.27,8.3,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,15,Bold,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>РАСЧЕТ НА ПРОЧНОСТЬ</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="9" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text2>
+        <Text3 Ref="10" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.2,13.39,8.3,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,15,Bold,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.PTO}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="11" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text3>
+        <Text5 Ref="12" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>11.89,7.45,1.85,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Экз.№</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="13" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text5>
+        <Text6 Ref="14" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10.8,15.37,1.75,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,12,Regular,Point,False,204</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Инв.№</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="15" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text6>
+        <Text7 Ref="16" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.2,10.93,8.3,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Editable>True</Editable>
+          <Font>Times New Roman,15,Bold,Point,False,204</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{SReport.PTO_OriginalName}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="17" type="GeneralFormat" isKey="true" />
+          <TextQuality>Wysiwyg</TextQuality>
+        </Text7>
+        <RectanglePrimitive1 Ref="18" type="Stimulsoft.Report.Components.StiRectanglePrimitive" isKey="true">
+          <ClientRectangle>3.62,7.17,12.95,8.91</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>7aea895c2b8e46ae888d02c623cf6da9</Guid>
+          <Name>RectanglePrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Size>2</Size>
+        </RectanglePrimitive1>
+        <StartPointPrimitive1 Ref="19" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>3.62,7.17,0,0</ClientRectangle>
+          <Name>StartPointPrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>7aea895c2b8e46ae888d02c623cf6da9</ReferenceToGuid>
+        </StartPointPrimitive1>
+        <EndPointPrimitive1 Ref="20" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>16.57,16.08,0,0</ClientRectangle>
+          <Name>EndPointPrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>7aea895c2b8e46ae888d02c623cf6da9</ReferenceToGuid>
+        </EndPointPrimitive1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Margins>0.6,0.6,0.6,0.6</Margins>
+      <Name>Page1</Name>
+      <Page isRef="3" />
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="21" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="22" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>8/6/2010 9:19:36 AM</ReportChanged>
+  <ReportCreated>3/14/2006 12:36:55 PM</ReportCreated>
+  <ReportGuid>d193a9907d204a04b0711bd1ccd24e19</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2006.4</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using System.IO;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.ReportControls;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();		
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
