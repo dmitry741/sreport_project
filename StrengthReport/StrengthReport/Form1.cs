@@ -2128,6 +2128,10 @@ namespace StrengthReport
             double B1 = hashTable.GetValue(ptoName, "B1");
             report.SetValue("Table9_B1", DigitalProcess.MathTrancate(B1, 1, false));
 
+            // Bm
+            double Bm = hashTable.GetValue(ptoName, "Bm");
+            report.SetValue("Table9_Bm", DigitalProcess.MathTrancate(Bm, 1, false));
+
             // R
             double R = 2 * (A + B) * b * q;
             report.SetValue("Table9_R", DigitalProcess.MathTrancate(Convert.ToInt32(R), 1).ToString());
