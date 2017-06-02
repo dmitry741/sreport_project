@@ -4853,8 +4853,6 @@ namespace StrengthReport
 
                 stireport.Show();
             }
-
-            // ===================================
         }
 
         private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
