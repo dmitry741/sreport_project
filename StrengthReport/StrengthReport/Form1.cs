@@ -18,8 +18,6 @@ namespace StrengthReport
 
         #region === members ===
 
-        const int c_pto_count = 181;
-
         PhisicFeatureManager m_manager = new PhisicFeatureManager();
         System.Globalization.NumberFormatInfo m_nfi = null;
         System.Collections.Generic.List<string> m_pto_list = new System.Collections.Generic.List<string>();
@@ -3880,7 +3878,7 @@ namespace StrengthReport
         {
             double[] data = new double[len];
 
-            for (int j = 0; j < c_pto_count; j++)
+            for (int j = 0; j < m_pto_list.Count; j++)
             {
                 for (int i = 0; i < len; i++)
                     data[i] = DoubleValue[j, i];
