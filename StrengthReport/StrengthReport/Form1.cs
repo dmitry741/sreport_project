@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
+using System.Linq;
 using PhisicsDependency;
 using SReport_Utility;
 using DbReader;
@@ -4635,11 +4636,7 @@ namespace StrengthReport
             // ========================
 
             // === Толщина пластин ===
-            foreach (double s in m_s)
-            {
-                comboBox3.Items.Add(string.Format("{0} mm", s));
-            }
-
+            comboBox3.Items.AddRange(Array.ConvertAll(m_s, x => string.Format("{0} mm", x)));
             comboBox3.SelectedIndex = 1;
             // =======================
 
