@@ -18,11 +18,13 @@ namespace StrengthReport
 
         #region === members ===
 
+        const double c_ksi = 0.26;
+
         PhisicFeatureManager m_manager = new PhisicFeatureManager();
         System.Globalization.NumberFormatInfo m_nfi = null;
         System.Collections.Generic.List<string> m_pto_list = new System.Collections.Generic.List<string>();
 
-        MyStringHashTable m_HashSteel = new MyStringHashTable();
+        MyStringHashTable m_hashSteel = new MyStringHashTable();
 
         protected delegate string GDF(double val, int sign);
         protected GDF GetDoubleFormat = (x, sign) => Math.Round(x, sign).ToString();
@@ -136,11 +138,12 @@ namespace StrengthReport
             m_set212247.AddRange(154, 157); // 19
             m_set212247.AddRange(162, 169); // 19w
             m_set212247.AddRange(176, 178); // 31
+            m_set212247.AddRange(186, 201); // 44, 25, 36
 
             m_setBig = new Set();
             m_setBig.AddRange(48, 153); 
             m_setBig.AddRange(158, 161); // 53, 160
-            m_setBig.AddRange(179, 180); // 229
+            m_setBig.AddRange(179, 185); // 229, 59
         }
 
         private bool FillTables(ref PrintReport report)
@@ -551,33 +554,33 @@ namespace StrengthReport
             m_pto_list.Add("HH№59-О-25"); // 183
 
             m_pto_list.Add("HH№59-C-10"); // 184
-            m_pto_list.Add("HH№59-C-16"); // 184
-            m_pto_list.Add("HH№59-C-25"); // 185
+            m_pto_list.Add("HH№59-C-16"); // 185
+            m_pto_list.Add("HH№59-C-25"); // 186
 
             // 44
-            m_pto_list.Add("HH№44-О-10"); // 186
-            m_pto_list.Add("HH№44-О-16"); // 187
-            m_pto_list.Add("HH№44-О-25"); // 188
+            m_pto_list.Add("HH№44-О-10"); // 187
+            m_pto_list.Add("HH№44-О-16"); // 188
+            m_pto_list.Add("HH№44-О-25"); // 189
 
-            m_pto_list.Add("HH№44-C-10"); // 189
-            m_pto_list.Add("HH№44-C-16"); // 190
-            m_pto_list.Add("HH№44-C-25"); // 191
+            m_pto_list.Add("HH№44-C-10"); // 190
+            m_pto_list.Add("HH№44-C-16"); // 191
+            m_pto_list.Add("HH№44-C-25"); // 192
 
             // 25
-            m_pto_list.Add("HH№25-О-10"); // 192
-            m_pto_list.Add("HH№25-О-16"); // 193
+            m_pto_list.Add("HH№25-О-10"); // 193
+            m_pto_list.Add("HH№25-О-16"); // 194
 
-            m_pto_list.Add("HH№25-C-10"); // 194
-            m_pto_list.Add("HH№25-C-16"); // 195
+            m_pto_list.Add("HH№25-C-10"); // 195
+            m_pto_list.Add("HH№25-C-16"); // 196
 
             // 36
-            m_pto_list.Add("HH№36-О-10"); // 196
-            m_pto_list.Add("HH№36-О-16"); // 197
-            m_pto_list.Add("HH№36-О-25"); // 198
+            m_pto_list.Add("HH№36-О-10"); // 197
+            m_pto_list.Add("HH№36-О-16"); // 198
+            m_pto_list.Add("HH№36-О-25"); // 199
 
-            m_pto_list.Add("HH№36-C-10"); // 199
-            m_pto_list.Add("HH№36-C-16"); // 200
-            m_pto_list.Add("HH№36-C-25"); // 201
+            m_pto_list.Add("HH№36-C-10"); // 200
+            m_pto_list.Add("HH№36-C-16"); // 201
+            m_pto_list.Add("HH№36-C-25"); // 202
         }
 
         private string GetPrePlaneNumber()
@@ -690,7 +693,7 @@ namespace StrengthReport
             string value = Steel;
             value += " ";
 
-            string val2 = m_HashSteel.GetValue2(Steel);
+            string val2 = m_hashSteel.GetValue2(Steel);
 
             if (val2.Length > 0)
             {
@@ -699,7 +702,7 @@ namespace StrengthReport
             }
 
             value += Convert.ToChar(10); // new line
-            value += m_HashSteel.GetValue1(Steel);
+            value += m_hashSteel.GetValue1(Steel);
 
             return value;
         }
@@ -1687,7 +1690,7 @@ namespace StrengthReport
             report.SetValue("Table5_d0", GetDoubleFormat(d0, 0));
 
             // ksi
-            double ksi = hashTable422.GetValue(ptoName, "ksi");
+            double ksi = c_ksi;
             report.SetValue("Table5_ksi", DigitalProcess.MathTrancate(ksi, 2, false));
 
             // Mk
@@ -1778,7 +1781,7 @@ namespace StrengthReport
             report.SetValue("Table6_Mk_up", GetDoubleFormat(Mk_up, 0));
 
             // ksi
-            double ksi = hashTable423.GetValue(ptoName, "ksi");
+            double ksi = c_ksi;
             report.SetValue("Table6_ksi", DigitalProcess.MathTrancate(ksi, 2, false));
 
             // Fow - down
@@ -1838,7 +1841,7 @@ namespace StrengthReport
 
                 // -rib
                 // -paronit
-                // b0-1	Dm-1	b0-2	Dm-2	b0-3	Dm-3	b1-rib	b2-rib	b3-rib	delta-rib	q0-liq-rib	q0-vap-rib	q0-air-rib	m-liq-rib	m-vap-rib	m-air-rib	nu-rib	b1-paronit	b2-paronit	b3-paronit	delta-paronit	q0-liq-paronit	q0-vap-paronit	q0-air-paronit	m-liq-paronit	m-vap-paronit	m-air-paronit	nu-paronit	hi	ksi	dc	z	d0	d0w
+                // b0-1	Dm-1	b0-2	Dm-2	b0-3	Dm-3	b1-rib	b2-rib	b3-rib	delta-rib	q0-liq-rib	q0-vap-rib	q0-air-rib	m-liq-rib	m-vap-rib	m-air-rib	nu-rib	b1-paronit	b2-paronit	b3-paronit	delta-paronit	q0-liq-paronit	q0-vap-paronit	q0-air-paronit	m-liq-paronit	m-vap-paronit	m-air-paronit	nu-paronit	hi	dc	z	d0	d0w
 
                 // ключ для фланцев
                 string flan = (comboBox16.SelectedIndex < 3) ? (comboBox16.SelectedIndex + 1).ToString() : "1";
@@ -2040,7 +2043,7 @@ namespace StrengthReport
                 report.SetValue("Table8_d0", GetDoubleFormat(d0, 0));
 
                 // ksi
-                double ksi = hashTable.GetValue(ptoName, "ksi");
+                double ksi = c_ksi;
                 report.SetValue("Table8_ksi", DigitalProcess.MathTrancate(ksi, 2, false));
 
                 // Mk
@@ -2191,7 +2194,7 @@ namespace StrengthReport
             //S1, S2
 
             // 422
-            // q0-liq	q0-vap	q0-air	m-liq	m-vap	m-air	eta	hi	z	d0	d0w	ksi
+            // q0-liq	q0-vap	q0-air	m-liq	m-vap	m-air	eta	hi	z	d0	d0w
 
             // 51
             // "k-4", "k-5", "k-6", "k-7", "k-8", "k-9" 
@@ -2410,7 +2413,7 @@ namespace StrengthReport
             double d0 = hashTable422.GetValue(ptoName, "d0");
 
             // ksi
-            double ksi = hashTable422.GetValue(ptoName, "ksi");
+            double ksi = c_ksi;
 
             // Mk
             double max = Fd;
@@ -3963,7 +3966,7 @@ namespace StrengthReport
         {
             // declare excel reader
             ExcelReader excelReader = new ExcelReader();
-            string[] fields = { "q0liq", "q0vap", "q0air", "mliq", "mvap", "mair", "eta", "hi", "z", "d0", "d0w", "ksi" };
+            string[] fields = { "q0liq", "q0vap", "q0air", "mliq", "mvap", "mair", "eta", "hi", "z", "d0", "d0w" };
 
             excelReader.DbPath = source;
             excelReader.Fields = fields;
@@ -3982,7 +3985,7 @@ namespace StrengthReport
         {
             // declare excel reader
             ExcelReader excelReader = new ExcelReader();
-            string[] fields = { "d0up", "d0wup", "Mkup", "zc", "d0down", "d0wdown", "Мкdown", "zdown", "ksi" };
+            string[] fields = { "d0up", "d0wup", "Mkup", "zc", "d0down", "d0wdown", "Мкdown", "zdown" };
 
             excelReader.DbPath = source;
             excelReader.Fields = fields;
@@ -4020,7 +4023,7 @@ namespace StrengthReport
         {
             // declare excel reader
             ExcelReader excelReader = new ExcelReader();
-            string[] fields = { "b01", "Dm1", "b02", "Dm2", "b03", "Dm3", "b1rib", "b2rib", "b3rib", "deltarib", "q0liqrib", "q0vaprib", "q0airrib", "mliqrib", "mvaprib", "mairrib", "nurib", "b1paronit", "b2paronit", "b3paronit", "deltaparonit", "q0liqparonit", "q0vapparonit", "q0airparonit", "mliqparonit", "mvapparonit", "mairparonit", "nuparonit", "hi", "ksi", "dc", "z", "d0", "d0w" };
+            string[] fields = { "b01", "Dm1", "b02", "Dm2", "b03", "Dm3", "b1rib", "b2rib", "b3rib", "deltarib", "q0liqrib", "q0vaprib", "q0airrib", "mliqrib", "mvaprib", "mairrib", "nurib", "b1paronit", "b2paronit", "b3paronit", "deltaparonit", "q0liqparonit", "q0vapparonit", "q0airparonit", "mliqparonit", "mvapparonit", "mairparonit", "nuparonit", "hi", "dc", "z", "d0", "d0w" };
 
             excelReader.DbPath = source;
             excelReader.Fields = fields;
@@ -4456,6 +4459,38 @@ namespace StrengthReport
                 hashTable.AddValue(m_pto_list[index++], data);
             }
 
+            // 59
+            data = new int[] { 600, 1000, 1500, 2000, 2500, 3000, 4000 };
+
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 44
+            data = new int[] { 400, 500, 600, 750, 1000 };
+
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 25
+            data = new int[] { 500, 600, 750, 1000, 1200, 1300, 1500, 2000, 2500 };
+
+            for (i = 0; i < 4; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 36
+            //data = new int[] { 500, 600, 750, 1000, 1200, 1300, 1500, 2000, 2500 };
+
+            for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
             return hashTable;
         }
 
@@ -4703,14 +4738,14 @@ namespace StrengthReport
             comboBox6.Items.Add(KitConstant.Steel_09G2C);
             comboBox6.SelectedIndex = 0;
 
-            m_HashSteel.Add(KitConstant.Steel_st2, "ГОСТ 380-2005");
-            m_HashSteel.Add(KitConstant.Steel_st3, "ГОСТ 380-2005");
-            m_HashSteel.Add(KitConstant.Steel_20, "ГОСТ 1050-2013");
-            m_HashSteel.Add(KitConstant.Steel_20x13, "ГОСТ 5949-75");
-            m_HashSteel.Add(KitConstant.Steel_40x, "ГОСТ 4543-71", "КП 8");
-            m_HashSteel.Add(KitConstant.Steel_35, "ГОСТ 1050-2013", "КП 8");
-            m_HashSteel.Add(KitConstant.Steel_09G2C, "ГОСТ 19281-2014");
-            m_HashSteel.Add(KitConstant.Steel_45, "ГОСТ 1050-2013", "КП 8");
+            m_hashSteel.Add(KitConstant.Steel_st2, "ГОСТ 380-2005");
+            m_hashSteel.Add(KitConstant.Steel_st3, "ГОСТ 380-2005");
+            m_hashSteel.Add(KitConstant.Steel_20, "ГОСТ 1050-2013");
+            m_hashSteel.Add(KitConstant.Steel_20x13, "ГОСТ 5949-75");
+            m_hashSteel.Add(KitConstant.Steel_40x, "ГОСТ 4543-71", "КП 8");
+            m_hashSteel.Add(KitConstant.Steel_35, "ГОСТ 1050-2013", "КП 8");
+            m_hashSteel.Add(KitConstant.Steel_09G2C, "ГОСТ 19281-2014");
+            m_hashSteel.Add(KitConstant.Steel_45, "ГОСТ 1050-2013", "КП 8");
             
             comboBox7.Items.Add(KitConstant.Steel_st2);
             comboBox7.Items.Add(KitConstant.Steel_st3);
