@@ -544,6 +544,40 @@ namespace StrengthReport
             // 229
             m_pto_list.Add("HH№229-O-10"); // 179
             m_pto_list.Add("HH№229-C-10"); // 180
+
+            // 59
+            m_pto_list.Add("HH№59-О-10"); // 181
+            m_pto_list.Add("HH№59-О-16"); // 182
+            m_pto_list.Add("HH№59-О-25"); // 183
+
+            m_pto_list.Add("HH№59-C-10"); // 184
+            m_pto_list.Add("HH№59-C-16"); // 184
+            m_pto_list.Add("HH№59-C-25"); // 185
+
+            // 44
+            m_pto_list.Add("HH№44-О-10"); // 186
+            m_pto_list.Add("HH№44-О-16"); // 187
+            m_pto_list.Add("HH№44-О-25"); // 188
+
+            m_pto_list.Add("HH№44-C-10"); // 189
+            m_pto_list.Add("HH№44-C-16"); // 190
+            m_pto_list.Add("HH№44-C-25"); // 191
+
+            // 25
+            m_pto_list.Add("HH№25-О-10"); // 192
+            m_pto_list.Add("HH№25-О-16"); // 193
+
+            m_pto_list.Add("HH№25-C-10"); // 194
+            m_pto_list.Add("HH№25-C-16"); // 195
+
+            // 36
+            m_pto_list.Add("HH№36-О-10"); // 196
+            m_pto_list.Add("HH№36-О-16"); // 197
+            m_pto_list.Add("HH№36-О-25"); // 198
+
+            m_pto_list.Add("HH№36-C-10"); // 199
+            m_pto_list.Add("HH№36-C-16"); // 200
+            m_pto_list.Add("HH№36-C-25"); // 201
         }
 
         private string GetPrePlaneNumber()
