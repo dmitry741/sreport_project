@@ -2656,48 +2656,47 @@ namespace StrengthReport
             }
             else if (setSmall1.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Sech_07_20, 650, 650);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.Sech_07_20, 650, 650);
             }
-            else if (setSmall2.In(ptoIndex) || set26.In(ptoIndex))
+            else if (setSmall2.In(ptoIndex) || set26.In(ptoIndex) || m_set212247.In(ptoIndex))
             {
-                //scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Sech_21_47, 1021, 1021);
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.sech_21_47_new, 294, 294);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.sech_21_47_new, 294, 294);
             }
             else if (setSmall3.In(ptoIndex) || set19w.In(ptoIndex) || set31.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.sech_19, 650, 650);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.sech_19, 650, 650);
             }
             else if (set41.In(ptoIndex) || set53.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._41_42_62_86__110_, 639, 639);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._41_42_62_86__110_, 639, 639);
             }
             else if (set42.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._41_42_62_86__110_, 639, 639);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._41_42_62_86__110_, 639, 639);
             }
             else if (set62.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._41_42_62_86__110_, 639, 639);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._41_42_62_86__110_, 639, 639);
             }
             else if (set86.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._41_42_62_86__110_, 639, 639);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._41_42_62_86__110_, 639, 639);
             }
             else if (set110.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
             }
             else if (set43.In(ptoIndex) || set160.In(ptoIndex) || set229.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
             }
             else if (set65.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
             }
             else if (set100.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
             }
             else if (set130.In(ptoIndex))
             {
@@ -2706,16 +2705,16 @@ namespace StrengthReport
 
                 if (L <= 2000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
                 }
                 else
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
                 }
             }
             else if (set152.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._3_big, 776, 776);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._3_big, 776, 776);
             }
             else if (set220.In(ptoIndex))
             {
@@ -2724,16 +2723,16 @@ namespace StrengthReport
 
                 if (L < 4000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
                 }
                 else
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._6_big, 750, 750);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._6_big, 750, 750);
                 }
             }
             else if (set113.In(ptoIndex))
             {
-                scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
             }
             else if (set81.In(ptoIndex))
             {
@@ -2741,11 +2740,11 @@ namespace StrengthReport
 
                 if (frameIndex > 6)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._81_8_9_10, 626, 626);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._81_8_9_10, 626, 626);
                 }
                 else
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.Kozenkova_luba, 648, 648);
                 }
             }
             else if (set121.In(ptoIndex))
@@ -2755,15 +2754,15 @@ namespace StrengthReport
 
                 if (L <= 2000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
                 }
                 else if (L <= 4000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
                 }
                 else
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._6_big, 750, 750);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._6_big, 750, 750);
                 }
             }
             else if (set188.In(ptoIndex))
@@ -2773,15 +2772,15 @@ namespace StrengthReport
 
                 if (L <= 2000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
                 }
                 else if (L <= 4000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
                 }
                 else
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
                 }
             }
             else if (set251.In(ptoIndex))
@@ -2791,15 +2790,15 @@ namespace StrengthReport
 
                 if (L <= 2000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
                 }
                 else if (L <= 4000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._6_big, 750, 750);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._6_big, 750, 750);
                 }
                 else
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
                 }
             }
             else if (set145.In(ptoIndex))
@@ -2809,15 +2808,15 @@ namespace StrengthReport
 
                 if (L <= 2000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._1_big, 741, 741);
                 }
                 else if (L <= 4000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
                 }
                 else
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
                 }
             }
             else if (set210.In(ptoIndex))
@@ -2827,11 +2826,11 @@ namespace StrengthReport
 
                 if (L <= 4000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._2_big, 808, 808);
                 }
                 else
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
                 }
             }
             else // if (set201.In(ptoIndex))
@@ -2841,11 +2840,11 @@ namespace StrengthReport
 
                 if (L <= 4000)
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._6_big, 750, 750);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._6_big, 750, 750);
                 }
                 else
                 {
-                    scBitmap = SReport_Utility.SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
+                    scBitmap = SimpleImageProccessing.Zoom(Properties.Resources._4_big, 742, 742);
                 }
             }
 
