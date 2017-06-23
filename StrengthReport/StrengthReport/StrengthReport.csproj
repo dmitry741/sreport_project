@@ -34,7 +34,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationRevision>18</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -219,7 +219,6 @@
     <Content Include="reports\0408\myreport_9_new_0408.mrt" />
     <Content Include="reports\212247\myreport_0_212247.mrt" />
     <Content Include="reports\212247\myreport_10_212247.mrt" />
-    <Content Include="reports\212247\myreport_11_212247.mrt" />
     <Content Include="reports\212247\myreport_12_212247.mrt" />
     <Content Include="reports\212247\myreport_13_212247.mrt" />
     <Content Include="reports\212247\myreport_14_212247.mrt" />
@@ -235,7 +234,6 @@
     <Content Include="reports\212247\myreport_9_212247.mrt" />
     <Content Include="reports\big\myreport_0_new_big.mrt" />
     <Content Include="reports\big\myreport_10_new_big.mrt" />
-    <Content Include="reports\big\myreport_11_new_big.mrt" />
     <Content Include="reports\big\myreport_12_new_big.mrt" />
     <Content Include="reports\big\myreport_13_new_big.mrt" />
     <Content Include="reports\big\myreport_14_new_big.mrt" />
@@ -266,6 +264,8 @@
     <Content Include="reports\new\myreport_7_new.mrt" />
     <Content Include="reports\new\myreport_8_new.mrt" />
     <Content Include="reports\new\myreport_9_new.mrt" />
+    <Content Include="reports\212247\myreport_11_212247.mrt" />
+    <Content Include="reports\big\myreport_11_new_big.mrt" />
     <None Include="Resources\logo.bmp" />
   </ItemGroup>
   <ItemGroup>
