@@ -130,8 +130,9 @@ namespace StrengthReport
 
         private void StartSets()
         {
-            m_set_0408 = new Set(0, 11);   
-                     
+            m_set_0408 = new Set(0, 11);
+            m_set_0408.AddRange(203, 205);
+
             m_set212247 = new Set();
             m_set212247.AddRange(30, 47);
             m_set212247.AddRange(170, 175); // 26
@@ -144,6 +145,9 @@ namespace StrengthReport
             m_setBig.AddRange(48, 153); 
             m_setBig.AddRange(158, 161); // 53, 160
             m_setBig.AddRange(179, 185); // 229, 59
+
+            m_setBig.AddRange(209, 210); // 150
+            m_setBig.AddRange(211, 212); // 201
         }
 
         private bool FillTables(ref PrintReport report)
@@ -596,7 +600,7 @@ namespace StrengthReport
             m_pto_list.Add("HH№150-O-10"); // 209
             m_pto_list.Add("HH№150-C-10"); // 210
 
-            // 150
+            // 201
             m_pto_list.Add("HH№201-O-16"); // 211
             m_pto_list.Add("HH№201-C-16"); // 212
         }
@@ -2602,6 +2606,7 @@ namespace StrengthReport
 
             // 62
             Set set62 = new Set(60, 65);
+            set62.AddRange(209, 210);
 
             // 86
             Set set86 = new Set(66, 71);
@@ -2666,11 +2671,18 @@ namespace StrengthReport
             // 19w
             Set set19w = new Set(162, 169);
 
+            // 050
+            Set set050 = new Set(206, 208);
+
             int ptoIndex = comboBox1.SelectedIndex;
             
             if (set0408.In(ptoIndex))
             {
                 scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.napr_0408, 620, 620);
+            }
+            if (set050.In(ptoIndex))
+            {
+                scBitmap = SimpleImageProccessing.Zoom(Properties.Resources.Napr_050_2, 468, 468);
             }
             else if (setSmall1.In(ptoIndex))
             {
