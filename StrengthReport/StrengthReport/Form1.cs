@@ -581,6 +581,24 @@ namespace StrengthReport
             m_pto_list.Add("HH№36-C-10"); // 200
             m_pto_list.Add("HH№36-C-16"); // 201
             m_pto_list.Add("HH№36-C-25"); // 202
+
+            // 032
+            m_pto_list.Add("XGM 032-10"); // 203
+            m_pto_list.Add("XGM 032-16"); // 204
+            m_pto_list.Add("XGM 032-25"); // 205
+
+            // 050
+            m_pto_list.Add("XGM 050-10"); // 206
+            m_pto_list.Add("XGM 050-16"); // 207
+            m_pto_list.Add("XGM 050-25"); // 208
+
+            // 150
+            m_pto_list.Add("HH№150-O-10"); // 209
+            m_pto_list.Add("HH№150-C-10"); // 210
+
+            // 150
+            m_pto_list.Add("HH№201-O-16"); // 211
+            m_pto_list.Add("HH№201-C-16"); // 212
         }
 
         private string GetPrePlaneNumber()
@@ -4486,6 +4504,38 @@ namespace StrengthReport
             //data = new int[] { 500, 600, 750, 1000, 1200, 1300, 1500, 2000, 2500 };
 
             for (i = 0; i < 6; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 032
+            data = new int[] { 250, 330, 500 };
+
+            for (i = 0; i < 3; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 050
+            data = new int[] { 330, 600, 750, 900 };
+
+            for (i = 0; i < 3; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 150
+            data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000 };
+
+            for (i = 0; i < 2; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 150
+            data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000 };
+
+            for (i = 0; i < 2; i++)
             {
                 hashTable.AddValue(m_pto_list[index++], data);
             }
