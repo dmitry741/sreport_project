@@ -2606,7 +2606,7 @@ namespace StrengthReport
 
             // 62
             Set set62 = new Set(60, 65);
-            set62.AddRange(209, 210);
+            set62.AddRange(209, 210); // 150 добавляем
 
             // 86
             Set set86 = new Set(66, 71);
