@@ -4224,7 +4224,7 @@ namespace StrengthReport
 
         private MyIntegerHashTable CreateLen()
         {
-            int[] data = null;
+            int[] data;
             int index = 0, i;
             MyIntegerHashTable hashTable = new MyIntegerHashTable();
 
