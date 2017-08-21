@@ -34,7 +34,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>21</ApplicationRevision>
+    <ApplicationRevision>22</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -161,11 +161,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="data.xls" />
-    <None Include="reports\0408\myreport_6_new_0408.mrt" />
-    <None Include="reports\212247\myreport_6_212247.mrt" />
-    <None Include="reports\big\myreport_6_new_big.mrt" />
-    <None Include="reports\new\myreport_6_new.mrt" />
+    <Content Include="data.xls" />
+    <Content Include="reports\0408\myreport_6_new_0408.mrt" />
+    <Content Include="reports\212247\myreport_6_212247.mrt" />
+    <Content Include="reports\big\myreport_6_new_big.mrt" />
+    <Content Include="reports\new\myreport_6_new.mrt" />
     <None Include="Resources\Napr_050_2.jpg" />
     <EmbeddedResource Include="Form1.resx">
       <SubType>Designer</SubType>
