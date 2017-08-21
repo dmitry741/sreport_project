@@ -2594,8 +2594,8 @@ namespace StrengthReport
             // 04-08
             Set set0408 = m_set_0408;
 
-            Set setSmall1 = new Set(12, 23);
-            Set setSmall2 = new Set(24, 47);            
+            Set setSmall1 = new Set(12, 29);
+            Set setSmall2 = new Set(30, 47);            
             Set setSmall3 = new Set(154, 157);
 
             // 41
