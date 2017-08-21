@@ -161,7 +161,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="data.xls" />
+    <None Include="data.xls" />
+    <None Include="reports\0408\myreport_6_new_0408.mrt" />
+    <None Include="reports\212247\myreport_6_212247.mrt" />
+    <None Include="reports\big\myreport_6_new_big.mrt" />
+    <None Include="reports\new\myreport_6_new.mrt" />
     <None Include="Resources\Napr_050_2.jpg" />
     <EmbeddedResource Include="Form1.resx">
       <SubType>Designer</SubType>
@@ -214,7 +218,6 @@
     <Content Include="reports\0408\myreport_3_new_0408.mrt" />
     <Content Include="reports\0408\myreport_4_new_0408.mrt" />
     <Content Include="reports\0408\myreport_5_new_0408.mrt" />
-    <Content Include="reports\0408\myreport_6_new_0408.mrt" />
     <Content Include="reports\0408\myreport_7_new_0408.mrt" />
     <Content Include="reports\0408\myreport_8_new_0408.mrt" />
     <Content Include="reports\0408\myreport_9_new_0408.mrt" />
@@ -229,7 +232,6 @@
     <Content Include="reports\212247\myreport_3_212247.mrt" />
     <Content Include="reports\212247\myreport_4_212247.mrt" />
     <Content Include="reports\212247\myreport_5_212247.mrt" />
-    <Content Include="reports\212247\myreport_6_212247.mrt" />
     <Content Include="reports\212247\myreport_7_212247.mrt" />
     <Content Include="reports\212247\myreport_8_212247.mrt" />
     <Content Include="reports\212247\myreport_9_212247.mrt" />
@@ -245,7 +247,6 @@
     <Content Include="reports\big\myreport_3_new_big.mrt" />
     <Content Include="reports\big\myreport_4_new_big.mrt" />
     <Content Include="reports\big\myreport_5_new_big.mrt" />
-    <Content Include="reports\big\myreport_6_new_big.mrt" />
     <Content Include="reports\big\myreport_7_new_big.mrt" />
     <Content Include="reports\big\myreport_8_new_big.mrt" />
     <Content Include="reports\big\myreport_9_new_big.mrt" />
@@ -261,7 +262,6 @@
     <Content Include="reports\new\myreport_3_new.mrt" />
     <Content Include="reports\new\myreport_4_new.mrt" />
     <Content Include="reports\new\myreport_5_new.mrt" />
-    <Content Include="reports\new\myreport_6_new.mrt" />
     <Content Include="reports\new\myreport_7_new.mrt" />
     <Content Include="reports\new\myreport_8_new.mrt" />
     <Content Include="reports\new\myreport_9_new.mrt" />
