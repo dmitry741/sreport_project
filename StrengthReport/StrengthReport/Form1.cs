@@ -2627,6 +2627,7 @@ namespace StrengthReport
 
             // 130
             Set set130 = new Set(96, 101);
+            set130.AddRange(213, 214);
 
             // 152
             Set set152 = new Set(102, 107);
