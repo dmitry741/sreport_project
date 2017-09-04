@@ -140,6 +140,7 @@ namespace StrengthReport
             m_set212247.AddRange(162, 169); // 19w
             m_set212247.AddRange(176, 178); // 31
             m_set212247.AddRange(186, 201); // 44, 25, 36
+            m_set212247.AddRange(215, 220); // 37
 
             m_setBig = new Set();
             m_setBig.AddRange(48, 153); 
@@ -605,6 +606,14 @@ namespace StrengthReport
             // 131
             m_pto_list.Add("HH№131-O-10"); // 213
             m_pto_list.Add("HH№131-C-10"); // 214
+
+            // HH-37
+            m_pto_list.Add("HH№37-O-10"); // 215
+            m_pto_list.Add("HH№37-O-16"); // 216
+            m_pto_list.Add("HH№37-O-25"); // 217
+            m_pto_list.Add("HH№37-C-10"); // 218
+            m_pto_list.Add("HH№37-C-16"); // 219
+            m_pto_list.Add("HH№37-C-25"); // 220
         }
 
         private string GetPrePlaneNumber()
@@ -4559,6 +4568,14 @@ namespace StrengthReport
             data = new int[] { 1000, 1500, 2000, 2500, 3000, 4000 };
 
             for (i = 0; i < 2; i++)
+            {
+                hashTable.AddValue(m_pto_list[index++], data);
+            }
+
+            // 37
+            data = new int[] { 500, 600, 800, 1000, 1200, 1300, 1500, 2000, 2500 };
+
+            for (i = 0; i < 6; i++)
             {
                 hashTable.AddValue(m_pto_list[index++], data);
             }
