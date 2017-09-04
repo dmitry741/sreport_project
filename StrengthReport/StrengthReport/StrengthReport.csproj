@@ -161,11 +161,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="data.xls" />
     <Content Include="reports\0408\myreport_6_new_0408.mrt" />
     <Content Include="reports\212247\myreport_6_212247.mrt" />
     <Content Include="reports\big\myreport_6_new_big.mrt" />
     <Content Include="reports\new\myreport_6_new.mrt" />
+    <Content Include="data.xls" />
     <None Include="Resources\Napr_050_2.jpg" />
     <EmbeddedResource Include="Form1.resx">
       <SubType>Designer</SubType>
