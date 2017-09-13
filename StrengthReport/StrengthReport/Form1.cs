@@ -648,16 +648,18 @@ namespace StrengthReport
         private string GetPtoString()
         {
             string sPto = comboBox1.Text;
-            int pos = sPto.IndexOf('-');
+            int pos1 = sPto.IndexOf('-');
+            int pos2 = sPto.IndexOf('№');
 
-            if (pos > 0)
-            {
-                sPto = sPto.Remove(pos + 1);
-                sPto += textBox4.Text;
-                sPto += "PP";
-            }
+            if (pos1 < 0 || pos2 < 0)
+                return sPto;
 
-            return sPto;
+            string prefix = sPto.Substring(0, pos2);
+            string number = sPto.Substring(pos2 + 1, pos1 - pos2 - 1);
+
+            for (int i = number.Length; i < 3; i++, number = string.Format("0{0}", number));
+
+            return string.Format("{0}№{1}-{2}PP", prefix, number, textBox4.Text); ;
         }
 
         private bool FillTable1(ref SReport_Utility.PrintReport report)
