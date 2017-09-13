@@ -659,7 +659,7 @@ namespace StrengthReport
 
             for (int i = number.Length; i < 3; i++, number = string.Format("0{0}", number));
 
-            return string.Format("{0}№{1}-{2}PP", prefix, number, textBox4.Text); ;
+            return string.Format("{0}№{1}-{2}PP", prefix, number, textBox4.Text);
         }
 
         private bool FillTable1(ref SReport_Utility.PrintReport report)
