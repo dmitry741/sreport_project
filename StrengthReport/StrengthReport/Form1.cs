@@ -543,9 +543,9 @@ namespace StrengthReport
             m_pto_list.Add("HH№26-C-25"); // 175
 
             // XG-31
-            m_pto_list.Add("XG31-C-10"); // 176
-            m_pto_list.Add("XG31-C-16"); // 177
-            m_pto_list.Add("XG31-C-25"); // 178
+            m_pto_list.Add("XG№31-C-10"); // 176
+            m_pto_list.Add("XG№31-C-16"); // 177
+            m_pto_list.Add("XG№31-C-25"); // 178
 
             // 229
             m_pto_list.Add("HH№229-O-10"); // 179
@@ -586,14 +586,14 @@ namespace StrengthReport
             m_pto_list.Add("HH№36-C-25"); // 202
 
             // 032
-            m_pto_list.Add("XGM 032-10"); // 203
-            m_pto_list.Add("XGM 032-16"); // 204
-            m_pto_list.Add("XGM 032-25"); // 205
+            m_pto_list.Add("XGM№032-10"); // 203
+            m_pto_list.Add("XGM№032-16"); // 204
+            m_pto_list.Add("XGM№032-25"); // 205
 
             // 050
-            m_pto_list.Add("XGM 050-10"); // 206
-            m_pto_list.Add("XGM 050-16"); // 207
-            m_pto_list.Add("XGM 050-25"); // 208
+            m_pto_list.Add("XGM№050-10"); // 206
+            m_pto_list.Add("XGM№050-16"); // 207
+            m_pto_list.Add("XGM№050-25"); // 208
 
             // 150
             m_pto_list.Add("HH№150-O-10"); // 209
