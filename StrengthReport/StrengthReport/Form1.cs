@@ -3954,268 +3954,107 @@ namespace StrengthReport
             return true;
         }
 
-        private void FillHashTable(ref double[,] DoubleValue, ref MyDoubleHashTable hashTable, int len)
+        private MyDoubleHashTable ReadMyHashTable(string source, string page, string[] fields)
         {
-            double[] data = new double[len];
+            ExcelReader excelReader = new ExcelReader
+            {
+                DbPath = source,
+                Fields = fields,
+                Page = page
+            };
+
+            double[,] DoubleValue = excelReader.GetDoubleTable();
+            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
+
+            double[] data = new double[fields.Length];
 
             for (int j = 0; j < m_pto_list.Count; j++)
             {
-                for (int i = 0; i < len; i++)
+                for (int i = 0; i < fields.Length; i++)
                     data[i] = DoubleValue[j, i];
 
                 hashTable.AddValue(m_pto_list[j], data);
             }
+
+            return hashTable;
         }
 
         private MyDoubleHashTable ReadHashTable43(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = new string[] { "f", "n", "Am", "Bm", "A1", "B1", "b", "h", "dh", "epsi", "Epr", "q", "R", "ps" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list43";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list43", fields);
         }
 
         private MyDoubleHashTable ReadHashTable41(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "Bm", "B", "Am", "A", "b1", "Bsh", "d", "z", "c111", "c112", "c12", "c2", "S1", "S2" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list41";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list41", fields);
         }
 
         private MyDoubleHashTable ReadHashTable422(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "q0liq", "q0vap", "q0air", "mliq", "mvap", "mair", "eta", "hi", "z", "d0", "d0w" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list422";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list422", fields);
         }
 
         private MyDoubleHashTable ReadHashTable423(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "d0up", "d0wup", "Mkup", "zc", "d0down", "d0wdown", "Мкdown", "zdown" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list423";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list423", fields);
         }
 
         private MyDoubleHashTable ReadHashTable51(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "k4", "k5", "k6", "k7", "k8", "k9" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list51";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list51", fields);
         }
 
         private MyDoubleHashTable ReadHashTable424(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "b01", "Dm1", "b02", "Dm2", "b03", "Dm3", "b1rib", "b2rib", "b3rib", "deltarib", "q0liqrib", "q0vaprib", "q0airrib", "mliqrib", "mvaprib", "mairrib", "nurib", "b1paronit", "b2paronit", "b3paronit", "deltaparonit", "q0liqparonit", "q0vapparonit", "q0airparonit", "mliqparonit", "mvapparonit", "mairparonit", "nuparonit", "hi", "dc", "z", "d0", "d0w" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list424";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list424", fields);
         }
 
         private MyDoubleHashTable ReadList52(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "aisim4", "aisim5",	"aisim6", "aisim7", "aisim8", "aisim9", "titanm5", "titanm6", "titanm7", "titanm8", "titanm9", "hasm5", "hasm6", "hasm7", "hasm8", "hasm9", "epdm", "nitril", "viton", "F" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list52";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list52", fields);
         }
 
         private MyDoubleHashTable ReadLen52(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "W1250", "W1330", "W1400", "W1500", "W1600", "W1800", "W1900", "W11000", "W11200", "W11300", "W11500", "W12000", "W12500", "W13000", "W14000", "W15000", "W16000", "W2", "W1750" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "len52";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            //double val = hashTable.GetValue(comboBox1.Text, "W1600");
-
-            return hashTable;
+            return ReadMyHashTable(source, "len52", fields);
         }
 
         private MyDoubleHashTable ReadList54(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "K1sh", "K1g", "Km", "h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list54";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            //double val = hashTable.GetValue(comboBox1.Text, "K1sh");
-
-            return hashTable;
+            return ReadMyHashTable(source, "list54", fields);
         }
 
         private MyDoubleHashTable ReadList55(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "z1", "z2", "z3", "b1", "b2", "b3" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list55";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list55", fields);
         }
 
         private MyDoubleHashTable ReadList56(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "A1", "A2" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list56";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list56", fields);
         }
 
         private MyDoubleHashTable ReadList57(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "N1", "N2", "N3", "NSigma", "NN", "A", "B", "K" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list57";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list57", fields);
         }
 
         private MyDoubleHashTable ReadList53(string source)
         {
-            // declare excel reader
-            ExcelReader excelReader = new ExcelReader();
             string[] fields = { "mu" };
-
-            excelReader.DbPath = source;
-            excelReader.Fields = fields;
-            excelReader.Page = "list53";
-
-            double[,] DoubleValue = excelReader.GetDoubleTable();
-
-            // === setup data ===
-            MyDoubleHashTable hashTable = new MyDoubleHashTable(fields);
-            FillHashTable(ref DoubleValue, ref hashTable, fields.Length);
-
-            return hashTable;
+            return ReadMyHashTable(source, "list53", fields);
         }
 
         private void ReadTemperature(string source)
