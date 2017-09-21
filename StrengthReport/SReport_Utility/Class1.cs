@@ -274,7 +274,7 @@ namespace SReport_Utility
     {
         #region === Members ===
 
-        private ArrayList m_value = new ArrayList();
+        private List<int[]> m_value = new List<int[]>();
 
         #endregion
 
@@ -289,7 +289,7 @@ namespace SReport_Utility
         public int[] GetValue(string Key)
         {
             int index = GetItemIndex(Key);
-            return (index >= 0) ? (int[])m_value[index] : null;
+            return (index >= 0) ? m_value[index] : null;
         }
 
         #endregion
@@ -499,13 +499,12 @@ namespace SReport_Utility
                 }
 
                 s = result.ToString();
-                //s = GetDoubleFormat(result, Sign);
             }
 
             return (Formated) ? ConvertToDigitFormat(s, Sign) : s;
         }
 
-        static public string ConvertToDigitFormat(string sVal, int Sign)
+        static private string ConvertToDigitFormat(string sVal, int Sign)
         {
             System.Globalization.NumberFormatInfo m_nfi = System.Threading.Thread.CurrentThread.CurrentCulture.NumberFormat;
             string s = sVal;
