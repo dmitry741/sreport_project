@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrengthReport", "StrengthReport\StrengthReport.csproj", "{D13B693B-8CD0-4596-A31D-287B511608AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SReport_Utility", "SReport_Utility\SReport_Utility.csproj", "{E16D3158-2235-416C-B024-E4A894F602D4}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VersionControl_VB", "VersionControl_VB\VersionControl_VB.vbproj", "{D40E97B3-B128-482F-B512-8C2E1F5990B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbReader", "DbReader\DbReader.csproj", "{CDCB6618-5040-4DF7-9692-E640620E1AD2}"
 EndProject
@@ -25,10 +23,6 @@ Global
 		{E16D3158-2235-416C-B024-E4A894F602D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E16D3158-2235-416C-B024-E4A894F602D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E16D3158-2235-416C-B024-E4A894F602D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D40E97B3-B128-482F-B512-8C2E1F5990B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D40E97B3-B128-482F-B512-8C2E1F5990B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D40E97B3-B128-482F-B512-8C2E1F5990B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D40E97B3-B128-482F-B512-8C2E1F5990B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CDCB6618-5040-4DF7-9692-E640620E1AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CDCB6618-5040-4DF7-9692-E640620E1AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDCB6618-5040-4DF7-9692-E640620E1AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4154996F-3CA2-4AAA-8530-0798E88175C9}
 	EndGlobalSection
 EndGlobal

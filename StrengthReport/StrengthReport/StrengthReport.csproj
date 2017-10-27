@@ -50,7 +50,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -355,10 +355,6 @@
     <ProjectReference Include="..\SReport_Utility\SReport_Utility.csproj">
       <Project>{e16d3158-2235-416c-b024-e4a894f602d4}</Project>
       <Name>SReport_Utility</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VersionControl_VB\VersionControl_VB.vbproj">
-      <Project>{d40e97b3-b128-482f-b512-8c2e1f5990b7}</Project>
-      <Name>VersionControl_VB</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

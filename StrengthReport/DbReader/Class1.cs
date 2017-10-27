@@ -1,4 +1,6 @@
-﻿using System.Data.Common;
+﻿using System;
+using System.Data;
+using System.Data.Common;
 
 namespace DbReader
 {
@@ -63,7 +65,8 @@ namespace DbReader
             DbProviderFactory factory = DbProviderFactories.GetFactory("System.Data.OleDb");
             DbConnection connection = factory.CreateConnection();
 
-            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
+            //old connection: connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
 
             DbCommand command = connection.CreateCommand();
 
@@ -77,7 +80,14 @@ namespace DbReader
             commandText += " FROM [" + m_page + "$]";
             command.CommandText = commandText;
 
-            connection.Open();
+            try
+            {
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                string mes = ex.Message;
+            }
 
             DbDataReader dr = command.ExecuteReader();
 
