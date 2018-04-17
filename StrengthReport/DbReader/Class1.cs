@@ -99,18 +99,7 @@ namespace DbReader
                 {
                     value = dr[m_Fields[i]].ToString();
 
-                    if (value.Length == 0)
-                    {
-                        A = 0;
-                    }
-                    else
-                    {
-                        if (!double.TryParse(value, out A))
-                        {
-                            A = 0;
-                        }
-                    }
-
+                    double.TryParse(value, out A);
                     table[i].Add(A);
                 }
             }
