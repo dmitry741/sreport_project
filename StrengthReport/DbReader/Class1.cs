@@ -63,53 +63,52 @@ namespace DbReader
             }
 
             DbProviderFactory factory = DbProviderFactories.GetFactory("System.Data.OleDb");
-            DbConnection connection = factory.CreateConnection();
 
-            //old connection: connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
-
-            DbCommand command = connection.CreateCommand();
-
-            string commandText = "SELECT " + m_Fields[0];
-
-            for (i = 1; i < Columns; i++)
+            using (DbConnection connection = factory.CreateConnection())
             {
-                commandText += ", " + m_Fields[i];
-            }
+                //old connection: connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
+                connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source=" + m_dbPath + @" ; Extended Properties=""Excel 8.0;HDR=YES;""";
 
-            commandText += " FROM [" + m_page + "$]";
-            command.CommandText = commandText;
+                DbCommand command = connection.CreateCommand();
 
-            try
-            {
-                connection.Open();
-            }
-            catch (Exception ex)
-            {
-                string mes = ex.Message;
-            }
+                string commandText = "SELECT " + m_Fields[0];
 
-            DbDataReader dr = command.ExecuteReader();
-
-            while (dr.Read())
-            {
-                double A;
-
-                for (i = 0; i < Columns; i++)
+                for (i = 1; i < Columns; i++)
                 {
-                    value = dr[m_Fields[i]].ToString();
+                    commandText += ", " + m_Fields[i];
+                }
 
-                    double.TryParse(value, out A);
-                    table[i].Add(A);
+                commandText += " FROM [" + m_page + "$]";
+                command.CommandText = commandText;
+
+                try
+                {
+                    connection.Open();
+                }
+                catch (Exception ex)
+                {
+                    string mes = ex.Message;
+                }
+
+                DbDataReader dr = command.ExecuteReader();
+
+                while (dr.Read())
+                {
+
+                    for (i = 0; i < Columns; i++)
+                    {
+                        value = dr[m_Fields[i]].ToString();
+
+                        double.TryParse(value, out double A);
+                        table[i].Add(A);
+                    }
                 }
             }
 
-            connection.Close();
+            int rowCount = table[0].Count;
+            double[,] DoubleTable = new double[rowCount, Columns];
 
-            int Rows = table[0].Count;
-            double[,] DoubleTable = new double[Rows, Columns];
-
-            for (i = 0; i < Rows; i++)
+            for (i = 0; i < rowCount; i++)
             {
                 for (int j = 0; j < Columns; j++)
                 {
