@@ -4751,7 +4751,7 @@ namespace StrengthReport
 
             // === title ===
             this.Text = string.Format("{0}: Новый", KitConstant.softwareName);
-            lblVersion.Text = KitConstant.companyName + ", версия: " + "2.116";
+            lblVersion.Text = string.Format("{0}, версия: " + "2.117", KitConstant.companyName);
             // ===============
         }
 
